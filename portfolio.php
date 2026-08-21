@@ -87,7 +87,7 @@ require_once __DIR__ . '/includes/header.php';
                   <span class="bento-browser-url">https://peeskinmedspa.jadecursor.com</span>
                 </div>
                 <div class="bento-browser-img-wrap">
-                  <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1200&q=80" alt="Pee Skin &amp; Med Spa Luxury Medical Aesthetics Website">
+                  <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1200&q=80" alt="Pee Skin &amp; Med Spa Luxury Medical Aesthetics Website">
                   <!-- Floating UI Badge -->
                   <div class="bento-floating-badge">
                     <span class="live-dot"></span>
@@ -190,7 +190,7 @@ require_once __DIR__ . '/includes/header.php';
                   <span class="bento-browser-url">https://jveewellness.jadecursor.com</span>
                 </div>
                 <div class="bento-browser-img-wrap">
-                  <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80" alt="JVEE Wellness &amp; Spa Website Showcase">
+                  <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80" alt="JVEE Wellness &amp; Spa Website Showcase">
                   <!-- Floating UI Badge -->
                   <div class="bento-floating-badge">
                     <span class="live-dot"></span>
@@ -290,7 +290,7 @@ require_once __DIR__ . '/includes/header.php';
                   <span class="bento-browser-url">https://arunaspa.jadecursor.com</span>
                 </div>
                 <div class="bento-browser-img-wrap">
-                  <img src="https://images.unsplash.com/photo-1583416750470-965b2707b355?auto=format&fit=crop&w=1200&q=80" alt="Aruna Spa Website Showcase">
+                  <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1583416750470-965b2707b355?auto=format&fit=crop&w=1200&q=80" alt="Aruna Spa Website Showcase">
                   <!-- Floating UI Badge -->
                   <div class="bento-floating-badge">
                     <span class="live-dot"></span>
@@ -390,7 +390,7 @@ require_once __DIR__ . '/includes/header.php';
                   <span class="bento-browser-url">https://beauticiansonthego.jadecursor.com</span>
                 </div>
                 <div class="bento-browser-img-wrap">
-                  <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80" alt="Beauticians On The Go Mobile Stylist Website">
+                  <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80" alt="Beauticians On The Go Mobile Stylist Website">
                   <!-- Floating UI Badge -->
                   <div class="bento-floating-badge">
                     <span class="live-dot"></span>
@@ -490,7 +490,7 @@ require_once __DIR__ . '/includes/header.php';
                   <span class="bento-browser-url">https://edenspa.jadecursor.com</span>
                 </div>
                 <div class="bento-browser-img-wrap">
-                  <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=1200&q=80" alt="Eden Spa &amp; Salon Botanical Website">
+                  <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=1200&q=80" alt="Eden Spa &amp; Salon Botanical Website">
                   <!-- Floating UI Badge -->
                   <div class="bento-floating-badge">
                     <span class="live-dot"></span>

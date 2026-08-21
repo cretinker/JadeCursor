@@ -69,7 +69,7 @@ require_once __DIR__ . '/includes/header.php';
           <div>
             <div class="double-bezel-card">
               <div class="double-bezel-inner">
-                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80" alt="Luxury Spa Atmosphere" style="border-radius: var(--radius-lg); height: 360px; width: 100%; object-fit: cover; margin-bottom: 1.5rem;">
+                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80" alt="Luxury Spa Atmosphere" style="border-radius: var(--radius-lg); height: 360px; width: 100%; object-fit: cover; margin-bottom: 1.5rem;">
                 <div style="border-left: 3px solid var(--color-jade-neon); padding-left: 1.25rem;">
                   <p style="font-size: 1.15rem; color: #FFFFFF; font-weight: 500;">
                     "Your website is the front door to your business. When it feels as luxurious and welcoming as your lobby, clients book with confidence."
@@ -202,7 +202,7 @@ require_once __DIR__ . '/includes/header.php';
           <!-- Member 1: Elijah Vance (Founder & Principal Director) -->
           <div class="double-bezel-card">
             <div class="double-bezel-inner">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Elijah Vance" style="border-radius: var(--radius-lg); height: 280px; width: 100%; object-fit: cover; margin-bottom: 1.25rem;">
+              <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Elijah Vance" style="border-radius: var(--radius-lg); height: 280px; width: 100%; object-fit: cover; margin-bottom: 1.25rem;">
               <h3 style="font-size: 1.45rem;">Elijah Vance</h3>
               <span style="font-size: 0.85rem; color: var(--color-jade-neon); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; display: block; margin-bottom: 0.75rem;">Founder &amp; Principal Design Director</span>
               <p style="font-size: 0.95rem; color: var(--color-text-muted);">
@@ -214,7 +214,7 @@ require_once __DIR__ . '/includes/header.php';
           <!-- Member 2: Seraphina Lin -->
           <div class="double-bezel-card">
             <div class="double-bezel-inner">
-              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Seraphina Lin" style="border-radius: var(--radius-lg); height: 280px; width: 100%; object-fit: cover; margin-bottom: 1.25rem;">
+              <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Seraphina Lin" style="border-radius: var(--radius-lg); height: 280px; width: 100%; object-fit: cover; margin-bottom: 1.25rem;">
               <h3 style="font-size: 1.45rem;">Seraphina Lin</h3>
               <span style="font-size: 0.85rem; color: var(--color-jade-neon); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; display: block; margin-bottom: 0.75rem;">Creative Director &amp; Visual Stylist</span>
               <p style="font-size: 0.95rem; color: var(--color-text-muted);">
@@ -226,7 +226,7 @@ require_once __DIR__ . '/includes/header.php';
           <!-- Member 3: Julian Thorne -->
           <div class="double-bezel-card">
             <div class="double-bezel-inner">
-              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="Julian Thorne" style="border-radius: var(--radius-lg); height: 280px; width: 100%; object-fit: cover; margin-bottom: 1.25rem;">
+              <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="Julian Thorne" style="border-radius: var(--radius-lg); height: 280px; width: 100%; object-fit: cover; margin-bottom: 1.25rem;">
               <h3 style="font-size: 1.45rem;">Julian Thorne</h3>
               <span style="font-size: 0.85rem; color: var(--color-jade-neon); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; display: block; margin-bottom: 0.75rem;">Lead Systems &amp; Booking Engineer</span>
               <p style="font-size: 0.95rem; color: var(--color-text-muted);">
