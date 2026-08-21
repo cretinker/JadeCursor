@@ -2,7 +2,7 @@
    JADE CURSOR — HIGH-PERFORMANCE TECH & WEB DESIGN AGENCY DESIGN SYSTEM
    Dark Tech Agency Theme (Linear / Stripe / Awwwards Inspired)
    Floating Glassmorphism Header & Bespoke Luxury Vector Logo
-   Award-Winning Bento Grid Case Study Showcase
+   Award-Winning Bento Grid Case Studies & Client Qualification Matrix
    Strictly Pure CSS (Zero JavaScript Architecture)
    ========================================================================== */
 
@@ -185,6 +185,11 @@ img {
 
 ul, ol {
   list-style: none;
+}
+
+/* Bulletproof Global SVG icon rules */
+svg {
+  flex-shrink: 0;
 }
 
 /* ==========================================================================
@@ -1050,24 +1055,21 @@ ul, ol {
   color: var(--color-text-main);
 }
 
-.broken-way .audit-point-list svg {
+.audit-point-list svg {
   width: 20px;
   height: 20px;
-  stroke: var(--color-status-red);
-  stroke-width: 2;
-  fill: none;
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-top: 3px;
+  fill: none;
+  stroke-width: 2.2;
+}
+
+.broken-way .audit-point-list svg {
+  stroke: var(--color-status-red);
 }
 
 .jade-way .audit-point-list svg {
-  width: 20px;
-  height: 20px;
   stroke: var(--color-status-green);
-  stroke-width: 2.2;
-  fill: none;
-  flex-shrink: 0;
-  margin-top: 2px;
 }
 
 /* ==========================================================================
@@ -1174,31 +1176,198 @@ ul, ol {
   font-family: var(--font-mono);
 }
 
-/* Qualification Grid */
+/* ==========================================================================
+   FLAGSHIP CLIENT QUALIFICATION & FIT MATRIX (process.html)
+   ========================================================================== */
+
 .qualification-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
   margin-top: 3rem;
+  align-items: stretch;
 }
 
 .fit-card {
-  padding: clamp(2rem, 3vw, 2.75rem);
-  border-radius: var(--radius-xl);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2xl);
+  padding: clamp(2rem, 3.5vw, 3rem);
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  justify-content: space-between;
+  box-shadow: var(--shadow-lift);
+  position: relative;
+  transition: var(--transition-smooth);
 }
 
 .fit-card.is-fit {
-  background-color: var(--color-surface);
-  border: 1.5px solid rgba(0, 245, 160, 0.3);
-  box-shadow: var(--shadow-ambient);
+  border-color: rgba(0, 245, 160, 0.35);
+  box-shadow: var(--shadow-lift), 0 0 36px rgba(0, 245, 160, 0.08);
+}
+
+.fit-card.is-fit:hover {
+  box-shadow: var(--shadow-lift), 0 0 48px rgba(0, 245, 160, 0.16);
+  border-color: var(--color-jade-neon);
 }
 
 .fit-card.not-fit {
-  background-color: rgba(248, 113, 113, 0.03);
-  border: 1px solid rgba(248, 113, 113, 0.2);
+  border-color: rgba(248, 113, 113, 0.25);
+  background: rgba(14, 18, 28, 0.6);
+}
+
+.fit-card-header {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 1.75rem;
+}
+
+.fit-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 800;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 1rem;
+}
+
+.is-fit .fit-status-badge {
+  color: var(--color-jade-neon);
+  background: rgba(0, 245, 160, 0.1);
+  border: 1px solid rgba(0, 245, 160, 0.3);
+}
+
+.is-fit .fit-status-badge .badge-pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-jade-neon);
+  box-shadow: 0 0 10px var(--color-jade-neon);
+}
+
+.not-fit .fit-status-badge {
+  color: var(--color-status-red);
+  background: rgba(248, 113, 113, 0.1);
+  border: 1px solid rgba(248, 113, 113, 0.3);
+}
+
+.fit-card-title {
+  font-size: clamp(1.5rem, 2.5vw, 1.85rem);
+  color: #FFFFFF;
+  margin-bottom: 0.5rem;
+}
+
+.fit-card-sub {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* Structured Benefit/Filter Tiles */
+.fit-tile-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+.fit-tile-item {
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: var(--transition-fast);
+}
+
+.is-fit .fit-tile-item:hover {
+  border-color: rgba(0, 245, 160, 0.3);
+  background: rgba(22, 31, 48, 0.9);
+}
+
+.fit-tile-icon-box {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.is-fit .fit-tile-icon-box {
+  background: rgba(0, 245, 160, 0.12);
+  color: var(--color-jade-neon);
+  border: 1px solid rgba(0, 245, 160, 0.25);
+}
+
+.is-fit .fit-tile-icon-box svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--color-jade-neon);
+  fill: none;
+  stroke-width: 2.2;
+}
+
+.not-fit .fit-tile-icon-box {
+  background: rgba(248, 113, 113, 0.1);
+  color: var(--color-status-red);
+  border: 1px solid rgba(248, 113, 113, 0.25);
+}
+
+.not-fit .fit-tile-icon-box svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--color-status-red);
+  fill: none;
+  stroke-width: 2.2;
+}
+
+.fit-tile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.fit-tile-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.fit-tile-desc {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+/* Card Bottom Highlight Bar */
+.fit-card-footer {
+  padding: 1.15rem 1.35rem;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.is-fit .fit-card-footer {
+  background: rgba(0, 245, 160, 0.08);
+  border: 1px solid rgba(0, 245, 160, 0.25);
+  color: var(--color-jade-neon);
+  font-weight: 600;
+}
+
+.not-fit .fit-card-footer {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
 }
 
 /* Calculator Card */
