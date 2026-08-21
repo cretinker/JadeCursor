@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jade Cursor | Luxury Spa & Wellness Web Design Agency</title>
+  <meta name="description" content="We build serene, high-performing websites and digital brands exclusively for luxury spas, wellness retreats, and premium salons. Blending tech precision with spa-like aesthetics.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SITE HEADER & PURE CSS FLOATING NAVIGATION
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="site-container">
+      <div class="nav-bar">
+        <a href="index.html" class="brand-logo" aria-label="Jade Cursor Home">
+          <div class="brand-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <div>
+            Jade Cursor
+            <span class="brand-text-accent">Digital Sanctuary</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="portfolio.html" class="nav-link">Case Studies</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="contact.html" class="nav-link">Onboarding</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="contact.html" class="btn btn-primary btn-header-cta">
+            Book a Discovery Call
+            <span class="btn-icon-wrapper">
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+        </div>
+
+        <!-- Pure CSS Mobile Hamburger via Checkbox Hack -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle mobile menu">
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <!-- Mobile Navigation Drawer -->
+        <div class="mobile-nav-drawer">
+          <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
+            <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+            <li><a href="portfolio.html" class="mobile-nav-link">Case Studies</a></li>
+            <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Start Your Journey</a></li>
+          </ul>
+          <div class="mobile-nav-footer">
+            <p>hello@jadecursor.com</p>
+            <p>Remote Digital Agency Serving Wellness Brands Globally</p>
+            <div style="margin-top: 1.25rem;">
+              <a href="contact.html" class="btn btn-gold" style="width: 100%;">Book a Discovery Call</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero-luxury">
+      <div class="site-container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="eyebrow-pill">
+              <span class="pill-dot"></span>
+              The Digital Atelier for Luxury Wellness
+            </div>
+            <h1 class="hero-title editorial-title">
+              We engineer serene digital sanctuaries that turn visitors into <span class="editorial-italic">devoted guests</span>.
+            </h1>
+            <p class="hero-description">
+              Jade Cursor crafts bespoke, high-converting websites exclusively for luxury day spas, medi-spas, wellness retreats, and premier salons. We blend tech precision with spa-grade aesthetics so you never have to wrestle with clunky software again.
+            </p>
+            <div class="hero-actions">
+              <a href="contact.html" class="btn btn-primary">
+                Book a Discovery Call
+                <span class="btn-icon-wrapper">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+              </a>
+              <a href="portfolio.html" class="btn btn-secondary">
+                Explore Case Studies
+                <span class="btn-icon-wrapper">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-visual-card">
+              <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1000&q=80" alt="Luxury Spa Atmosphere with Stone Textures and Water Elements">
+            </div>
+            <div class="hero-floating-badge">
+              <div class="hero-badge-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div class="hero-badge-text">
+                <strong>Pure Zen Experience</strong>
+                Zero JavaScript bloat, sub-second load times &amp; friction-free booking.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROOF METRICS RIBBON
+         ========================================================================== -->
+    <section class="proof-ribbon" aria-label="Agency Impact Metrics">
+      <div class="site-container">
+        <div class="proof-grid">
+          <div class="proof-item">
+            <div class="proof-number">50+</div>
+            <div class="proof-label">Sanctuaries Elevated</div>
+          </div>
+          <div class="proof-item">
+            <div class="proof-number">3.4x</div>
+            <div class="proof-label">Average Booking Surge</div>
+          </div>
+          <div class="proof-item">
+            <div class="proof-number">$18M+</div>
+            <div class="proof-label">Direct Client Revenue</div>
+          </div>
+          <div class="proof-item">
+            <div class="proof-number">100%</div>
+            <div class="proof-label">Bespoke Clean Code</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         THE JADE CURSOR PHILOSOPHY
+         ========================================================================== -->
+    <section class="section-spacing philosophy-section">
+      <div class="site-container">
+        <div class="philosophy-grid">
+          <div>
+            <div class="eyebrow-pill">
+              <span class="pill-dot"></span>
+              Our Guiding Philosophy
+            </div>
+            <h2 class="editorial-title">
+              Bringing Zen to Web Design: Why <span class="editorial-italic">generic templates</span> fail luxury wellness.
+            </h2>
+            <p>
+              Your physical spa is a haven of calming aromatherapy, soft linen, warm lighting, and tailored rituals. Yet most spa websites look like cluttered dental software: sluggish page speeds, aggressive popups, confusing menus, and disjointed booking portals.
+            </p>
+            <p style="margin-top: 1rem;">
+              At Jade Cursor, we believe your digital front door should offer the exact same emotional resonance as your physical sanctuary. When high-ticket clients arrive on your site, their shoulders should drop, their breath should steady, and booking a $600 ritual should feel effortless.
+            </p>
+            
+            <div class="duality-comparison">
+              <div class="duality-card jade-side">
+                <div class="duality-icon">
+                  <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L12 22l7.03-4.39C20.26 16.07 21 14.12 21 12c0-4.97-4.03-9-9-9z"/></svg>
+                </div>
+                <h4>The "Jade" Soul</h4>
+                <p>Tactile luxury, organic serenity, soothing color harmonies, and mindful pacing inspired by healing stones.</p>
+              </div>
+
+              <div class="duality-card cursor-side">
+                <div class="duality-icon">
+                  <svg viewBox="0 0 24 24"><path d="M3 3l7 18 3-7 7-3L3 3z"/></svg>
+                </div>
+                <h4>The "Cursor" Mind</h4>
+                <p>Digital precision, razor-sharp typography, seamless booking integrations, and ultra-light clean code.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="double-bezel-card">
+              <div class="double-bezel-inner">
+                <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=800&q=80" alt="Botanical Spa Essence" style="border-radius: var(--radius-lg); margin-bottom: 1.5rem; height: 320px; object-fit: cover;">
+                <h3 style="font-family: var(--font-serif); margin-bottom: 0.75rem;">A Sanctuary Built for Peace of Mind</h3>
+                <p style="font-size: 0.95rem; color: var(--color-slate-muted);">
+                  We handle the entire digital ecosystem for busy spa directors and founders so you can stay fully focused on delivering transcendent guest experiences.
+                </p>
+                <div style="margin-top: 1.5rem;">
+                  <a href="about.html" class="btn btn-secondary" style="width: 100%;">
+                    Read Our Full Story
+                    <span class="btn-icon-wrapper">
+                      <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SERVICES SNAPSHOT
+         ========================================================================== -->
+    <section class="section-spacing">
+      <div class="site-container">
+        <div class="section-header text-center">
+          <div class="eyebrow-pill">
+            <span class="pill-dot"></span>
+            Crafted Offerings
+          </div>
+          <h2 class="editorial-title">
+            Tailored digital architecture for <span class="editorial-italic">esteemed wellness brands</span>.
+          </h2>
+          <p>
+            Every service is engineered to solve the exact operational bottlenecks spa directors face: eliminating booking friction, attracting high-ticket clientele, and establishing an undeniable luxury presence.
+          </p>
+        </div>
+
+        <div class="services-grid-3col">
+          <!-- Service 1 -->
+          <div class="double-bezel-card">
+            <div class="double-bezel-inner service-card-feature">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              </div>
+              <div class="service-card-header">
+                <h3>Custom Spa Web Design</h3>
+                <p style="font-size: 0.95rem; margin-top: 0.5rem;">Bespoke UI/UX architectures crafted specifically for wellness clinics, hydrothermal sanctuaries, and luxury salon ateliers.</p>
+              </div>
+              <ul class="service-feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                  Sub-second page load times with zero JS bloat
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                  Editorial typography and double-bezel layouts
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                  Mobile-first immersive sensory design
+                </li>
+              </ul>
+              <div style="margin-top: auto; padding-top: 1.25rem;">
+                <a href="services.html" class="btn btn-secondary" style="width: 100%;">
+                  Explore Service
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="double-bezel-card">
+            <div class="double-bezel-inner service-card-feature">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></svg>
+              </div>
+              <div class="service-card-header">
+                <h3>Branding &amp; Aesthetic Strategy</h3>
+                <p style="font-size: 0.95rem; margin-top: 0.5rem;">Translating your physical spa interior, signature scents, and botanical rituals into a cohesive digital identity.</p>
+              </div>
+              <ul class="service-feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                  Custom earthy color palettes and type pairings
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                  Digital treatment menu and pricing layout design
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                  Comprehensive brand guidelines and asset suite
+                </li>
+              </ul>
+              <div style="margin-top: auto; padding-top: 1.25rem;">
+                <a href="services.html" class="btn btn-secondary" style="width: 100%;">
+                  Explore Service
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="double-bezel-card">
+            <div class="double-bezel-inner service-card-feature">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <div class="service-card-header">
+                <h3>Frictionless Booking &amp; SEO</h3>
+                <p style="font-size: 0.95rem; margin-top: 0.5rem;">Seamless software integration (Boulevard, Mindbody, Fresha, Jane) paired with high-intent local luxury SEO.</p>
+              </div>
+              <ul class="service-feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                  One-tap treatment selection &amp; booking links
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                  Dominant Google Local ranking for high-ticket terms
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                  Zero software lock-in with clean semantic HTML
+                </li>
+              </ul>
+              <div style="margin-top: auto; padding-top: 1.25rem;">
+                <a href="services.html" class="btn btn-secondary" style="width: 100%;">
+                  Explore Service
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CSS PARALLAX BREAKOUT
+         ========================================================================== -->
+    <section class="parallax-breakout" style="background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1600&q=80');" aria-label="Philosophy Quote">
+      <div class="site-container">
+        <div class="parallax-content">
+          <blockquote class="parallax-quote">
+            "A digital sanctuary shouldn't feel like software. It should feel like stepping into a private villa at dusk, where every detail invites you to exhale."
+          </blockquote>
+          <div class="parallax-author">
+             -  The Jade Cursor Aesthetic Standard
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURED CASE STUDIES
+         ========================================================================== -->
+    <section class="section-spacing">
+      <div class="site-container">
+        <div class="section-header text-center">
+          <div class="eyebrow-pill">
+            <span class="pill-dot"></span>
+            Proven Transformations
+          </div>
+          <h2 class="editorial-title">
+            Signature case studies from our <span class="editorial-italic">wellness portfolio</span>.
+          </h2>
+          <p>
+            Explore how we elevated leading day spas, mobile beauty practices, and medical esthetics clinics into digital category leaders.
+          </p>
+        </div>
+
+        <div class="portfolio-case-studies">
+          <!-- Featured Case 1: JVEE Wellness & Spa -->
+          <article class="case-study-item">
+            <div class="case-study-media">
+              <div class="case-browser-frame">
+                <div class="browser-top-bar">
+                  <span class="browser-dot dot-red"></span>
+                  <span class="browser-dot dot-yellow"></span>
+                  <span class="browser-dot dot-green"></span>
+                  <span class="browser-url-pill">https://jveewellness.jadecursor.com</span>
+                </div>
+                <div class="case-image-wrap">
+                  <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=80" alt="JVEE Wellness & Spa Website Showcase">
+                </div>
+              </div>
+            </div>
+            <div class="case-study-narrative">
+              <div class="case-client-tag">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>
+                Day Spa &amp; Holistic Retreat
+              </div>
+              <h3>JVEE Wellness &amp; Spa</h3>
+              <p>
+                JVEE offered world-class bespoke massage therapies but suffered from a dated, clunky booking interface that caused a 65% mobile abandonment rate.
+              </p>
+              <div class="case-metrics-badges">
+                <div class="metric-badge">
+                  <strong>+142%</strong>
+                  Direct Ritual Bookings
+                </div>
+                <div class="metric-badge">
+                  <strong>4.8 min</strong>
+                  Average Dwell Time
+                </div>
+              </div>
+              <div>
+                <a href="https://jveewellness.jadecursor.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  View Live Site
+                  <span class="btn-icon-wrapper">
+                    <svg viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Featured Case 2: Aruna Spa -->
+          <article class="case-study-item">
+            <div class="case-study-media">
+              <div class="case-browser-frame">
+                <div class="browser-top-bar">
+                  <span class="browser-dot dot-red"></span>
+                  <span class="browser-dot dot-yellow"></span>
+                  <span class="browser-dot dot-green"></span>
+                  <span class="browser-url-pill">https://arunaspa.jadecursor.com</span>
+                </div>
+                <div class="case-image-wrap">
+                  <img src="https://images.unsplash.com/photo-1583416750470-965b2707b355?auto=format&fit=crop&w=900&q=80" alt="Aruna Spa Website Showcase">
+                </div>
+              </div>
+            </div>
+            <div class="case-study-narrative">
+              <div class="case-client-tag">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>
+                Nordic Hydrothermal Sanctuary
+              </div>
+              <h3>Aruna Spa</h3>
+              <p>
+                A high-end thermal bath retreat losing corporate package bookings due to an uninspiring, clinical booking site. We redesigned the journey with Japandi-Nordic minimalism.
+              </p>
+              <div class="case-metrics-badges">
+                <div class="metric-badge">
+                  <strong>+180%</strong>
+                  Weekday Occupancy
+                </div>
+                <div class="metric-badge">
+                  <strong>$480k</strong>
+                  Corporate Retreats
+                </div>
+              </div>
+              <div>
+                <a href="https://arunaspa.jadecursor.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  View Live Site
+                  <span class="btn-icon-wrapper">
+                    <svg viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center" style="margin-top: 3.5rem;">
+          <a href="portfolio.html" class="btn btn-secondary">
+            View All 5 In-Depth Case Studies
+            <span class="btn-icon-wrapper">
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CLIENT ENDORSEMENTS & KIND WORDS
+         ========================================================================== -->
+    <section class="section-spacing philosophy-section">
+      <div class="site-container">
+        <div class="section-header text-center">
+          <div class="eyebrow-pill">
+            <span class="pill-dot"></span>
+            Client Words
+          </div>
+          <h2 class="editorial-title">
+            Trusted by the directors of <span class="editorial-italic">esteemed wellness havens</span>.
+          </h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Review 1 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="star-rating">
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <p class="testimonial-quote">
+                "Working with Jade Cursor felt like a treatment in itself. They took all the overwhelming tech off our plates and delivered a site that matches our physical interior down to the finest detail."
+              </p>
+            </div>
+            <div class="testimonial-author-box">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Elena Vance" class="testimonial-avatar">
+              <div>
+                <div class="testimonial-author-name">Elena Vance</div>
+                <div class="testimonial-author-role">Founder, JVEE Wellness &amp; Spa</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="star-rating">
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <p class="testimonial-quote">
+                "Our consultation requests for our $2,000 laser treatment packages tripled within 30 days of launch. The editorial design instantly established clinical trust."
+              </p>
+            </div>
+            <div class="testimonial-author-box">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&q=80" alt="Dr. Priya Chen" class="testimonial-avatar">
+              <div>
+                <div class="testimonial-author-name">Dr. Priya Chen</div>
+                <div class="testimonial-author-role">Medical Director, Pee Skin &amp; Med Spa</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="testimonial-card">
+            <div>
+              <div class="star-rating">
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <p class="testimonial-quote">
+                "Our mobile stylists no longer spend hours on the phone coordinating appointments. The custom booking funnel does everything quietly and flawlessly."
+              </p>
+            </div>
+            <div class="testimonial-author-box">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Marcus Sterling" class="testimonial-avatar">
+              <div>
+                <div class="testimonial-author-name">Marcus Sterling</div>
+                <div class="testimonial-author-role">Operations Lead, Beauticians On The Go</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CALL TO ACTION SECTION
+         ========================================================================== -->
+    <section class="section-spacing">
+      <div class="site-container">
+        <div class="cta-banner-luxury">
+          <div class="cta-banner-content">
+            <div class="eyebrow-pill pill-light">
+              <span class="pill-dot"></span>
+              Begin Your Elevation
+            </div>
+            <h2 class="editorial-title">
+              Ready to give your sanctuary the digital presence it deserves?
+            </h2>
+            <p>
+              Schedule a tranquil 30-minute Discovery Call. We will analyze your current booking flow, identify friction points, and outline a tailored roadmap for your digital transformation.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap;">
+              <a href="contact.html" class="btn btn-gold">
+                Book a Discovery Call
+                <span class="btn-icon-wrapper">
+                  <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </span>
+              </a>
+              <a href="services.html" class="btn btn-ghost-light">
+                View Pricing &amp; Packages
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       STICKY MOBILE CTA BAR (Pure CSS, Mobile Only)
+       ========================================================================== -->
+  <div class="mobile-sticky-cta" aria-label="Mobile Quick Booking CTA">
+    <div class="mobile-cta-text">
+      <strong>Jade Cursor</strong>
+      <span>Luxury Spa Web Design</span>
+    </div>
+    <a href="contact.html" class="btn btn-gold">
+      Book Discovery Call
+    </a>
+  </div>
+
+  <!-- ==========================================================================
+       GLOBAL FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" style="color: var(--color-cream-lightest);">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            Jade Cursor
+          </a>
+          <p>
+            We build serene, high-performing websites and digital brands exclusively for luxury spas, wellness retreats, and salons. Blending tech precision with spa-like aesthetics.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services &amp; Packages</a>
+            <a href="portfolio.html">Case Studies</a>
+            <a href="about.html">About Jade Cursor</a>
+            <a href="contact.html">Onboarding Journey</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Specializations</h4>
+          <div class="footer-links">
+            <a href="portfolio.html">Day Spa Sanctuaries</a>
+            <a href="portfolio.html">Medical Esthetics &amp; MedSpas</a>
+            <a href="portfolio.html">Hydrothermal &amp; Bathhouses</a>
+            <a href="portfolio.html">Mobile Beauty Collectives</a>
+            <a href="portfolio.html">Botanical Organic Salons</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Direct Concierge</h4>
+          <div class="footer-contact-info">
+            <p><strong>Inquiries:</strong> hello@jadecursor.com</p>
+            <p><strong>Location:</strong> Remote Digital Atelier serving wellness brands globally.</p>
+            <p><strong>Office Hours:</strong> Mon  -  Fri: 9:00 AM - 6:00 PM EST</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Jade Cursor Atelier. All rights reserved. Strictly Pure HTML5 &amp; Advanced CSS.
+        </div>
+        <div>
+          <span>Bespoke Code</span> &bull; <span>Zero JavaScript Bloat</span> &bull; <span>Luxury Spa Standard</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+# Node / Server
+node_modules/
+.env
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
