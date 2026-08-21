@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Discovery Call | Jade Cursor — Spa Web Design</title>
+  <meta name="description" content="Schedule a complimentary 30-minute website strategy session for your luxury day spa, salon, or medi-spa. Live mobile audit, booking funnel breakdown, and custom 4-week sprint plan.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       FLOATING GLASSMORPHISM HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="nav-container">
+      <div class="nav-bar">
+        <!-- High-End Vector Logo -->
+        <a href="index.html" class="brand-logo" aria-label="Jade Cursor Home">
+          <svg class="brand-logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="jadeGradPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#00F5A0" />
+                <stop offset="100%" stop-color="#059669" />
+              </linearGradient>
+              <linearGradient id="jadeFacet1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#10B981" stop-opacity="0.8" />
+                <stop offset="100%" stop-color="#047857" stop-opacity="0.9" />
+              </linearGradient>
+              <linearGradient id="jadeFacet2" x1="100%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#34D399" stop-opacity="0.4" />
+                <stop offset="100%" stop-color="#064E3B" stop-opacity="0.8" />
+              </linearGradient>
+              <filter id="jadeGlow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="3" result="blur" />
+                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+              </filter>
+            </defs>
+            <polygon points="24,2 43,13 43,35 24,46 5,35 5,13" fill="#080C14" stroke="url(#jadeGradPrimary)" stroke-width="1.8" />
+            <polygon points="24,2 24,24 43,13" fill="url(#jadeFacet1)" />
+            <polygon points="43,13 24,24 43,35" fill="#064E3B" fill-opacity="0.6" />
+            <polygon points="43,35 24,24 24,46" fill="url(#jadeFacet2)" />
+            <polygon points="24,46 24,24 5,35" fill="url(#jadeFacet1)" />
+            <polygon points="5,35 24,24 5,13" fill="#064E3B" fill-opacity="0.6" />
+            <polygon points="5,13 24,24 24,2" fill="url(#jadeFacet2)" />
+            <path d="M21 14L31 24L24 25.5L28 34L24 35.5L20 27L15 31V14H21Z" fill="#00F5A0" filter="url(#jadeGlow)" />
+            <path d="M21 14L31 24L24 25.5L28 34L24 35.5L20 27L15 31V14H21Z" fill="#FFFFFF" fill-opacity="0.85" />
+          </svg>
+          <div class="brand-text-block">
+            <span class="brand-title">Jade Cursor</span>
+            <span class="brand-badge">Spa Web Studio</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="portfolio.html" class="nav-link">Results</a>
+          <a href="process.html" class="nav-link">Process</a>
+          <a href="audit.html" class="nav-link">Free Audit</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="book-a-call.html" class="btn btn-primary btn-header-cta" style="box-shadow: 0 0 24px var(--color-jade-glow);">
+            Book a Call
+            <span class="btn-icon-wrapper">
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+        </div>
+
+        <!-- Pure CSS Mobile Hamburger Toggle -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle mobile menu">
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <!-- Fullscreen Glass Mobile Drawer -->
+        <div class="mobile-nav-drawer">
+          <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link"><span>Home</span> <span class="nav-num">01</span></a></li>
+            <li><a href="services.html" class="mobile-nav-link"><span>Services &amp; Pricing</span> <span class="nav-num">02</span></a></li>
+            <li><a href="portfolio.html" class="mobile-nav-link"><span>Client Results</span> <span class="nav-num">03</span></a></li>
+            <li><a href="process.html" class="mobile-nav-link"><span>How We Work</span> <span class="nav-num">04</span></a></li>
+            <li><a href="audit.html" class="mobile-nav-link"><span>Free Website Audit</span> <span class="nav-num">05</span></a></li>
+            <li><a href="about.html" class="mobile-nav-link"><span>About Us</span> <span class="nav-num">06</span></a></li>
+            <li><a href="contact.html" class="mobile-nav-link"><span>Contact Us</span> <span class="nav-num">07</span></a></li>
+          </ul>
+          <div class="mobile-nav-footer">
+            <p><strong>hello@jadecursor.com</strong></p>
+            <p style="font-size: 0.85rem; margin-top: 0.25rem;">Dedicated Web Design Agency for Luxury Spas &amp; Salons</p>
+            <div style="margin-top: 1.25rem;">
+              <a href="book-a-call.html" class="btn btn-primary" style="width: 100%;">Book a Discovery Call</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         PAGE HEADER
+         ========================================================================== -->
+    <section class="page-header-luxury">
+      <div class="site-container">
+        <div class="eyebrow-pill">
+          <span class="pill-dot"></span>
+          Private 30-Minute Strategy Session
+        </div>
+        <h1>
+          Schedule your spa website <span class="text-jade-accent">strategy session</span>.
+        </h1>
+        <p class="lead">
+          A complimentary 30-minute private consultation with our principal design director. We'll audit your current website live, spot where mobile visitors are dropping off, and map out a custom 4-week build plan.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         MAIN INTERACTIVE BOOKING STAGE
+         ========================================================================== -->
+    <section class="section-spacing">
+      <div class="site-container">
+        <div class="booking-layout-grid">
+
+          <!-- Left Column: Interactive Intake & Scheduling Engine -->
+          <div class="booking-engine-card">
+            <form action="contact.html" method="GET">
+              
+              <!-- STEP 1: Date & Time Selection -->
+              <div class="form-group">
+                <div class="booking-step-title">
+                  <span class="booking-step-num">STEP 01</span>
+                  Select Your Preferred Date &amp; Time
+                </div>
+
+                <div class="calendar-module">
+                  <div class="calendar-header-row">
+                    <span class="calendar-month-label">October 2026</span>
+                    <span class="calendar-timezone-tag">Timezone: Eastern Time (US &amp; Canada)</span>
+                  </div>
+
+                  <!-- 5 Selectable Date Radios -->
+                  <div class="calendar-days-row">
+                    <div>
+                      <input type="radio" name="call-date" id="date-mon" class="date-radio" value="Oct 20">
+                      <label for="date-mon" class="date-btn-label">
+                        <span class="date-day-abbr">Mon</span>
+                        <span class="date-num">20</span>
+                      </label>
+                    </div>
+                    <div>
+                      <input type="radio" name="call-date" id="date-tue" class="date-radio" value="Oct 21">
+                      <label for="date-tue" class="date-btn-label">
+                        <span class="date-day-abbr">Tue</span>
+                        <span class="date-num">21</span>
+                      </label>
+                    </div>
+                    <div>
+                      <input type="radio" name="call-date" id="date-wed" class="date-radio" value="Oct 22" checked>
+                      <label for="date-wed" class="date-btn-label">
+                        <span class="date-day-abbr">Wed</span>
+                        <span class="date-num">22</span>
+                      </label>
+                    </div>
+                    <div>
+                      <input type="radio" name="call-date" id="date-thu" class="date-radio" value="Oct 23">
+                      <label for="date-thu" class="date-btn-label">
+                        <span class="date-day-abbr">Thu</span>
+                        <span class="date-num">23</span>
+                      </label>
+                    </div>
+                    <div>
+                      <input type="radio" name="call-date" id="date-fri" class="date-radio" value="Oct 24">
+                      <label for="date-fri" class="date-btn-label">
+                        <span class="date-day-abbr">Fri</span>
+                        <span class="date-num">24</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- Selectable Time Slots -->
+                  <span style="display: block; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-muted); margin-bottom: 0.75rem;">
+                    Available 30-Min Timeslots:
+                  </span>
+                  <div class="timeslot-grid">
+                    <div>
+                      <input type="radio" name="call-time" id="time-1000" class="time-radio" value="10:00 AM EST">
+                      <label for="time-1000" class="time-btn-label">10:00 AM</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="call-time" id="time-1130" class="time-radio" value="11:30 AM EST">
+                      <label for="time-1130" class="time-btn-label">11:30 AM</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="call-time" id="time-1330" class="time-radio" value="1:30 PM EST" checked>
+                      <label for="time-1330" class="time-btn-label">1:30 PM</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="call-time" id="time-1500" class="time-radio" value="3:00 PM EST">
+                      <label for="time-1500" class="time-btn-label">3:00 PM</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="call-time" id="time-1630" class="time-radio" value="4:30 PM EST">
+                      <label for="time-1630" class="time-btn-label">4:30 PM</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="call-time" id="time-1730" class="time-radio" value="5:30 PM EST">
+                      <label for="time-1730" class="time-btn-label">5:30 PM</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- STEP 2: Spa Modality & Booking Software -->
+              <div class="form-group">
+                <div class="booking-step-title">
+                  <span class="booking-step-num">STEP 02</span>
+                  Your Business Category &amp; Booking Software
+                </div>
+
+                <div style="margin-bottom: 1.25rem;">
+                  <label class="form-label" style="margin-bottom: 0.65rem;">What type of wellness business do you run?</label>
+                  <div class="chip-grid">
+                    <div>
+                      <input type="radio" name="spa_type" id="type_dayspa" class="chip-input" value="Day Spa / Massage" checked>
+                      <label for="type_dayspa" class="chip-label">Day Spa / Massage</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="spa_type" id="type_medspa" class="chip-input" value="MedSpa / Esthetics">
+                      <label for="type_medspa" class="chip-label">Medical Aesthetics</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="spa_type" id="type_salon" class="chip-input" value="Luxury Salon">
+                      <label for="type_salon" class="chip-label">Luxury Salon</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="spa_type" id="type_bathhouse" class="chip-input" value="Bathhouse / Thermal">
+                      <label for="type_bathhouse" class="chip-label">Bathhouse / Thermal</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="spa_type" id="type_mobile" class="chip-input" value="Mobile Stylist">
+                      <label for="type_mobile" class="chip-label">Mobile Collective</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <label class="form-label" style="margin-bottom: 0.65rem;">Which booking software do you use?</label>
+                  <div class="chip-grid">
+                    <div>
+                      <input type="radio" name="software" id="soft_boulevard" class="chip-input" value="Boulevard" checked>
+                      <label for="soft_boulevard" class="chip-label">Boulevard</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="software" id="soft_jane" class="chip-input" value="Jane App">
+                      <label for="soft_jane" class="chip-label">Jane App</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="software" id="soft_mindbody" class="chip-input" value="Mindbody">
+                      <label for="soft_mindbody" class="chip-label">Mindbody</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="software" id="soft_phorest" class="chip-input" value="Phorest">
+                      <label for="soft_phorest" class="chip-label">Phorest</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="software" id="soft_fresha" class="chip-input" value="Fresha / Vagaro">
+                      <label for="soft_fresha" class="chip-label">Fresha / Vagaro</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="software" id="soft_other" class="chip-input" value="Other / None">
+                      <label for="soft_other" class="chip-label">Other / None</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- STEP 3: Contact & Website Details -->
+              <div class="form-group">
+                <div class="booking-step-title">
+                  <span class="booking-step-num">STEP 03</span>
+                  Your Details &amp; Website
+                </div>
+
+                <div class="form-row-2col">
+                  <div class="form-group">
+                    <label for="name" class="form-label">Your Full Name *</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Sarah Jenkins" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="form-label">Work Email *</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="sarah@yourspa.com" required>
+                  </div>
+                </div>
+
+                <div class="form-row-2col">
+                  <div class="form-group">
+                    <label for="website" class="form-label">Current Spa Website URL *</label>
+                    <input type="url" id="website" name="website" class="form-input" placeholder="https://yourspa.com" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone" class="form-label">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="+1 (555) 000-0000">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="primary_goal" class="form-label">Primary Goal for This Redesign *</label>
+                  <select id="primary_goal" name="primary_goal" class="form-select" required>
+                    <option value="Double Direct Online Bookings">Double Direct Online Bookings &amp; Eliminate Phone Churn</option>
+                    <option value="Fix Broken Mobile Experience">Fix Slow / Broken Mobile Experience</option>
+                    <option value="Launch High-Ticket Packages">Launch High-Ticket Treatment Funnels &amp; Gift Cards</option>
+                    <option value="Complete Luxury Rebranding">Complete Visual Rebrand to Match In-Person Luxury</option>
+                    <option value="New Spa Grand Opening">Building a New Website for an Upcoming Spa Opening</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="notes" class="form-label">Anything specific you'd like us to prepare for our call?</label>
+                  <textarea id="notes" name="notes" class="form-textarea" placeholder="Tell us about any specific frustrations with your current website or scheduling flow..."></textarea>
+                </div>
+              </div>
+
+              <!-- Submit CTA -->
+              <div style="margin-top: 2rem;">
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.15rem; font-size: 1.05rem;">
+                  Confirm 30-Minute Discovery Session
+                  <span class="btn-icon-wrapper">
+                    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </span>
+                </button>
+                <p style="font-size: 0.8rem; text-align: center; color: var(--color-text-muted); margin-top: 0.85rem;">
+                  🔒 100% Free Consultation. No sales pitch. You will receive a calendar invite with a private video link instantly.
+                </p>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Right Column: Value Rail, Agenda & Proof -->
+          <div class="booking-value-rail">
+
+            <!-- Sprint Scarcity Card -->
+            <div class="sprint-scarcity-alert">
+              <span class="scarcity-dot"></span>
+              <span><strong>Q3 Availability:</strong> Only 2 Client Build Slots Open for Next Month</span>
+            </div>
+
+            <!-- Call Agenda Card -->
+            <div class="rail-card rail-card-highlight">
+              <div class="eyebrow-pill" style="margin-bottom: 0.75rem;">
+                <span class="pill-dot"></span>
+                Call Agenda
+              </div>
+              <h3 style="font-size: 1.35rem; color: #FFFFFF;">What We'll Cover in 30 Min:</h3>
+              
+              <div class="agenda-list">
+                <div class="agenda-item">
+                  <span class="agenda-num-bullet">01</span>
+                  <div>
+                    <strong>Live Mobile &amp; Speed Audit</strong>
+                    <p style="font-size: 0.85rem; margin-top: 2px;">We inspect your live site on iPhone and Android to pinpoint exactly where potential guests give up.</p>
+                  </div>
+                </div>
+
+                <div class="agenda-item">
+                  <span class="agenda-num-bullet">02</span>
+                  <div>
+                    <strong>Booking Architecture Strategy</strong>
+                    <p style="font-size: 0.85rem; margin-top: 2px;">How to deep-link each treatment directly into your scheduling software to cut booking steps in half.</p>
+                  </div>
+                </div>
+
+                <div class="agenda-item">
+                  <span class="agenda-num-bullet">03</span>
+                  <div>
+                    <strong>Transparent 4-Week Scope &amp; Quote</strong>
+                    <p style="font-size: 0.85rem; margin-top: 2px;">We provide a clear fixed price quote ($4,800 to $14,000) with zero hidden fees or ongoing mandatory retainers.</p>
+                  </div>
+                </div>
+
+                <div class="agenda-item">
+                  <span class="agenda-num-bullet">04</span>
+                  <div>
+                    <strong>Revenue Lift Forecast</strong>
+                    <p style="font-size: 0.85rem; margin-top: 2px;">A realistic forecast of how many additional direct appointments you can capture every month.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Director Bio -->
+              <div class="director-profile-box">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Elijah C. — Principal Design Director" class="director-avatar">
+                <div>
+                  <div style="font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; color: #FFFFFF;">Elijah C.</div>
+                  <div style="font-size: 0.78rem; color: var(--color-jade-neon); font-weight: 600;">Principal Design Director</div>
+                  <div style="font-size: 0.75rem; color: var(--color-text-muted);">Direct consultation &bull; No middle managers</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Client Proof Card -->
+            <div class="rail-card">
+              <div style="display: flex; gap: 0.25rem; color: #F59E0B; margin-bottom: 0.75rem;">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+              <p style="font-size: 0.92rem; color: #E2E8F0; font-style: italic; line-height: 1.6; margin-bottom: 1rem;">
+                "Our 30-minute discovery call gave us more actionable clarity on our booking leaks than 6 months with our previous generalist agency. Within 4 weeks of launching our new site, our consultation inquiries tripled."
+              </p>
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--color-border); padding-top: 0.75rem;">
+                <span style="font-size: 0.82rem; font-weight: 700; color: #FFFFFF;">Dr. Pee, Founder</span>
+                <span style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--color-jade-neon); font-weight: 700;">Pee Skin Med Spa (+310%)</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         WHAT HAPPENS NEXT SECTION (3 STEPS)
+         ========================================================================== -->
+    <section class="section-spacing-sm" style="background-color: var(--color-bg-alt); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="site-container">
+        <div class="section-header text-center">
+          <div class="eyebrow-pill">
+            <span class="pill-dot"></span>
+            Zero Friction
+          </div>
+          <h2>
+            What happens <span class="text-jade-accent">after you book</span>?
+          </h2>
+          <p>
+            We respect your time as a busy spa founder. Here is exactly how our discovery process works:
+          </p>
+        </div>
+
+        <div class="bento-narrative-strip">
+          <div class="bento-narrative-card step-solution">
+            <span class="narrative-card-step">01 // Instant Calendar Confirmation</span>
+            <h4>Calendar Invite &amp; Video Link</h4>
+            <p>
+              You'll immediately receive a calendar invitation with a private Google Meet link. No preparation or complicated questionnaires required.
+            </p>
+          </div>
+
+          <div class="bento-narrative-card step-impact">
+            <span class="narrative-card-step">02 // 30-Min Strategy Session</span>
+            <h4>Actionable Live Audit</h4>
+            <p>
+              We meet for 30 minutes. We review your live website on screen, show you exactly where appointments are leaking, and share design solutions.
+            </p>
+          </div>
+
+          <div class="bento-narrative-card step-solution">
+            <span class="narrative-card-step">03 // Custom Blueprint &amp; Scope</span>
+            <h4>Same-Day Written Proposal</h4>
+            <p>
+              Following our call, you receive a detailed, fixed-price sprint roadmap with guaranteed delivery dates so you can make an informed decision.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FREQUENTLY ASKED QUESTIONS
+         ========================================================================== -->
+    <section class="section-spacing">
+      <div class="site-container-narrow">
+        <div class="section-header text-center">
+          <div class="eyebrow-pill">
+            <span class="pill-dot"></span>
+            Pre-Call Questions
+          </div>
+          <h2>
+            Frequently asked questions about <span class="text-jade-accent">our discovery calls</span>.
+          </h2>
+        </div>
+
+        <div>
+          <details class="luxury-accordion" open>
+            <summary>
+              <span>Is this discovery call really 100% free and without obligation?</span>
+              <span class="accordion-indicator"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </summary>
+            <div class="accordion-content">
+              <p>
+                Yes, absolutely. We do not do high-pressure sales pitches. Our discovery call is designed to analyze your current online booking bottlenecks, answer your questions, and determine whether our 4-week sprint model is a strong mutual fit.
+              </p>
+            </div>
+          </details>
+
+          <details class="luxury-accordion">
+            <summary>
+              <span>Do I need to have all my photos, menu copy, or branding ready before the call?</span>
+              <span class="accordion-indicator"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </summary>
+            <div class="accordion-content">
+              <p>
+                Not at all. Part of our done-for-you service includes professional high-converting copywriting, menu structuring, and sourcing premium imagery if needed. We will discuss your current assets on the call.
+              </p>
+            </div>
+          </details>
+
+          <details class="luxury-accordion">
+            <summary>
+              <span>Which booking systems can you connect to our new website?</span>
+              <span class="accordion-indicator"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </summary>
+            <div class="accordion-content">
+              <p>
+                We integrate seamlessly with all major spa and clinic platforms, including Boulevard, Jane App, Mindbody, Phorest, Fresha, Vagaro, Meevo, and Acuity. We deep-link directly to individual services so guests never get lost.
+              </p>
+            </div>
+          </details>
+
+          <details class="luxury-accordion">
+            <summary>
+              <span>How quickly can we begin our 4-week sprint after the call?</span>
+              <span class="accordion-indicator"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </summary>
+            <div class="accordion-content">
+              <p>
+                Because we work with a maximum of 3 spa clients per month, we can typically kick off within 5 to 7 business days of an approved scope. Your complete new website will be live within 28 days of kickoff.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       STICKY MOBILE CTA BAR
+       ========================================================================== -->
+  <div class="mobile-sticky-cta" aria-label="Mobile Quick Booking CTA">
+    <div class="mobile-cta-text">
+      <strong>Jade Cursor</strong>
+      <span>30-Min Strategy Call</span>
+    </div>
+    <a href="#name" class="btn btn-gold">
+      Select Time
+    </a>
+  </div>
+
+  <!-- ==========================================================================
+       GLOBAL FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <svg class="brand-logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="24,2 43,13 43,35 24,46 5,35 5,13" fill="#080C14" stroke="#00F5A0" stroke-width="1.8" />
+              <polygon points="24,2 24,24 43,13" fill="#10B981" fill-opacity="0.8" />
+              <polygon points="43,13 24,24 43,35" fill="#064E3B" fill-opacity="0.6" />
+              <polygon points="43,35 24,24 24,46" fill="#34D399" fill-opacity="0.4" />
+              <polygon points="24,46 24,24 5,35" fill="#10B981" fill-opacity="0.8" />
+              <polygon points="5,35 24,24 5,13" fill="#064E3B" fill-opacity="0.6" />
+              <polygon points="5,13 24,24 24,2" fill="#34D399" fill-opacity="0.4" />
+              <path d="M21 14L31 24L24 25.5L28 34L24 35.5L20 27L15 31V14H21Z" fill="#00F5A0" />
+            </svg>
+            <div class="brand-text-block">
+              <span class="brand-title">Jade Cursor</span>
+              <span class="brand-badge">Spa Web Studio</span>
+            </div>
+          </a>
+          <p>
+            The dedicated web design agency crafting custom, high-converting websites for luxury spas, salons, and medi-spas worldwide.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services &amp; Pricing</a>
+            <a href="portfolio.html">Client Results</a>
+            <a href="process.html">How We Work</a>
+            <a href="audit.html">Free Website Audit</a>
+            <a href="about.html">About Us</a>
+            <a href="book-a-call.html">Book a Call</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Who We Serve</h4>
+          <div class="footer-links">
+            <a href="portfolio.html">Luxury Day Spas</a>
+            <a href="portfolio.html">Medical Esthetics &amp; MedSpas</a>
+            <a href="portfolio.html">Bathhouses &amp; Retreats</a>
+            <a href="portfolio.html">Mobile Stylist Collectives</a>
+            <a href="portfolio.html">Upscale Salons</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-contact-info">
+            <p><strong>Email:</strong> hello@jadecursor.com</p>
+            <p><strong>Hours:</strong> Monday — Friday: 9:00 AM — 6:00 PM EST</p>
+            <p><strong>Global:</strong> Working with luxury spas across the US, UK, Canada &amp; Europe</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Jade Cursor Agency. All rights reserved. Custom Luxury Web Design.
+        </div>
+        <div>
+          <span>More Bookings</span> &bull; <span>Effortless Mobile Experience</span> &bull; <span>Turnkey Delivery</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
