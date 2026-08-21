@@ -3,6 +3,9 @@
 # Universally compatible with Apache, LiteSpeed, cPanel, Hostinger, SiteGround
 # ==============================================================================
 
+# Set default index files
+DirectoryIndex index.html index.php
+
 # 1. Enable Rewrite Engine
 <IfModule mod_rewrite.c>
     RewriteEngine On
@@ -13,13 +16,13 @@
     # Clean URLs: Allow visiting /about or /services without extension
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME}.php -f
-    RewriteRule ^([^\.]+)$ $1.php [NC,L]
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME}.html -f
-    RewriteRule ^([^\.]+)$ $1.html [NC,L]
+    RewriteCond %{REQUEST_FILENAME}.php -f
+    RewriteRule ^([^\.]+)$ $1.php [NC,L]
 </IfModule>
 
 # 2. Block sensitive dotfiles and repository files from web access
@@ -76,4 +79,4 @@
 </IfModule>
 
 # 6. Custom Error Page
-ErrorDocument 404 /404.php
+ErrorDocument 404 /404.html
