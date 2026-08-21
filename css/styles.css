@@ -2004,7 +2004,7 @@ svg {
 }
 
 #billing-monthly:checked ~ .pricing-toggle-wrapper label[for="billing-monthly"],
-#billing-sprints:checked ~ .pricing-toggle-wrapper label[for="billing-sprints"] {
+#billing-onetime:checked ~ .pricing-toggle-wrapper label[for="billing-onetime"] {
   background-color: var(--color-jade-neon);
   color: #080C14;
   box-shadow: 0 0 20px var(--color-jade-glow);
@@ -2016,11 +2016,11 @@ svg {
   border-color: rgba(0, 0, 0, 0.3);
 }
 
-#billing-monthly:checked ~ .pricing-grid-monthly { display: grid; }
-#billing-monthly:checked ~ .pricing-grid-sprints { display: none; }
+#billing-monthly:checked ~ .pricing-grid-monthly { display: grid !important; }
+#billing-monthly:checked ~ .pricing-grid-onetime { display: none !important; }
 
-#billing-sprints:checked ~ .pricing-grid-monthly { display: none; }
-#billing-sprints:checked ~ .pricing-grid-sprints { display: grid; }
+#billing-onetime:checked ~ .pricing-grid-monthly { display: none !important; }
+#billing-onetime:checked ~ .pricing-grid-onetime { display: grid !important; }
 
 /* Pricing Grid */
 .pricing-grid {
