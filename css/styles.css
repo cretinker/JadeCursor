@@ -2133,7 +2133,7 @@ svg {
 .pricing-deliverables {
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
+  gap: 1.1rem;
   margin-bottom: 2rem;
   flex-grow: 1;
 }
@@ -2141,19 +2141,52 @@ svg {
 .pricing-deliverables li {
   display: flex;
   align-items: flex-start;
-  gap: 0.75rem;
-  font-size: 0.95rem;
-  color: var(--color-text-muted);
+  gap: 0.85rem;
+  font-size: 0.92rem;
 }
 
 .pricing-deliverables li svg {
   width: 18px;
   height: 18px;
   stroke: var(--color-jade-neon);
-  stroke-width: 2;
+  stroke-width: 2.2;
   fill: none;
   flex-shrink: 0;
-  margin-top: 3px;
+  margin-top: 2px;
+}
+
+.pricing-deliverables li div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.feature-title {
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 0.92rem;
+  line-height: 1.35;
+}
+
+.feature-detail {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+}
+
+.pricing-tier-tag {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
 }
 
 /* Subscription Guarantee Pill */
