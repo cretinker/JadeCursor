@@ -1955,6 +1955,73 @@ svg {
   color: var(--color-text-muted);
 }
 
+/* Pricing Switcher Toggle */
+.pricing-toggle-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: 0.35rem;
+  border-radius: var(--radius-full);
+  width: fit-content;
+  margin: 0 auto clamp(2.5rem, 4vw, 3.5rem);
+  box-shadow: var(--shadow-subtle);
+}
+
+.pricing-radio { display: none; }
+
+.pricing-toggle-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 1.45rem;
+  border-radius: var(--radius-full);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: var(--transition-fast);
+  user-select: none;
+}
+
+.pricing-toggle-label:hover {
+  color: #FFFFFF;
+}
+
+.pricing-badge-save {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-full);
+  background: rgba(0, 245, 160, 0.15);
+  color: var(--color-jade-neon);
+  border: 1px solid rgba(0, 245, 160, 0.3);
+  font-weight: 800;
+}
+
+#billing-monthly:checked ~ .pricing-toggle-wrapper label[for="billing-monthly"],
+#billing-sprints:checked ~ .pricing-toggle-wrapper label[for="billing-sprints"] {
+  background-color: var(--color-jade-neon);
+  color: #080C14;
+  box-shadow: 0 0 20px var(--color-jade-glow);
+}
+
+#billing-monthly:checked ~ .pricing-toggle-wrapper label[for="billing-monthly"] .pricing-badge-save {
+  background: #080C14;
+  color: var(--color-jade-neon);
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+#billing-monthly:checked ~ .pricing-grid-monthly { display: grid; }
+#billing-monthly:checked ~ .pricing-grid-sprints { display: none; }
+
+#billing-sprints:checked ~ .pricing-grid-monthly { display: none; }
+#billing-sprints:checked ~ .pricing-grid-sprints { display: grid; }
+
 /* Pricing Grid */
 .pricing-grid {
   display: grid;
@@ -2001,17 +2068,66 @@ svg {
 .pricing-tier-name {
   font-family: var(--font-display);
   font-size: 1.65rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Strikethrough Market Benchmark Row */
+.price-benchmark-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  margin-top: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+
+.price-benchmark-strike {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--color-text-subtle);
+  text-decoration: line-through;
+  font-weight: 600;
+}
+
+.discount-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-full);
+  background: rgba(0, 245, 160, 0.12);
+  color: var(--color-jade-neon);
+  border: 1px solid rgba(0, 245, 160, 0.3);
+}
+
+.discount-pill.tier-50 {
+  background: rgba(0, 245, 160, 0.2);
+  color: #FFFFFF;
+  border-color: var(--color-jade-neon);
+  box-shadow: 0 0 12px var(--color-jade-glow);
 }
 
 .pricing-price {
   font-family: var(--font-display);
-  font-size: 2.75rem;
+  font-size: 3rem;
   font-weight: 800;
   color: var(--color-jade-neon);
-  line-height: 1.1;
-  margin: 0.75rem 0;
+  line-height: 1;
+  margin: 0.25rem 0 0.5rem;
   text-shadow: 0 0 20px var(--color-jade-glow);
+}
+
+.pricing-period {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .pricing-deliverables {
@@ -2038,6 +2154,39 @@ svg {
   fill: none;
   flex-shrink: 0;
   margin-top: 3px;
+}
+
+/* Subscription Guarantee Pill */
+.subscription-guarantee-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-glow);
+  border-radius: var(--radius-full);
+  width: fit-content;
+  margin: 3rem auto 0;
+  box-shadow: 0 0 24px rgba(0, 245, 160, 0.08);
+}
+
+.subscription-guarantee-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+}
+
+.subscription-guarantee-item svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--color-jade-neon);
+  stroke-width: 2.2;
+  fill: none;
 }
 
 /* Philosophy & Duality */
