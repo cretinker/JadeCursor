@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B101A" />
+      <stop offset="100%" stop-color="#041B14" />
+    </linearGradient>
+    <linearGradient id="jadeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5A0" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="facet1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#047857" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="facet2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#064E3B" stop-opacity="0.9" />
+    </linearGradient>
+    <filter id="cursorGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Shield/Rounded Tile -->
+  <rect width="64" height="64" rx="14" fill="url(#bgGrad)" stroke="#1E293B" stroke-width="1.5" />
+
+  <!-- Outer Emerald Hexagonal Facet Gem -->
+  <g transform="translate(0, 0)">
+    <polygon points="32,8 54,20 54,44 32,56 10,44 10,20" fill="#080C14" stroke="url(#jadeGrad)" stroke-width="2" />
+    <polygon points="32,8 32,32 54,20" fill="url(#facet1)" />
+    <polygon points="54,20 32,32 54,44" fill="#064E3B" fill-opacity="0.7" />
+    <polygon points="54,44 32,32 32,56" fill="url(#facet2)" />
+    <polygon points="32,56 32,32 10,44" fill="url(#facet1)" />
+    <polygon points="10,44 32,32 10,20" fill="#064E3B" fill-opacity="0.7" />
+    <polygon points="10,20 32,32 32,8" fill="url(#facet2)" />
+
+    <!-- Sharp Modern Pointer Cursor Icon -->
+    <path d="M28 20L40 32L32 34L37 44L32 46L27 36L21 41V20H28Z" fill="#00F5A0" filter="url(#cursorGlow)" />
+    <path d="M28 20L40 32L32 34L37 44L32 46L27 36L21 41V20H28Z" fill="#FFFFFF" fill-opacity="0.95" />
+  </g>
+</svg>
