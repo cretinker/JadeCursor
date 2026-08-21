@@ -1,0 +1,11 @@
+# Jade Cursor Robots.txt
+User-agent: *
+Allow: /
+
+# Disallow private directories
+Disallow: /storage/
+Disallow: /includes/
+Disallow: /scratch/
+Disallow: /api/
+
+Sitemap: https://jadecursor.com/sitemap.xml

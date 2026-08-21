@@ -1,109 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book a Discovery Call | Jade Cursor — Spa Web Design</title>
-  <meta name="description" content="Schedule a complimentary 30-minute website strategy session for your luxury day spa, salon, or medi-spa. Live mobile audit, booking funnel breakdown, and custom 4-week sprint plan.">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+<?php
+$pageTitle = "Book a 30-Min Discovery Strategy Call | Jade Cursor";
+$pageDescription = "Schedule a free 30-minute 1-on-1 strategy session with Principal Design Director Elijah Vance. Live mobile audit and transparent project roadmap.";
+$currentPage = "book-a-call";
+$extraScripts = ["js/booking.js"];
 
-  <!-- ==========================================================================
-       FLOATING GLASSMORPHISM HEADER & NAVIGATION
-       ========================================================================== -->
-  <header class="site-header">
-    <div class="nav-container">
-      <div class="nav-bar">
-        <!-- High-End Vector Logo -->
-        <a href="index.html" class="brand-logo" aria-label="Jade Cursor Home">
-          <svg class="brand-logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="jadeGradPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#00F5A0" />
-                <stop offset="100%" stop-color="#059669" />
-              </linearGradient>
-              <linearGradient id="jadeFacet1" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#10B981" stop-opacity="0.8" />
-                <stop offset="100%" stop-color="#047857" stop-opacity="0.9" />
-              </linearGradient>
-              <linearGradient id="jadeFacet2" x1="100%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#34D399" stop-opacity="0.4" />
-                <stop offset="100%" stop-color="#064E3B" stop-opacity="0.8" />
-              </linearGradient>
-              <filter id="jadeGlow" x="-20%" y="-20%" width="140%" height="140%">
-                <feGaussianBlur stdDeviation="3" result="blur" />
-                <feComposite in="SourceGraphic" in2="blur" operator="over" />
-              </filter>
-            </defs>
-            <polygon points="24,2 43,13 43,35 24,46 5,35 5,13" fill="#080C14" stroke="url(#jadeGradPrimary)" stroke-width="1.8" />
-            <polygon points="24,2 24,24 43,13" fill="url(#jadeFacet1)" />
-            <polygon points="43,13 24,24 43,35" fill="#064E3B" fill-opacity="0.6" />
-            <polygon points="43,35 24,24 24,46" fill="url(#jadeFacet2)" />
-            <polygon points="24,46 24,24 5,35" fill="url(#jadeFacet1)" />
-            <polygon points="5,35 24,24 5,13" fill="#064E3B" fill-opacity="0.6" />
-            <polygon points="5,13 24,24 24,2" fill="url(#jadeFacet2)" />
-            <path d="M21 14L31 24L24 25.5L28 34L24 35.5L20 27L15 31V14H21Z" fill="#00F5A0" filter="url(#jadeGlow)" />
-            <path d="M21 14L31 24L24 25.5L28 34L24 35.5L20 27L15 31V14H21Z" fill="#FFFFFF" fill-opacity="0.85" />
-          </svg>
-          <div class="brand-text-block">
-            <span class="brand-title">Jade Cursor</span>
-            <span class="brand-badge">Spa Web Studio</span>
-          </div>
-        </a>
+require_once __DIR__ . '/includes/header.php';
+?>
 
-        <!-- Desktop Navigation Links -->
-        <nav class="desktop-nav" aria-label="Main Navigation">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="about.html" class="nav-link">About</a>
-          <a href="services.html" class="nav-link">Services</a>
-          <a href="portfolio.html" class="nav-link">Results</a>
-          <a href="process.html" class="nav-link">Process</a>
-          <a href="audit.html" class="nav-link">Free Audit</a>
-          <a href="contact.html" class="nav-link">Contact</a>
-        </nav>
-
-        <div class="nav-actions">
-          <a href="book-a-call.html" class="btn btn-primary btn-header-cta" style="box-shadow: 0 0 24px var(--color-jade-glow);">
-            Book a Call
-            <span class="btn-icon-wrapper">
-              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </span>
-          </a>
-        </div>
-
-        <!-- Pure CSS Mobile Hamburger Toggle -->
-        <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle mobile menu">
-        <label for="nav-toggle" class="nav-toggle-label">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-
-        <!-- Fullscreen Glass Mobile Drawer -->
-        <div class="mobile-nav-drawer">
-          <ul class="mobile-nav-list">
-            <li><a href="index.html" class="mobile-nav-link"><span>Home</span> <span class="nav-num">01</span></a></li>
-            <li><a href="about.html" class="mobile-nav-link"><span>About Us</span> <span class="nav-num">02</span></a></li>
-            <li><a href="services.html" class="mobile-nav-link"><span>Services &amp; Pricing</span> <span class="nav-num">03</span></a></li>
-            <li><a href="portfolio.html" class="mobile-nav-link"><span>Client Results</span> <span class="nav-num">04</span></a></li>
-            <li><a href="process.html" class="mobile-nav-link"><span>How We Work</span> <span class="nav-num">05</span></a></li>
-            <li><a href="audit.html" class="mobile-nav-link"><span>Free Website Audit</span> <span class="nav-num">06</span></a></li>
-            <li><a href="contact.html" class="mobile-nav-link"><span>Contact Us</span> <span class="nav-num">07</span></a></li>
-          </ul>
-          <div class="mobile-nav-footer">
-            <p><strong>hello@jadecursor.com</strong></p>
-            <p style="font-size: 0.85rem; margin-top: 0.25rem;">Dedicated Web Design Agency for Luxury Spas &amp; Salons</p>
-            <div style="margin-top: 1.25rem;">
-              <a href="book-a-call.html" class="btn btn-primary" style="width: 100%;">Book a Discovery Call</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
+<main>
     <!-- ==========================================================================
          PAGE HEADER
          ========================================================================== -->
@@ -131,7 +35,8 @@
 
           <!-- Left Column: Interactive Intake & Scheduling Engine -->
           <div class="booking-engine-card">
-            <form action="contact.html" method="GET">
+            <form action="api/booking.php" method="POST">
+              <?= CSRF::getInputField() ?>
               
               <!-- STEP 1: Date & Time Selection -->
               <div class="form-group">
@@ -539,93 +444,4 @@
     </section>
   </main>
 
-  <!-- ==========================================================================
-       STICKY MOBILE CTA BAR
-       ========================================================================== -->
-  <div class="mobile-sticky-cta" aria-label="Mobile Quick Booking CTA">
-    <div class="mobile-cta-text">
-      <strong>Jade Cursor</strong>
-      <span>30-Min Strategy Call</span>
-    </div>
-    <a href="#name" class="btn btn-gold">
-      Select Time
-    </a>
-  </div>
-
-  <!-- ==========================================================================
-       GLOBAL FOOTER
-       ========================================================================== -->
-  <footer class="site-footer">
-    <div class="site-container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="brand-logo">
-            <svg class="brand-logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <polygon points="24,2 43,13 43,35 24,46 5,35 5,13" fill="#080C14" stroke="#00F5A0" stroke-width="1.8" />
-              <polygon points="24,2 24,24 43,13" fill="#10B981" fill-opacity="0.8" />
-              <polygon points="43,13 24,24 43,35" fill="#064E3B" fill-opacity="0.6" />
-              <polygon points="43,35 24,24 24,46" fill="#34D399" fill-opacity="0.4" />
-              <polygon points="24,46 24,24 5,35" fill="#10B981" fill-opacity="0.8" />
-              <polygon points="5,35 24,24 5,13" fill="#064E3B" fill-opacity="0.6" />
-              <polygon points="5,13 24,24 24,2" fill="#34D399" fill-opacity="0.4" />
-              <path d="M21 14L31 24L24 25.5L28 34L24 35.5L20 27L15 31V14H21Z" fill="#00F5A0" />
-            </svg>
-            <div class="brand-text-block">
-              <span class="brand-title">Jade Cursor</span>
-              <span class="brand-badge">Spa Web Studio</span>
-            </div>
-          </a>
-          <p>
-            The dedicated web design agency crafting custom, high-converting websites for luxury spas, salons, and medi-spas worldwide.
-          </p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Navigation</h4>
-          <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="services.html">Services &amp; Pricing</a>
-            <a href="portfolio.html">Client Results</a>
-            <a href="process.html">How We Work</a>
-            <a href="audit.html">Free Website Audit</a>
-            <a href="book-a-call.html">Book a Discovery Call</a>
-          </div>
-        </div>
-
-        <div class="footer-col">
-          <h4>Who We Serve</h4>
-          <div class="footer-links">
-            <a href="portfolio.html">Luxury Day Spas</a>
-            <a href="portfolio.html">Medical Esthetics &amp; MedSpas</a>
-            <a href="portfolio.html">Bathhouses &amp; Retreats</a>
-            <a href="portfolio.html">Mobile Stylist Collectives</a>
-            <a href="portfolio.html">Upscale Salons</a>
-          </div>
-        </div>
-
-        <div class="footer-col">
-          <h4>Contact Us</h4>
-          <div class="footer-contact-info">
-            <p><strong>Email:</strong> hello@jadecursor.com</p>
-            <p><strong>Hours:</strong> Monday — Friday: 9:00 AM — 6:00 PM EST</p>
-            <p><strong>Global:</strong> Working with luxury spas across the US, UK, Canada &amp; Europe</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div>
-          &copy; 2026 Jade Cursor Agency. All rights reserved. Custom Luxury Web Design.
-        </div>
-        <div>
-          <span>More Bookings</span> &bull; <span>Effortless Mobile Experience</span> &bull; <span>Turnkey Delivery</span>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/app.js" defer></script>
-  <script src="js/booking.js" defer></script>
-</body>
-</html>
+<?php require_once __DIR__ . '/includes/footer.php'; ?>

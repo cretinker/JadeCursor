@@ -1,0 +1,131 @@
+# ==============================================================================
+# JADE CURSOR - PRODUCTION WEB SERVER CONFIGURATION (.htaccess)
+# Designed for Apache, LiteSpeed, cPanel, Hostinger, SiteGround, Cloudways
+# ==============================================================================
+
+# Enable Rewrite Engine
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # 1. Force HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # 2. Block direct web access to sensitive files and directories
+    RewriteRule ^storage/.*$ - [F,L]
+    RewriteRule ^config\.php$ - [F,L]
+    RewriteRule ^includes/.*$ - [F,L]
+    RewriteRule ^scratch/.*$ - [F,L]
+
+    # 3. Clean URLs (Allow extensionless URLs: /services -> /services.php or /services.html)
+    # Check for PHP file
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME}.php -f
+    RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+    # Check for HTML file
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^([^\.]+)$ $1.html [NC,L]
+</IfModule>
+
+# ==============================================================================
+# HARDENED HTTP SECURITY HEADERS
+# ==============================================================================
+<IfModule mod_headers.c>
+    # Enforce HTTPS Strict Transport Security (HSTS)
+    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
+
+    # Prevent MIME type sniffing
+    Header set X-Content-Type-Options "nosniff"
+
+    # Clickjacking protection
+    Header set X-Frame-Options "SAMEORIGIN"
+
+    # Cross-site scripting filter
+    Header set X-XSS-Protection "1; mode=block"
+
+    # Referrer privacy control
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Restrict hardware permissions
+    Header set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+
+    # Content Security Policy (CSP)
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https://images.unsplash.com https://images.pexels.com; connect-src 'self'; frame-ancestors 'self';"
+</IfModule>
+
+# ==============================================================================
+# BLOCK ACCESS TO DOTFILES, LOGS, JSON & SYSTEM FILES
+# ==============================================================================
+<FilesMatch "^\.|\.(env|json|log|sql|md|sh|bak|ini|yaml|yml)$">
+    <IfModule authz_core_module>
+        Require all denied
+    </IfModule>
+    <IfModule !authz_core_module>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Allow sitemap and robots
+<Files "robots.txt">
+    <IfModule authz_core_module>
+        Require all granted
+    </IfModule>
+</Files>
+<Files "sitemap.xml">
+    <IfModule authz_core_module>
+        Require all granted
+    </IfModule>
+</Files>
+
+# ==============================================================================
+# GZIP / BROTLI COMPRESSION (Sub-Second Page Load Optimization)
+# ==============================================================================
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+    AddOutputFilterByType DEFLATE application/javascript application/x-javascript application/json
+    AddOutputFilterByType DEFLATE image/svg+xml image/x-icon
+</IfModule>
+
+# ==============================================================================
+# BROWSER CACHING (Performance Optimization)
+# ==============================================================================
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+
+    # CSS & JavaScript
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+
+    # Images & Vectors
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+
+    # Web Fonts
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+
+    # HTML Documents
+    ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# ==============================================================================
+# CUSTOM ERROR DOCUMENTS
+# ==============================================================================
+ErrorDocument 404 /404.php
+ErrorDocument 403 /404.php
+ErrorDocument 500 /404.php
