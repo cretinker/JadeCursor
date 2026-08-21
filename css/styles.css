@@ -1,19 +1,20 @@
 /* ==========================================================================
-   JADE CURSOR  -  LUXURY SPA WEB AGENCY DESIGN SYSTEM
+   JADE CURSOR - LUXURY TECH & DIGITAL WEB AGENCY DESIGN SYSTEM
    Strictly Pure CSS (Zero JavaScript Architecture)
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  /* --- Brand Color System --- */
-  /* Deep Emerald Palette */
+  /* --- Brand Color System: Luxury Tech Meets Zen --- */
+  /* Deep Obsidian & Emerald Palette */
   --color-emerald-deepest: #071710;
   --color-emerald-deep: #0B2219;
   --color-emerald-dark: #123326;
   --color-emerald-primary: #1B4D3E;
   --color-emerald-light: #2A6653;
   --color-emerald-tint: rgba(27, 77, 62, 0.08);
+  --color-emerald-glow: rgba(27, 77, 62, 0.25);
 
   /* Sage Green Palette */
   --color-sage-soft: #F0F4F2;
@@ -21,24 +22,31 @@
   --color-sage-muted: #8EA89D;
   --color-sage-dark: #4A6357;
 
-  /* Warm Cream Palette */
+  /* Warm Cream & High-Contrast Canvas */
   --color-cream-lightest: #FDFBF8;
   --color-cream-light: #FAF7F2;
   --color-cream-base: #F3ECE1;
   --color-cream-warm: #EAE0D0;
   --color-cream-dark: #D8CABE;
 
-  /* Slate Grey Palette */
+  /* Slate Grey & Tech Dark */
   --color-slate-dark: #1C2722;
   --color-slate-muted: #4B5B53;
   --color-slate-subtle: #7A8D84;
   --color-slate-line: rgba(75, 91, 83, 0.15);
+  --color-tech-code-bg: #0E1B15;
 
-  /* Champagne Gold & Luxury Accents */
+  /* Champagne Gold & High-Ticket Accents */
   --color-gold-light: #EFE4CC;
   --color-gold-base: #C5A059;
   --color-gold-dark: #9D7B38;
   --color-gold-glow: rgba(197, 160, 89, 0.2);
+
+  /* Status Colors */
+  --color-status-green: #2E7D32;
+  --color-status-green-bg: #E8F5E9;
+  --color-status-red: #C62828;
+  --color-status-red-bg: #FFEBEE;
 
   /* Base System Tokens */
   --color-white: #FFFFFF;
@@ -51,6 +59,7 @@
   /* Typography System */
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 
   /* Scale & Spacing */
   --space-2xs: 0.25rem;
@@ -76,9 +85,10 @@
   /* Elevation & Shadows */
   --shadow-subtle: 0 4px 20px -2px rgba(11, 34, 25, 0.05);
   --shadow-ambient: 0 12px 36px -4px rgba(11, 34, 25, 0.08);
-  --shadow-lift: 0 24px 64px -12px rgba(11, 34, 25, 0.12);
+  --shadow-lift: 0 24px 64px -12px rgba(11, 34, 25, 0.14);
+  --shadow-device: 0 32px 80px -16px rgba(7, 23, 16, 0.35);
   --shadow-emerald-glow: 0 16px 40px -8px rgba(27, 77, 62, 0.25);
-  --shadow-inset-soft: inset 0 1px 1px rgba(255, 255, 255, 0.6);
+  --shadow-inset-soft: inset 0 1px 1px rgba(255, 255, 255, 0.7);
 
   /* Fluid Motion & Transitions */
   --ease-luxury: cubic-bezier(0.25, 1, 0.5, 1);
@@ -119,10 +129,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Base Headings & Typography */
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
-  color: var(--color-emerald-deep);
+  color: var(--color-emerald-deepest);
   font-weight: 600;
   line-height: 1.15;
   letter-spacing: -0.01em;
@@ -235,7 +245,7 @@ ul, ol {
   border: 1px solid rgba(27, 77, 62, 0.18);
   border-radius: var(--radius-full);
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.18em;
   color: var(--color-emerald-primary);
@@ -246,6 +256,12 @@ ul, ol {
   background-color: rgba(255, 255, 255, 0.12);
   border-color: rgba(255, 255, 255, 0.25);
   color: var(--color-gold-light);
+}
+
+.eyebrow-pill.pill-gold {
+  background-color: var(--color-gold-glow);
+  border-color: rgba(197, 160, 89, 0.4);
+  color: var(--color-gold-dark);
 }
 
 .eyebrow-pill .pill-dot {
@@ -415,6 +431,183 @@ ul, ol {
 }
 
 /* ==========================================================================
+   AGENCY TECH BADGES & PERFORMANCE SCORE INDICATORS
+   ========================================================================== */
+
+.tech-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--color-sage-soft);
+  border: 1px solid var(--color-sage-light);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-emerald-primary);
+  font-family: var(--font-mono);
+}
+
+.speed-scores-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 1.25rem;
+  background-color: var(--color-tech-code-bg);
+  border-radius: var(--radius-lg);
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 1.5rem;
+}
+
+.speed-score-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.score-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(46, 125, 50, 0.2);
+  border: 2.5px solid #4CAF50;
+  color: #81C784;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.speed-score-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.speed-score-label {
+  font-size: 0.75rem;
+  color: var(--color-sage-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.speed-score-val {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+/* ==========================================================================
+   REALISTIC DEVICE MOCKUPS (Pure CSS MacBook & iPhone)
+   ========================================================================== */
+
+.agency-device-stage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* MacBook Mockup */
+.macbook-mockup {
+  position: relative;
+  width: 100%;
+  max-width: 580px;
+  background: #1A1D20;
+  border-radius: 16px 16px 0 0;
+  padding: 12px 12px 0;
+  box-shadow: var(--shadow-device);
+  border: 1px solid #33393F;
+}
+
+.macbook-notch {
+  width: 60px;
+  height: 12px;
+  background: #000;
+  margin: 0 auto 6px;
+  border-radius: 0 0 6px 6px;
+}
+
+.macbook-screen {
+  background: #000;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.macbook-screen img {
+  width: 100%;
+  height: clamp(260px, 30vw, 360px);
+  object-fit: cover;
+  display: block;
+}
+
+.macbook-base {
+  width: calc(100% + 40px);
+  height: 14px;
+  background: #C4C8CC;
+  margin-left: -20px;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.macbook-base::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #8E9499;
+  border-radius: 0 0 4px 4px;
+}
+
+/* iPhone Floating Mockup */
+.iphone-mockup {
+  position: absolute;
+  bottom: -20px;
+  right: -24px;
+  width: clamp(140px, 20vw, 190px);
+  background: #15181B;
+  border-radius: 28px;
+  padding: 6px;
+  box-shadow: 0 24px 48px -8px rgba(0, 0, 0, 0.5);
+  border: 3px solid #383E45;
+  z-index: 10;
+}
+
+.iphone-screen {
+  background: #000;
+  border-radius: 22px;
+  overflow: hidden;
+  position: relative;
+}
+
+.iphone-island {
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 44px;
+  height: 10px;
+  background: #000;
+  border-radius: 10px;
+  z-index: 20;
+}
+
+.iphone-screen img {
+  width: 100%;
+  height: clamp(240px, 28vw, 320px);
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
    HEADER & PURE CSS FLOATING NAVIGATION
    ========================================================================== */
 
@@ -423,7 +616,7 @@ ul, ol {
   top: 0;
   z-index: 1000;
   padding: 1.25rem 0;
-  background: rgba(253, 251, 248, 0.9);
+  background: rgba(253, 251, 248, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-slate-line);
@@ -436,7 +629,6 @@ ul, ol {
   justify-content: space-between;
 }
 
-/* Brand Logo */
 .brand-logo {
   display: flex;
   align-items: center;
@@ -484,11 +676,11 @@ ul, ol {
 .desktop-nav {
   display: flex;
   align-items: center;
-  gap: 2.25rem;
+  gap: 1.75rem;
 }
 
 .desktop-nav .nav-link {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 500;
   color: var(--color-slate-dark);
   position: relative;
@@ -519,7 +711,7 @@ ul, ol {
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
 /* PURE CSS MOBILE NAVIGATION HAMBURGER VIA CHECKBOX HACK */
@@ -556,8 +748,7 @@ ul, ol {
   display: none;
 }
 
-/* Mobile Nav Toggle Active State */
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   .desktop-nav,
   .nav-actions .btn-header-cta {
     display: none;
@@ -574,11 +765,11 @@ ul, ol {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(11, 34, 25, 0.96);
+    background: rgba(11, 34, 25, 0.97);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     z-index: 1050;
-    padding: 6rem 2rem 2rem;
+    padding: 5.5rem 2rem 2rem;
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
@@ -586,6 +777,7 @@ ul, ol {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow-y: auto;
   }
 
   .nav-toggle-input:checked ~ .mobile-nav-drawer {
@@ -612,18 +804,18 @@ ul, ol {
   .mobile-nav-list {
     display: flex;
     flex-direction: column;
-    gap: 1.75rem;
+    gap: 1.25rem;
   }
 
   .mobile-nav-link {
     font-family: var(--font-serif);
-    font-size: 2rem;
+    font-size: 1.85rem;
     color: var(--color-cream-lightest);
     font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
@@ -634,7 +826,7 @@ ul, ol {
   }
 
   .mobile-nav-footer {
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     color: var(--color-sage-light);
     font-size: 0.9rem;
@@ -687,14 +879,13 @@ ul, ol {
     flex-shrink: 0;
   }
 
-  /* Add padding to body so content isn't obscured by fixed mobile bar */
   body {
     padding-bottom: 74px;
   }
 }
 
 /* ==========================================================================
-   HERO SECTIONS
+   TECH AGENCY HERO SECTIONS
    ========================================================================== */
 
 .hero-luxury {
@@ -702,8 +893,8 @@ ul, ol {
   padding-top: clamp(3.5rem, 7vw, 6.5rem);
   padding-bottom: clamp(4rem, 8vw, 7rem);
   overflow: hidden;
-  background: radial-gradient(circle at 80% 20%, rgba(142, 168, 157, 0.15) 0%, transparent 60%),
-              radial-gradient(circle at 10% 80%, rgba(197, 160, 89, 0.08) 0%, transparent 50%),
+  background: radial-gradient(circle at 80% 20%, rgba(142, 168, 157, 0.18) 0%, transparent 60%),
+              radial-gradient(circle at 10% 80%, rgba(197, 160, 89, 0.1) 0%, transparent 50%),
               var(--color-cream-lightest);
 }
 
@@ -715,7 +906,7 @@ ul, ol {
 }
 
 .hero-content {
-  max-width: 650px;
+  max-width: 660px;
 }
 
 .hero-title {
@@ -735,72 +926,7 @@ ul, ol {
   flex-wrap: wrap;
   align-items: center;
   gap: 1.25rem;
-  margin-bottom: 3rem;
-}
-
-.hero-visual {
-  position: relative;
-}
-
-.hero-visual-card {
-  position: relative;
-  border-radius: var(--radius-2xl);
-  overflow: hidden;
-  box-shadow: var(--shadow-lift);
-  border: 8px solid var(--color-white);
-}
-
-.hero-visual-card img {
-  width: 100%;
-  height: clamp(380px, 45vw, 540px);
-  object-fit: cover;
-  transition: transform 0.8s var(--ease-luxury);
-}
-
-.hero-visual-card:hover img {
-  transform: scale(1.03);
-}
-
-.hero-floating-badge {
-  position: absolute;
-  bottom: 24px;
-  left: -20px;
-  background: rgba(253, 251, 248, 0.95);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  padding: 1.15rem 1.5rem;
-  border-radius: var(--radius-lg);
-  border: 1px solid rgba(27, 77, 62, 0.12);
-  box-shadow: var(--shadow-ambient);
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  max-width: 280px;
-}
-
-.hero-badge-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--color-emerald-primary);
-  color: var(--color-gold-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.hero-badge-text {
-  font-size: 0.85rem;
-  line-height: 1.35;
-  color: var(--color-slate-dark);
-}
-
-.hero-badge-text strong {
-  display: block;
-  font-family: var(--font-serif);
-  font-size: 1.15rem;
-  color: var(--color-emerald-deep);
+  margin-bottom: 2.5rem;
 }
 
 /* Proof Metric Ribbon */
@@ -846,21 +972,21 @@ ul, ol {
   color: var(--color-slate-muted);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* Page Header (Internal pages) */
 .page-header-luxury {
   padding-top: clamp(4rem, 6vw, 6rem);
   padding-bottom: clamp(3.5rem, 5vw, 5rem);
-  background: radial-gradient(circle at 50% 0%, rgba(142, 168, 157, 0.2) 0%, transparent 70%),
+  background: radial-gradient(circle at 50% 0%, rgba(142, 168, 157, 0.25) 0%, transparent 70%),
               var(--color-cream-lightest);
   border-bottom: 1px solid var(--color-slate-line);
   text-align: center;
 }
 
 .page-header-luxury .site-container {
-  max-width: 860px;
+  max-width: 880px;
 }
 
 .page-header-luxury h1 {
@@ -868,119 +994,290 @@ ul, ol {
 }
 
 /* ==========================================================================
-   PHILOSOPHY & DUALITY SECTIONS
+   PROBLEM VS SOLUTION / COST OF INACTION BREAKDOWN
    ========================================================================== */
 
-.philosophy-section {
-  background-color: var(--color-cream-light);
-  position: relative;
-}
-
-.philosophy-grid {
+.problem-solution-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: clamp(2.5rem, 6vw, 5rem);
-  align-items: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
 }
 
-.duality-comparison {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin-top: 2rem;
+.audit-status-card {
+  padding: 2.25rem;
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
-.duality-card {
-  padding: 1.75rem;
-  border-radius: var(--radius-lg);
-  background-color: var(--color-white);
-  border: 1px solid rgba(27, 77, 62, 0.08);
+.audit-status-card.broken-way {
+  background-color: #FFF5F5;
+  border: 1px solid rgba(198, 40, 40, 0.2);
 }
 
-.duality-card.jade-side {
-  border-left: 4px solid var(--color-emerald-primary);
+.audit-status-card.jade-way {
+  background-color: #F4F9F6;
+  border: 1.5px solid rgba(43, 114, 87, 0.3);
+  box-shadow: var(--shadow-ambient);
 }
 
-.duality-card.cursor-side {
-  border-left: 4px solid var(--color-gold-base);
-}
-
-.duality-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: var(--radius-sm);
+.audit-header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
 }
 
-.jade-side .duality-icon {
-  background: var(--color-sage-soft);
-  color: var(--color-emerald-primary);
+.broken-way .audit-header { color: var(--color-status-red); }
+.jade-way .audit-header { color: var(--color-status-green); }
+
+.audit-point-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.cursor-side .duality-icon {
-  background: var(--color-gold-light);
-  color: var(--color-gold-dark);
+.audit-point-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  font-size: 0.98rem;
 }
 
-.duality-card h4 {
-  font-family: var(--font-serif);
-  font-size: 1.35rem;
-  margin-bottom: 0.5rem;
+.broken-way .audit-point-list svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--color-status-red);
+  stroke-width: 2;
+  fill: none;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.jade-way .audit-point-list svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--color-status-green);
+  stroke-width: 2.2;
+  fill: none;
+  flex-shrink: 0;
+  margin-top: 2px;
 }
 
 /* ==========================================================================
-   CSS PARALLAX & DEPTH BREAKOUT
+   TECH STACK & BOOKING API INTEGRATIONS GRID
    ========================================================================== */
 
-.parallax-breakout {
+.tech-integrations-section {
+  background-color: var(--color-cream-light);
+  border-top: 1px solid var(--color-slate-line);
+  border-bottom: 1px solid var(--color-slate-line);
+  padding: 3.5rem 0;
+}
+
+.tech-logos-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem clamp(1.5rem, 3vw, 3rem);
+  margin-top: 1.5rem;
+}
+
+.tech-logo-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 1.25rem;
+  background: var(--color-white);
+  border: 1px solid var(--color-slate-line);
+  border-radius: var(--radius-full);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-slate-dark);
+  box-shadow: var(--shadow-subtle);
+}
+
+.tech-logo-item svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--color-emerald-primary);
+  fill: none;
+  stroke-width: 2;
+}
+
+/* ==========================================================================
+   4-WEEK SANCTUARY SPRINT TIMELINE (process.html)
+   ========================================================================== */
+
+.sprint-timeline-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
   position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: clamp(6rem, 10vw, 10rem) 0;
+}
+
+.sprint-card {
+  position: relative;
+  background-color: var(--color-white);
+  border: 1px solid rgba(27, 77, 62, 0.1);
+  border-radius: var(--radius-xl);
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+  box-shadow: var(--shadow-subtle);
+  transition: var(--transition-smooth);
+}
+
+.sprint-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-ambient);
+  border-color: rgba(197, 160, 89, 0.4);
+}
+
+.sprint-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-slate-line);
+}
+
+.sprint-week-pill {
+  padding: 0.35rem 1rem;
+  border-radius: var(--radius-full);
+  background-color: var(--color-emerald-primary);
   color: var(--color-cream-lightest);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sprint-duration-tag {
+  font-size: 0.85rem;
+  color: var(--color-slate-muted);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   WHO THIS IS FOR / NOT FOR QUALIFIER
+   ========================================================================== */
+
+.qualification-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.fit-card {
+  padding: clamp(2rem, 3vw, 2.75rem);
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.fit-card.is-fit {
+  background-color: var(--color-white);
+  border: 2px solid rgba(27, 77, 62, 0.2);
+  box-shadow: var(--shadow-ambient);
+}
+
+.fit-card.not-fit {
+  background-color: #FAF5F5;
+  border: 1px solid rgba(198, 40, 40, 0.15);
+}
+
+/* ==========================================================================
+   INTERACTIVE BOOKING LOSS ROI CALCULATOR (audit.html)
+   ========================================================================== */
+
+.calculator-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-slate-line);
+  border-radius: var(--radius-2xl);
+  padding: clamp(2rem, 4vw, 3.5rem);
+  box-shadow: var(--shadow-lift);
+}
+
+.calc-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 4vw, 3.5rem);
+  align-items: center;
+}
+
+.calc-result-box {
+  background: linear-gradient(135deg, var(--color-emerald-deepest) 0%, var(--color-emerald-deep) 100%);
+  border-radius: var(--radius-xl);
+  padding: 2.25rem;
+  color: var(--color-cream-lightest);
+  border: 1px solid rgba(197, 160, 89, 0.3);
   text-align: center;
 }
 
-.parallax-breakout::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(7, 23, 16, 0.88) 0%, rgba(18, 51, 38, 0.82) 100%);
-  z-index: 1;
-}
-
-.parallax-content {
-  position: relative;
-  z-index: 2;
-  max-width: 880px;
-  margin: 0 auto;
-}
-
-.parallax-quote {
+.calc-metric-number {
   font-family: var(--font-serif);
-  font-size: clamp(1.8rem, 3.5vw, 2.75rem);
-  font-weight: 400;
-  line-height: 1.35;
-  font-style: italic;
-  margin-bottom: 2rem;
-  color: var(--color-cream-lightest);
-}
-
-.parallax-author {
-  font-family: var(--font-sans);
-  font-size: 0.95rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+  font-size: clamp(2.75rem, 5vw, 4rem);
+  font-weight: 700;
   color: var(--color-gold-light);
+  line-height: 1.1;
+  margin: 0.5rem 0;
 }
 
 /* ==========================================================================
-   SERVICES CARDS & ACCORDION SYSTEM (Pure CSS)
+   COMPARISON MATRIX: TYPICAL AGENCY VS JADE CURSOR ATELIER
+   ========================================================================== */
+
+.comparison-matrix-wrapper {
+  overflow-x: auto;
+  margin: 3rem 0;
+}
+
+.comparison-matrix-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-ambient);
+  border: 1px solid var(--color-slate-line);
+}
+
+.comparison-matrix-table th,
+.comparison-matrix-table td {
+  padding: 1.25rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-slate-line);
+}
+
+.comparison-matrix-table th {
+  background: var(--color-cream-base);
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--color-emerald-deepest);
+}
+
+.comparison-matrix-table th.highlight-col,
+.comparison-matrix-table td.highlight-col {
+  background: rgba(27, 77, 62, 0.05);
+  font-weight: 600;
+  color: var(--color-emerald-primary);
+}
+
+/* ==========================================================================
+   SERVICES & SPRINTS
    ========================================================================== */
 
 .services-grid-3col {
@@ -1124,7 +1421,6 @@ ul, ol {
    CASE STUDIES & PORTFOLIO ARCHITECTURE
    ========================================================================== */
 
-/* PURE CSS FILTER TABS FOR PORTFOLIO (Radio Button Mechanism) */
 .filter-tabs-wrapper {
   display: flex;
   justify-content: center;
@@ -1155,7 +1451,6 @@ ul, ol {
   color: var(--color-emerald-deep);
 }
 
-/* Radio Checked States */
 #filter-all:checked ~ .filter-tabs-wrapper label[for="filter-all"],
 #filter-medspa:checked ~ .filter-tabs-wrapper label[for="filter-medspa"],
 #filter-dayspa:checked ~ .filter-tabs-wrapper label[for="filter-dayspa"],
@@ -1167,7 +1462,6 @@ ul, ol {
   box-shadow: 0 4px 12px rgba(27, 77, 62, 0.2);
 }
 
-/* Category Filtering Visibility Logic */
 #filter-medspa:checked ~ .portfolio-case-studies .case-study-item:not(.cat-medspa),
 #filter-dayspa:checked ~ .portfolio-case-studies .case-study-item:not(.cat-dayspa),
 #filter-mobile:checked ~ .portfolio-case-studies .case-study-item:not(.cat-mobile),
@@ -1175,7 +1469,6 @@ ul, ol {
   display: none;
 }
 
-/* Comprehensive Case Study Narrative Block */
 .portfolio-case-studies {
   display: flex;
   flex-direction: column;
@@ -1184,13 +1477,13 @@ ul, ol {
 
 .case-study-item {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1.15fr 0.85fr;
   gap: clamp(2rem, 5vw, 4rem);
   align-items: center;
 }
 
 .case-study-item:nth-child(even) {
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: 0.85fr 1.15fr;
 }
 
 .case-study-item:nth-child(even) .case-study-media {
@@ -1240,7 +1533,7 @@ ul, ol {
   border-radius: var(--radius-full);
   font-size: 0.75rem;
   color: var(--color-slate-muted);
-  font-family: monospace;
+  font-family: var(--font-mono);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1274,7 +1567,7 @@ ul, ol {
   align-items: center;
   gap: 0.75rem;
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: var(--color-emerald-primary);
@@ -1303,17 +1596,9 @@ ul, ol {
   font-weight: 700;
 }
 
-.narrative-step-title.problem-color {
-  color: #9C4221;
-}
-
-.narrative-step-title.solution-color {
-  color: var(--color-emerald-primary);
-}
-
-.narrative-step-title.impact-color {
-  color: var(--color-gold-dark);
-}
+.narrative-step-title.problem-color { color: #9C4221; }
+.narrative-step-title.solution-color { color: var(--color-emerald-primary); }
+.narrative-step-title.impact-color { color: var(--color-gold-dark); }
 
 .narrative-step p {
   font-size: 0.95rem;
@@ -1344,7 +1629,7 @@ ul, ol {
 }
 
 /* ==========================================================================
-   TIERED INVESTMENT PACKAGES
+   TIERED SPRINT PACKAGES (services.html)
    ========================================================================== */
 
 .pricing-grid {
@@ -1430,58 +1715,119 @@ ul, ol {
 }
 
 /* ==========================================================================
-   4-STEP ONBOARDING JOURNEY
+   CSS PARALLAX & DEPTH BREAKOUT
    ========================================================================== */
 
-.journey-timeline {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+.parallax-breakout {
   position: relative;
-  margin: 3rem 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: clamp(6rem, 10vw, 10rem) 0;
+  color: var(--color-cream-lightest);
+  text-align: center;
 }
 
-.journey-step-card {
+.parallax-breakout::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(7, 23, 16, 0.88) 0%, rgba(18, 51, 38, 0.82) 100%);
+  z-index: 1;
+}
+
+.parallax-content {
   position: relative;
-  background-color: var(--color-white);
-  border: 1px solid rgba(27, 77, 62, 0.08);
-  border-radius: var(--radius-lg);
-  padding: 2rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
-  box-shadow: var(--shadow-subtle);
-  transition: var(--transition-smooth);
+  z-index: 2;
+  max-width: 880px;
+  margin: 0 auto;
 }
 
-.journey-step-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-ambient);
-  border-color: rgba(197, 160, 89, 0.3);
-}
-
-.step-number-badge {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--color-sage-soft);
-  color: var(--color-emerald-primary);
+.parallax-quote {
   font-family: var(--font-serif);
-  font-size: 1.35rem;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--color-sage-light);
-  margin-bottom: 0.5rem;
+  font-size: clamp(1.8rem, 3.5vw, 2.75rem);
+  font-weight: 400;
+  line-height: 1.35;
+  font-style: italic;
+  margin-bottom: 2rem;
+  color: var(--color-cream-lightest);
 }
 
-.journey-step-card h4 {
-  font-size: 1.25rem;
+.parallax-author {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-gold-light);
 }
 
 /* ==========================================================================
-   CONTACT & ONBOARDING FORM (Pure CSS)
+   PHILOSOPHY & DUALITY SECTIONS
+   ========================================================================== */
+
+.philosophy-section {
+  background-color: var(--color-cream-light);
+  position: relative;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2.5rem, 6vw, 5rem);
+  align-items: center;
+}
+
+.duality-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.duality-card {
+  padding: 1.75rem;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-white);
+  border: 1px solid rgba(27, 77, 62, 0.08);
+}
+
+.duality-card.jade-side {
+  border-left: 4px solid var(--color-emerald-primary);
+}
+
+.duality-card.cursor-side {
+  border-left: 4px solid var(--color-gold-base);
+}
+
+.duality-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.jade-side .duality-icon {
+  background: var(--color-sage-soft);
+  color: var(--color-emerald-primary);
+}
+
+.cursor-side .duality-icon {
+  background: var(--color-gold-light);
+  color: var(--color-gold-dark);
+}
+
+.duality-card h4 {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ==========================================================================
+   CONTACT & PROJECT INTAKE FORM (Pure CSS)
    ========================================================================== */
 
 .contact-layout-grid {
@@ -1579,7 +1925,6 @@ ul, ol {
   min-height: 120px;
 }
 
-/* Radio Chip Selector */
 .chip-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -1811,7 +2156,7 @@ ul, ol {
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 3.5rem;
   }
 
   .hero-content {
@@ -1823,25 +2168,24 @@ ul, ol {
     justify-content: center;
   }
 
-  .hero-floating-badge {
-    left: 20px;
+  .speed-scores-row {
+    justify-content: center;
   }
 
   .services-grid-3col,
   .pricing-grid,
-  .testimonials-grid {
+  .testimonials-grid,
+  .problem-solution-grid,
+  .qualification-grid,
+  .calc-layout {
     grid-template-columns: 1fr;
-    max-width: 600px;
+    max-width: 620px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .pricing-card.featured {
     transform: none;
-  }
-
-  .journey-timeline {
-    grid-template-columns: 1fr 1fr;
   }
 
   .footer-grid {
@@ -1859,11 +2203,10 @@ ul, ol {
     display: none;
   }
 
-  .philosophy-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .duality-comparison {
+  .philosophy-grid,
+  .duality-comparison,
+  .contact-layout-grid,
+  .form-row-2col {
     grid-template-columns: 1fr;
   }
 
@@ -1880,16 +2223,9 @@ ul, ol {
     order: 0;
   }
 
-  .journey-timeline {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-layout-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .form-row-2col {
-    grid-template-columns: 1fr;
+  .iphone-mockup {
+    right: 0;
+    bottom: -15px;
   }
 
   .footer-grid {
