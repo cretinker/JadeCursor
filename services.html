@@ -10,44 +10,69 @@
 <body>
 
   <!-- ==========================================================================
-       SITE HEADER
+       FLOATING GLASSMORPHISM HEADER & NAVIGATION
        ========================================================================== -->
   <header class="site-header">
-    <div class="site-container">
+    <div class="nav-container">
       <div class="nav-bar">
+        <!-- High-End Geometric Vector Logo -->
         <a href="index.html" class="brand-logo" aria-label="Jade Cursor Home">
-          <div class="brand-icon">
-            <svg viewBox="0 0 24 24">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-            </svg>
-          </div>
-          <div>
-            Jade Cursor
-            <span class="brand-text-accent">Spa Web Design Agency</span>
+          <svg class="brand-logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="jadeGradPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#00F5A0" />
+                <stop offset="100%" stop-color="#059669" />
+              </linearGradient>
+              <linearGradient id="jadeFacet1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#10B981" stop-opacity="0.8" />
+                <stop offset="100%" stop-color="#047857" stop-opacity="0.9" />
+              </linearGradient>
+              <linearGradient id="jadeFacet2" x1="100%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#34D399" stop-opacity="0.4" />
+                <stop offset="100%" stop-color="#064E3B" stop-opacity="0.8" />
+              </linearGradient>
+              <filter id="jadeGlow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="3" result="blur" />
+                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+              </filter>
+            </defs>
+            <polygon points="24,2 43,13 43,35 24,46 5,35 5,13" fill="#080C14" stroke="url(#jadeGradPrimary)" stroke-width="1.8" />
+            <polygon points="24,2 24,24 43,13" fill="url(#jadeFacet1)" />
+            <polygon points="43,13 24,24 43,35" fill="#064E3B" fill-opacity="0.6" />
+            <polygon points="43,35 24,24 24,46" fill="url(#jadeFacet2)" />
+            <polygon points="24,46 24,24 5,35" fill="url(#jadeFacet1)" />
+            <polygon points="5,35 24,24 5,13" fill="#064E3B" fill-opacity="0.6" />
+            <polygon points="5,13 24,24 24,2" fill="url(#jadeFacet2)" />
+            <path d="M21 14L31 24L24 25.5L28 34L24 35.5L20 27L15 31V14H21Z" fill="#00F5A0" filter="url(#jadeGlow)" />
+            <path d="M21 14L31 24L24 25.5L28 34L24 35.5L20 27L15 31V14H21Z" fill="#FFFFFF" fill-opacity="0.85" />
+          </svg>
+          <div class="brand-text-block">
+            <span class="brand-title">Jade Cursor</span>
+            <span class="brand-badge">Spa Web Studio</span>
           </div>
         </a>
 
-        <!-- Desktop Navigation -->
+        <!-- Desktop Navigation Links -->
         <nav class="desktop-nav" aria-label="Main Navigation">
           <a href="index.html" class="nav-link">Home</a>
-          <a href="services.html" class="nav-link active">Services &amp; Pricing</a>
-          <a href="portfolio.html" class="nav-link">Client Results</a>
-          <a href="process.html" class="nav-link">How We Work</a>
-          <a href="audit.html" class="nav-link">Free Website Audit</a>
-          <a href="about.html" class="nav-link">About Us</a>
+          <a href="services.html" class="nav-link active">Services</a>
+          <a href="portfolio.html" class="nav-link">Results</a>
+          <a href="process.html" class="nav-link">Process</a>
+          <a href="audit.html" class="nav-link">Free Audit</a>
+          <a href="about.html" class="nav-link">About</a>
           <a href="contact.html" class="nav-link">Contact</a>
         </nav>
 
         <div class="nav-actions">
           <a href="contact.html" class="btn btn-primary btn-header-cta">
-            Book Discovery Call
+            Book a Call
             <span class="btn-icon-wrapper">
               <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </span>
           </a>
         </div>
 
-        <!-- Mobile Toggle -->
+        <!-- Pure CSS Mobile Hamburger Toggle -->
         <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle mobile menu">
         <label for="nav-toggle" class="nav-toggle-label">
           <span></span>
@@ -55,22 +80,22 @@
           <span></span>
         </label>
 
-        <!-- Mobile Drawer -->
+        <!-- Fullscreen Glass Mobile Drawer -->
         <div class="mobile-nav-drawer">
           <ul class="mobile-nav-list">
-            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
-            <li><a href="services.html" class="mobile-nav-link active">Services &amp; Pricing</a></li>
-            <li><a href="portfolio.html" class="mobile-nav-link">Client Results</a></li>
-            <li><a href="process.html" class="mobile-nav-link">How We Work</a></li>
-            <li><a href="audit.html" class="mobile-nav-link">Free Website Audit</a></li>
-            <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
-            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+            <li><a href="index.html" class="mobile-nav-link"><span>Home</span> <span class="nav-num">01</span></a></li>
+            <li><a href="services.html" class="mobile-nav-link active"><span>Services &amp; Pricing</span> <span class="nav-num">02</span></a></li>
+            <li><a href="portfolio.html" class="mobile-nav-link"><span>Client Results</span> <span class="nav-num">03</span></a></li>
+            <li><a href="process.html" class="mobile-nav-link"><span>How We Work</span> <span class="nav-num">04</span></a></li>
+            <li><a href="audit.html" class="mobile-nav-link"><span>Free Website Audit</span> <span class="nav-num">05</span></a></li>
+            <li><a href="about.html" class="mobile-nav-link"><span>About Us</span> <span class="nav-num">06</span></a></li>
+            <li><a href="contact.html" class="mobile-nav-link"><span>Contact Us</span> <span class="nav-num">07</span></a></li>
           </ul>
           <div class="mobile-nav-footer">
-            <p>hello@jadecursor.com</p>
-            <p>Dedicated Web Design Agency for Luxury Spas &amp; Salons</p>
+            <p><strong>hello@jadecursor.com</strong></p>
+            <p style="font-size: 0.85rem; margin-top: 0.25rem;">Dedicated Web Design Agency for Luxury Spas &amp; Salons</p>
             <div style="margin-top: 1.25rem;">
-              <a href="contact.html" class="btn btn-gold" style="width: 100%;">Book Discovery Call</a>
+              <a href="contact.html" class="btn btn-primary" style="width: 100%;">Book a Discovery Call</a>
             </div>
           </div>
         </div>
@@ -578,12 +603,20 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="brand-logo">
-            <div class="brand-icon">
-              <svg viewBox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-              </svg>
+            <svg class="brand-logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="24,2 43,13 43,35 24,46 5,35 5,13" fill="#080C14" stroke="#00F5A0" stroke-width="1.8" />
+              <polygon points="24,2 24,24 43,13" fill="#10B981" fill-opacity="0.8" />
+              <polygon points="43,13 24,24 43,35" fill="#064E3B" fill-opacity="0.6" />
+              <polygon points="43,35 24,24 24,46" fill="#34D399" fill-opacity="0.4" />
+              <polygon points="24,46 24,24 5,35" fill="#10B981" fill-opacity="0.8" />
+              <polygon points="5,35 24,24 5,13" fill="#064E3B" fill-opacity="0.6" />
+              <polygon points="5,13 24,24 24,2" fill="#34D399" fill-opacity="0.4" />
+              <path d="M21 14L31 24L24 25.5L28 34L24 35.5L20 27L15 31V14H21Z" fill="#00F5A0" />
+            </svg>
+            <div class="brand-text-block">
+              <span class="brand-title">Jade Cursor</span>
+              <span class="brand-badge">Spa Web Studio</span>
             </div>
-            Jade Cursor
           </a>
           <p>
             The dedicated web design agency crafting custom, high-converting websites for luxury spas, salons, and medi-spas worldwide.

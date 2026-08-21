@@ -1,6 +1,7 @@
 /* ==========================================================================
    JADE CURSOR — HIGH-PERFORMANCE TECH & WEB DESIGN AGENCY DESIGN SYSTEM
    Dark Tech Agency Theme (Linear / Stripe / Awwwards Inspired)
+   Floating Glassmorphism Header & Bespoke Luxury Vector Logo
    Strictly Pure CSS (Zero JavaScript Architecture)
    ========================================================================== */
 
@@ -108,16 +109,17 @@ body {
   position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-top: 100px; /* Offset for floating glass navbar */
 }
 
-/* Tech Background Grid Pattern */
+/* Subtle Tech Background Grid Pattern */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
   background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
   background-size: 48px 48px;
   pointer-events: none;
   z-index: 0;
@@ -185,6 +187,283 @@ ul, ol {
 }
 
 /* ==========================================================================
+   FLOATING GLASSMORPHISM HEADER & NAVIGATION
+   ========================================================================== */
+
+.site-header {
+  position: fixed;
+  top: 18px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  pointer-events: none; /* Allows clicks around the floating dock */
+}
+
+.site-header .nav-container {
+  width: calc(100% - 2.5rem);
+  max-width: 1180px;
+  margin: 0 auto;
+  pointer-events: auto;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(11, 16, 26, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 16px 40px -8px rgba(0, 0, 0, 0.8), inset 0 1px 1px rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-full);
+  padding: 0.55rem 0.85rem 0.55rem 1.25rem;
+  transition: var(--transition-smooth);
+}
+
+.nav-bar:hover {
+  border-color: rgba(0, 245, 160, 0.25);
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.9), 0 0 24px rgba(0, 245, 160, 0.12);
+}
+
+/* High-End Vector Logo */
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.02em;
+}
+
+.brand-logo-svg {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 12px rgba(0, 245, 160, 0.35));
+  transition: var(--transition-smooth);
+}
+
+.brand-logo:hover .brand-logo-svg {
+  transform: rotate(10deg) scale(1.08);
+  filter: drop-shadow(0 0 16px rgba(0, 245, 160, 0.6));
+}
+
+.brand-text-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  line-height: 1.1;
+  font-size: 1.25rem;
+}
+
+.brand-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-jade-neon);
+  background: rgba(0, 245, 160, 0.08);
+  border: 1px solid rgba(0, 245, 160, 0.2);
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+}
+
+/* Desktop Navigation Links */
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.desktop-nav .nav-link {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  padding: 0.5rem 0.95rem;
+  border-radius: var(--radius-full);
+  transition: var(--transition-fast);
+}
+
+.desktop-nav .nav-link:hover {
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.desktop-nav .nav-link.active {
+  color: var(--color-jade-neon);
+  background: rgba(0, 245, 160, 0.1);
+  font-weight: 700;
+  box-shadow: inset 0 0 0 1px rgba(0, 245, 160, 0.25);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-actions .btn-header-cta {
+  padding: 0.65rem 1.35rem;
+  font-size: 0.88rem;
+}
+
+/* ==========================================================================
+   MOBILE HAMBURGER & FULLSCREEN GLASS DRAWER (Pure CSS)
+   ========================================================================== */
+
+.nav-toggle-input {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  cursor: pointer;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  transition: var(--transition-fast);
+  z-index: 10001;
+}
+
+.nav-toggle-label:hover {
+  background: rgba(0, 245, 160, 0.15);
+  border-color: var(--color-jade-neon);
+}
+
+.nav-toggle-label span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  transition: var(--transition-smooth);
+}
+
+.mobile-nav-drawer {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .desktop-nav,
+  .nav-actions .btn-header-cta {
+    display: none;
+  }
+
+  .nav-toggle-label {
+    display: flex;
+  }
+
+  .mobile-nav-drawer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    background: rgba(6, 10, 18, 0.98);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    z-index: 10000;
+    padding: 6rem 2rem 2.5rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.45s var(--ease-tech), opacity 0.35s ease, visibility 0.45s;
+    overflow-y: auto;
+    pointer-events: auto;
+  }
+
+  .nav-toggle-input:checked ~ .mobile-nav-drawer {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-toggle-input:checked + .nav-toggle-label {
+    background: rgba(0, 245, 160, 0.2);
+    border-color: var(--color-jade-neon);
+  }
+
+  .nav-toggle-input:checked + .nav-toggle-label span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+    background-color: var(--color-jade-neon);
+  }
+
+  .nav-toggle-input:checked + .nav-toggle-label span:nth-child(2) {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+
+  .nav-toggle-input:checked + .nav-toggle-label span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+    background-color: var(--color-jade-neon);
+  }
+
+  .mobile-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .mobile-nav-link {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    color: var(--color-text-main);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-border);
+    transition: var(--transition-fast);
+  }
+
+  .mobile-nav-link .nav-num {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--color-text-subtle);
+    font-weight: 500;
+  }
+
+  .mobile-nav-link:hover,
+  .mobile-nav-link.active {
+    color: var(--color-jade-neon);
+    border-bottom-color: var(--color-jade-neon);
+    padding-left: 0.5rem;
+  }
+
+  .mobile-nav-link:hover .nav-num,
+  .mobile-nav-link.active .nav-num {
+    color: var(--color-jade-neon);
+  }
+
+  .mobile-nav-footer {
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+  }
+}
+
+/* ==========================================================================
    LAYOUT CONTAINERS & UTILITIES
    ========================================================================== */
 
@@ -231,7 +510,7 @@ ul, ol {
   text-align: center;
 }
 
-/* Agency Eyebrow Badges */
+/* Eyebrow Badges */
 .eyebrow-pill {
   display: inline-flex;
   align-items: center;
@@ -261,7 +540,7 @@ ul, ol {
 }
 
 /* ==========================================================================
-   BUTTON & INTERACTIVE CTA ARCHITECTURE
+   BUTTONS
    ========================================================================== */
 
 .btn {
@@ -350,7 +629,7 @@ ul, ol {
 }
 
 /* ==========================================================================
-   DOUBLE-BEZEL COMPONENT SYSTEM (Dark Glassmorphism)
+   DOUBLE-BEZEL COMPONENT SYSTEM
    ========================================================================== */
 
 .double-bezel-card {
@@ -379,10 +658,7 @@ ul, ol {
   flex-direction: column;
 }
 
-/* ==========================================================================
-   FLOATING GLOW METRIC BADGES & SPEED ROWS
-   ========================================================================== */
-
+/* Metric Pills & Benchmark Badges */
 .tech-pill {
   display: inline-flex;
   align-items: center;
@@ -406,7 +682,6 @@ ul, ol {
   background-color: rgba(14, 20, 32, 0.8);
   backdrop-filter: blur(12px);
   border-radius: var(--radius-lg);
-  color: var(--color-white);
   border: 1px solid var(--color-border);
   margin-top: 2rem;
 }
@@ -418,19 +693,20 @@ ul, ol {
 }
 
 .score-circle {
-  width: 44px;
-  height: 44px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
   background: rgba(0, 245, 160, 0.12);
   border: 2px solid var(--color-jade-neon);
   color: var(--color-jade-neon);
   font-family: var(--font-mono);
-  font-size: 0.88rem;
-  font-weight: 700;
+  font-size: 0.82rem;
+  font-weight: 800;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 16px rgba(0, 245, 160, 0.3);
+  flex-shrink: 0;
 }
 
 .speed-score-info {
@@ -449,13 +725,10 @@ ul, ol {
 .speed-score-val {
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--color-white);
+  color: #FFFFFF;
 }
 
-/* ==========================================================================
-   AGENCY DEVICE STAGE & HARDWARE MOCKUPS
-   ========================================================================== */
-
+/* Hardware Stage */
 .agency-device-stage {
   position: relative;
   display: flex;
@@ -558,232 +831,7 @@ ul, ol {
   display: block;
 }
 
-/* ==========================================================================
-   HEADER & NAVIGATION
-   ========================================================================== */
-
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  padding: 1.15rem 0;
-  background: rgba(8, 12, 20, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--color-border);
-  transition: var(--transition-smooth);
-}
-
-.nav-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.brand-logo {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-family: var(--font-display);
-  font-size: 1.45rem;
-  font-weight: 800;
-  color: #FFFFFF;
-  letter-spacing: -0.03em;
-}
-
-.brand-icon {
-  width: 36px;
-  height: 36px;
-  background: linear-gradient(135deg, #10B981, #047857);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #FFFFFF;
-  box-shadow: 0 0 16px var(--color-jade-glow);
-  border: 1px solid rgba(0, 245, 160, 0.4);
-}
-
-.brand-icon svg {
-  width: 18px;
-  height: 18px;
-  stroke: currentColor;
-  stroke-width: 2;
-  fill: none;
-}
-
-.brand-text-accent {
-  color: var(--color-jade-neon);
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  display: block;
-  margin-top: -2px;
-  font-weight: 700;
-}
-
-.desktop-nav {
-  display: flex;
-  align-items: center;
-  gap: 1.75rem;
-}
-
-.desktop-nav .nav-link {
-  font-size: 0.92rem;
-  font-weight: 600;
-  color: var(--color-text-muted);
-  position: relative;
-  padding: 0.4rem 0;
-}
-
-.desktop-nav .nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background-color: var(--color-jade-neon);
-  box-shadow: 0 0 8px var(--color-jade-neon);
-  transition: var(--transition-fast);
-}
-
-.desktop-nav .nav-link:hover,
-.desktop-nav .nav-link.active {
-  color: #FFFFFF;
-}
-
-.desktop-nav .nav-link:hover::after,
-.desktop-nav .nav-link.active::after {
-  width: 100%;
-}
-
-.nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-/* Mobile Toggle */
-.nav-toggle-input { display: none; }
-
-.nav-toggle-label {
-  display: none;
-  cursor: pointer;
-  width: 42px;
-  height: 42px;
-  border-radius: var(--radius-sm);
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 5px;
-  transition: var(--transition-fast);
-  z-index: 1100;
-}
-
-.nav-toggle-label span {
-  display: block;
-  width: 20px;
-  height: 2px;
-  background-color: #FFFFFF;
-  border-radius: 2px;
-  transition: var(--transition-smooth);
-}
-
-.mobile-nav-drawer { display: none; }
-
-@media (max-width: 1024px) {
-  .desktop-nav,
-  .nav-actions .btn-header-cta {
-    display: none;
-  }
-
-  .nav-toggle-label {
-    display: flex;
-  }
-
-  .mobile-nav-drawer {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(8, 12, 20, 0.98);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    z-index: 1050;
-    padding: 5.5rem 2rem 2rem;
-    transform: translateY(-100%);
-    opacity: 0;
-    visibility: hidden;
-    transition: var(--transition-smooth);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow-y: auto;
-  }
-
-  .nav-toggle-input:checked ~ .mobile-nav-drawer {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .nav-toggle-input:checked + .nav-toggle-label span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
-    background-color: var(--color-jade-neon);
-  }
-
-  .nav-toggle-input:checked + .nav-toggle-label span:nth-child(2) {
-    opacity: 0;
-    transform: scale(0.2);
-  }
-
-  .nav-toggle-input:checked + .nav-toggle-label span:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
-    background-color: var(--color-jade-neon);
-  }
-
-  .mobile-nav-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-  }
-
-  .mobile-nav-link {
-    font-family: var(--font-display);
-    font-size: 1.85rem;
-    color: var(--color-text-main);
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--color-border);
-  }
-
-  .mobile-nav-link:hover,
-  .mobile-nav-link.active {
-    color: var(--color-jade-neon);
-    border-bottom-color: var(--color-jade-neon);
-  }
-
-  .mobile-nav-footer {
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--color-border);
-    color: var(--color-text-muted);
-    font-size: 0.9rem;
-  }
-}
-
-/* ==========================================================================
-   STICKY MOBILE CTA BAR
-   ========================================================================== */
-
+/* Sticky Mobile CTA Bar */
 .mobile-sticky-cta {
   display: none;
 }
@@ -837,7 +885,7 @@ ul, ol {
 
 .hero-luxury {
   position: relative;
-  padding-top: clamp(3.5rem, 7vw, 6.5rem);
+  padding-top: clamp(2.5rem, 5vw, 5rem);
   padding-bottom: clamp(4rem, 8vw, 7rem);
   overflow: hidden;
   background: radial-gradient(circle at 80% 20%, rgba(0, 245, 160, 0.08) 0%, transparent 60%),
@@ -924,8 +972,8 @@ ul, ol {
 
 /* Page Header (Internal pages) */
 .page-header-luxury {
-  padding-top: clamp(4rem, 6vw, 6rem);
-  padding-bottom: clamp(3.5rem, 5vw, 5rem);
+  padding-top: clamp(3rem, 5vw, 4.5rem);
+  padding-bottom: clamp(3rem, 5vw, 4.5rem);
   background: radial-gradient(circle at 50% 0%, rgba(0, 245, 160, 0.1) 0%, transparent 70%),
               var(--color-bg-alt);
   border-bottom: 1px solid var(--color-border);
@@ -1022,7 +1070,7 @@ ul, ol {
 }
 
 /* ==========================================================================
-   TECH STACK & BOOKING API INTEGRATIONS
+   TECH INTEGRATIONS
    ========================================================================== */
 
 .tech-integrations-section {
@@ -1070,7 +1118,7 @@ ul, ol {
 }
 
 /* ==========================================================================
-   4-WEEK SPRINT TIMELINE (process.html)
+   SPRINT TIMELINE (process.html)
    ========================================================================== */
 
 .sprint-timeline-vertical {
@@ -1125,10 +1173,7 @@ ul, ol {
   font-family: var(--font-mono);
 }
 
-/* ==========================================================================
-   QUALIFICATION CARDS (process.html)
-   ========================================================================== */
-
+/* Qualification Grid */
 .qualification-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1155,10 +1200,7 @@ ul, ol {
   border: 1px solid rgba(248, 113, 113, 0.2);
 }
 
-/* ==========================================================================
-   ROI LOSS CALCULATOR (audit.html)
-   ========================================================================== */
-
+/* Calculator Card */
 .calculator-card {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -1194,10 +1236,7 @@ ul, ol {
   text-shadow: 0 0 24px var(--color-jade-glow);
 }
 
-/* ==========================================================================
-   AGENCY COMPARISON MATRIX TABLE
-   ========================================================================== */
-
+/* Comparison Matrix Table */
 .comparison-matrix-wrapper {
   overflow-x: auto;
   margin: 3rem 0;
@@ -1236,10 +1275,7 @@ ul, ol {
   color: var(--color-jade-neon);
 }
 
-/* ==========================================================================
-   SERVICES & SPRINTS
-   ========================================================================== */
-
+/* Services Grid */
 .services-grid-3col {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1313,7 +1349,7 @@ ul, ol {
   margin-top: 3px;
 }
 
-/* ACCORDIONS (<details> & <summary>) */
+/* Accordions */
 .luxury-accordion {
   border-bottom: 1px solid var(--color-border);
   padding: 1.25rem 0;
@@ -1380,10 +1416,7 @@ ul, ol {
   line-height: 1.7;
 }
 
-/* ==========================================================================
-   CASE STUDIES & PORTFOLIO
-   ========================================================================== */
-
+/* Case Studies Filtering */
 .filter-tabs-wrapper {
   display: flex;
   justify-content: center;
@@ -1590,10 +1623,7 @@ ul, ol {
   line-height: 1.1;
 }
 
-/* ==========================================================================
-   TIERED SPRINTS
-   ========================================================================== */
-
+/* Pricing Grid */
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1678,10 +1708,7 @@ ul, ol {
   margin-top: 3px;
 }
 
-/* ==========================================================================
-   PHILOSOPHY & DUALITY
-   ========================================================================== */
-
+/* Philosophy & Duality */
 .philosophy-section {
   background-color: var(--color-bg-alt);
   position: relative;
@@ -1692,13 +1719,6 @@ ul, ol {
   grid-template-columns: 1fr 1fr;
   gap: clamp(2.5rem, 6vw, 5rem);
   align-items: center;
-}
-
-.duality-comparison {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin-top: 2rem;
 }
 
 .duality-card {
@@ -1716,36 +1736,7 @@ ul, ol {
   border-left: 4px solid #38BDF8;
 }
 
-.duality-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-
-.jade-side .duality-icon {
-  background: rgba(0, 245, 160, 0.1);
-  color: var(--color-jade-neon);
-}
-
-.cursor-side .duality-icon {
-  background: rgba(56, 189, 248, 0.1);
-  color: #38BDF8;
-}
-
-.duality-card h4 {
-  font-family: var(--font-display);
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-/* ==========================================================================
-   CONTACT & PROJECT INTAKE FORM
-   ========================================================================== */
-
+/* Contact Layout */
 .contact-layout-grid {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -1873,85 +1864,7 @@ ul, ol {
   box-shadow: 0 0 16px var(--color-jade-glow);
 }
 
-/* ==========================================================================
-   TESTIMONIALS
-   ========================================================================== */
-
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-.testimonial-card {
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-xl);
-  padding: clamp(1.75rem, 3vw, 2.25rem);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: var(--shadow-subtle);
-  transition: var(--transition-smooth);
-}
-
-.testimonial-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--color-border-glow);
-  box-shadow: var(--shadow-ambient), var(--shadow-jade-glow);
-}
-
-.star-rating {
-  display: flex;
-  gap: 4px;
-  color: var(--color-jade-neon);
-  margin-bottom: 1rem;
-}
-
-.star-rating svg {
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
-}
-
-.testimonial-quote {
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: #E2E8F0;
-  margin-bottom: 1.5rem;
-}
-
-.testimonial-author-box {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid var(--color-border);
-}
-
-.testimonial-avatar {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid var(--color-jade-neon);
-}
-
-.testimonial-author-name {
-  font-weight: 700;
-  font-size: 0.95rem;
-  color: #FFFFFF;
-}
-
-.testimonial-author-role {
-  font-size: 0.8rem;
-  color: var(--color-text-muted);
-}
-
-/* ==========================================================================
-   GLOBAL CALL TO ACTION BANNER
-   ========================================================================== */
-
+/* CTA Banner */
 .cta-banner-luxury {
   position: relative;
   background: linear-gradient(135deg, #0E1626 0%, #111A2E 100%);
@@ -1993,10 +1906,7 @@ ul, ol {
   margin-bottom: 2.25rem;
 }
 
-/* ==========================================================================
-   GLOBAL FOOTER
-   ========================================================================== */
-
+/* Footer */
 .site-footer {
   background-color: #05080E;
   color: var(--color-text-muted);
@@ -2063,10 +1973,7 @@ ul, ol {
   color: var(--color-text-subtle);
 }
 
-/* ==========================================================================
-   RESPONSIVE MEDIA QUERIES
-   ========================================================================== */
-
+/* Responsive Media Queries */
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -2085,7 +1992,6 @@ ul, ol {
 
   .services-grid-3col,
   .pricing-grid,
-  .testimonials-grid,
   .problem-solution-grid,
   .qualification-grid,
   .calc-layout {
@@ -2105,6 +2011,30 @@ ul, ol {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-top: 90px;
+  }
+
+  .site-header {
+    top: 10px;
+  }
+
+  .site-header .nav-container {
+    width: calc(100% - 1.5rem);
+  }
+
+  .nav-bar {
+    padding: 0.45rem 0.65rem 0.45rem 0.95rem;
+  }
+
+  .brand-title {
+    font-size: 1.1rem;
+  }
+
+  .brand-badge {
+    display: none; /* Hide sub badge on small mobile for clean fit */
+  }
+
   .proof-grid {
     grid-template-columns: 1fr 1fr;
     gap: 2rem 1rem;
@@ -2115,7 +2045,6 @@ ul, ol {
   }
 
   .philosophy-grid,
-  .duality-comparison,
   .contact-layout-grid,
   .form-row-2col {
     grid-template-columns: 1fr;
