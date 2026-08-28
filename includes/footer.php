@@ -4,6 +4,22 @@
  */
 ?>
   <!-- ==========================================================================
+       MOBILE STICKY CTA BAR
+       ========================================================================== -->
+  <div class="mobile-sticky-cta" aria-label="Mobile Quick Booking CTA">
+    <div class="mobile-cta-text">
+      <strong>Ready to Upgrade?</strong>
+      <span>Turn your spa traffic into paying clients</span>
+    </div>
+    <a href="book-a-call.php" class="btn btn-primary">
+      <span>Book Strategy Call</span>
+      <div class="btn-icon-wrapper">
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+    </a>
+  </div>
+
+  <!-- ==========================================================================
        GLOBAL FOOTER
        ========================================================================== -->
   <footer class="site-footer">

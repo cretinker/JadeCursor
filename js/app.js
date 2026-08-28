@@ -232,11 +232,21 @@ function initMobileNav() {
 
   if (!toggle || !drawer) return;
 
+  // Toggle body scroll locking when mobile menu opens/closes
+  toggle.addEventListener('change', () => {
+    if (toggle.checked) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  });
+
   // Close menu when clicking on any mobile nav link
   const links = drawer.querySelectorAll('a');
   links.forEach(link => {
     link.addEventListener('click', () => {
       toggle.checked = false;
+      document.body.style.overflow = '';
     });
   });
 
@@ -244,6 +254,7 @@ function initMobileNav() {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && toggle.checked) {
       toggle.checked = false;
+      document.body.style.overflow = '';
     }
   });
 }
