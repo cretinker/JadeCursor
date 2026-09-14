@@ -1,6 +1,6 @@
 <?php
-$pageTitle = "Jade Cursor | High-Converting Web Design for Luxury Spas & Salons";
-$pageDescription = "Jade Cursor is the dedicated web design agency for luxury day spas, medical esthetics clinics, and upscale salons. Double your direct bookings with effortless mobile reservation flows.";
+$pageTitle = "Spa Design Hub | High-Converting Web Design for Luxury Spas & Salons";
+$pageDescription = "Spa Design Hub is the dedicated web design agency for luxury day spas, medical esthetics clinics, and upscale salons. Double your direct bookings with effortless mobile reservation flows.";
 $currentPage = "home";
 
 require_once __DIR__ . '/includes/header.php';
@@ -16,23 +16,23 @@ require_once __DIR__ . '/includes/header.php';
           <div class="hero-content">
             <div class="eyebrow-pill">
               <span class="pill-dot"></span>
-              Web Design Exclusively for Luxury Spas &amp; Salons
+              Boutique Digital Atelier &amp; Growth Studio
             </div>
             <h1 class="hero-title">
-              We build luxury spa websites that turn visitors into <span class="text-jade-accent">booked clients</span>.
+              We design digital flagships for <span class="text-jade-accent">luxury spas &amp; aesthetic sanctuaries</span>.
             </h1>
             <p class="hero-description">
-              Your spa delivers an unforgettable experience in person. We build custom, high-converting websites that reflect your luxury standard, showcase your signature treatments, and make booking appointments effortless.
+              Crafting bespoke digital experiences, sub-second mobile performance, and custom zero-commission in-house booking engines for premium day spas, medspas, and aesthetic wellness clinics worldwide.
             </p>
             <div class="hero-actions">
-              <a href="contact.php" class="btn btn-primary">
-                Book a Free Discovery Call
+              <a href="book-a-call.php" class="btn btn-primary">
+                Book 30-Min Strategy Call
                 <span class="btn-icon-wrapper">
                   <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </span>
               </a>
-              <a href="audit.php" class="btn btn-secondary">
-                Get a Free 5-Min Video Audit
+              <a href="portfolio.php" class="btn btn-secondary">
+                Explore Selected Work
                 <span class="btn-icon-wrapper">
                   <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </span>
@@ -162,7 +162,7 @@ require_once __DIR__ . '/includes/header.php';
           <div class="audit-status-card jade-way">
             <div class="audit-header">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01" fill="none" stroke="currentColor"/></svg>
-              The Jade Cursor Advantage
+              The Spa Design Hub Advantage
             </div>
             <h3 style="font-size: 1.45rem; color: var(--color-jade-neon);">A Website That Drives Growth</h3>
             <ul class="audit-point-list">
@@ -545,7 +545,7 @@ require_once __DIR__ . '/includes/header.php';
             Why Choose Us
           </div>
           <h2>
-            Why spa owners choose <span class="text-jade-accent">Jade Cursor</span>.
+            Why spa owners choose <span class="text-jade-accent">Spa Design Hub</span>.
           </h2>
         </div>
 
@@ -555,7 +555,7 @@ require_once __DIR__ . '/includes/header.php';
               <tr>
                 <th>Feature</th>
                 <th>Typical Web Designers</th>
-                <th class="highlight-col">Jade Cursor Agency</th>
+                <th class="highlight-col">Spa Design Hub Agency</th>
               </tr>
             </thead>
             <tbody>

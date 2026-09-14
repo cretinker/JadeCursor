@@ -1,6 +1,6 @@
 <?php
-$pageTitle = "Contact Us | Jade Cursor Spa Web Design Studio";
-$pageDescription = "Get in touch with Jade Cursor to discuss your spa website project. Schedule a 30-minute discovery call or send us an inquiry.";
+$pageTitle = "Contact Us | Spa Design Hub Spa Web Design Studio";
+$pageDescription = "Get in touch with Spa Design Hub to discuss your spa website project. Schedule a 30-minute discovery call or send us an inquiry.";
 $currentPage = "contact";
 
 require_once __DIR__ . '/includes/header.php';
@@ -52,8 +52,8 @@ require_once __DIR__ . '/includes/header.php';
                 <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               </div>
               <div>
-                <strong style="display: block; font-size: 1.05rem; color: #FFFFFF;">Email Us Directly</strong>
-                <a href="mailto:hello@jadecursor.com" style="color: var(--color-jade-neon); font-weight: 600;">hello@jadecursor.com</a>
+                <strong style="display: block; font-size: 1.05rem; color: var(--color-espresso);">Email Us Directly</strong>
+                <a href="mailto:hello@spadesignhub.com" style="color: var(--color-jade-neon); font-weight: 600;">hello@spadesignhub.com</a>
                 <p style="font-size: 0.85rem; margin-top: 0.25rem;">We respond within 24 business hours.</p>
               </div>
             </div>
@@ -63,7 +63,7 @@ require_once __DIR__ . '/includes/header.php';
                 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
               </div>
               <div>
-                <strong style="display: block; font-size: 1.05rem; color: #FFFFFF;">Working Globally</strong>
+                <strong style="display: block; font-size: 1.05rem; color: var(--color-espresso);">Working Globally</strong>
                 <p style="font-size: 0.95rem; color: var(--color-text-muted);">Serving luxury spas and salons across the US, UK, Canada &amp; Europe</p>
                 <p style="font-size: 0.85rem; margin-top: 0.25rem;">Flexible call times across all major time zones.</p>
               </div>
@@ -74,7 +74,7 @@ require_once __DIR__ . '/includes/header.php';
                 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
               </div>
               <div>
-                <strong style="display: block; font-size: 1.05rem; color: #FFFFFF;">Office Hours</strong>
+                <strong style="display: block; font-size: 1.05rem; color: var(--color-espresso);">Office Hours</strong>
                 <p style="font-size: 0.95rem; color: var(--color-text-muted);">Monday — Friday: 9:00 AM — 6:00 PM EST</p>
                 <p style="font-size: 0.85rem; margin-top: 0.25rem;">Closed on weekends.</p>
               </div>

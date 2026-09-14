@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "How We Work & Turnkey Delivery | Jade Cursor";
+$pageTitle = "How We Work & Turnkey Delivery | Spa Design Hub";
 $pageDescription = "Discover our zero-stress web design process built exclusively for busy spa owners. 100% done-for-you copywriting, luxury layout design, and booking software integration.";
 $currentPage = "process";
 
@@ -127,7 +127,7 @@ require_once __DIR__ . '/includes/header.php';
             Who We Work With
           </div>
           <h2>
-            Is Jade Cursor the right fit for <span class="text-jade-accent">your spa</span>?
+            Is Spa Design Hub the right fit for <span class="text-jade-accent">your spa</span>?
           </h2>
           <p>
             We work exclusively with high-end wellness businesses to ensure the highest quality results.

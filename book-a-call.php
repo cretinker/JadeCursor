@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Book a 30-Min Discovery Strategy Call | Jade Cursor";
+$pageTitle = "Book a 30-Min Discovery Strategy Call | Spa Design Hub";
 $pageDescription = "Schedule a free 30-minute 1-on-1 strategy session with Principal Design Director Elijah Vance. Live mobile audit and transparent project roadmap.";
 $currentPage = "book-a-call";
 $extraScripts = ["js/booking.js"];
@@ -264,7 +264,7 @@ require_once __DIR__ . '/includes/header.php';
                 <span class="pill-dot"></span>
                 Call Agenda
               </div>
-              <h3 style="font-size: 1.35rem; color: #FFFFFF;">What We'll Cover in 30 Min:</h3>
+              <h3 style="font-size: 1.35rem; color: var(--color-espresso);">What We'll Cover in 30 Min:</h3>
               
               <div class="agenda-list">
                 <div class="agenda-item">
@@ -304,7 +304,7 @@ require_once __DIR__ . '/includes/header.php';
               <div class="director-profile-box">
                 <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Elijah Vance — Founder &amp; Principal Design Director" class="director-avatar">
                 <div>
-                  <div style="font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; color: #FFFFFF;">Elijah Vance</div>
+                  <div style="font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; color: var(--color-espresso);">Elijah Vance</div>
                   <div style="font-size: 0.78rem; color: var(--color-jade-neon); font-weight: 600;">Founder &amp; Principal Design Director</div>
                   <div style="font-size: 0.75rem; color: var(--color-text-muted);">Direct consultation &bull; No junior middlemen</div>
                 </div>
@@ -316,11 +316,11 @@ require_once __DIR__ . '/includes/header.php';
               <div style="display: flex; gap: 0.25rem; color: #F59E0B; margin-bottom: 0.75rem;">
                 &#9733;&#9733;&#9733;&#9733;&#9733;
               </div>
-              <p style="font-size: 0.92rem; color: #E2E8F0; font-style: italic; line-height: 1.6; margin-bottom: 1rem;">
+              <p style="font-size: 0.92rem; color: var(--color-text-muted); font-style: italic; line-height: 1.6; margin-bottom: 1rem;">
                 "Our 30-minute discovery call gave us more actionable clarity on our booking leaks than 6 months with our previous generalist agency. Within weeks of launching our new site, our direct online inquiries surged."
               </p>
               <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--color-border); padding-top: 0.75rem;">
-                <span style="font-size: 0.82rem; font-weight: 700; color: #FFFFFF;">Dr. Chloe Chen, Founder</span>
+                <span style="font-size: 0.82rem; font-weight: 700; color: var(--color-espresso);">Dr. Chloe Chen, Founder</span>
                 <span style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--color-jade-neon); font-weight: 700;">Soleil MedSpa (+310% Bookings)</span>
               </div>
             </div>

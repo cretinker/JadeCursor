@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Free 5-Minute Spa Website Audit | Jade Cursor";
+$pageTitle = "Free 5-Minute Spa Website Audit | Spa Design Hub";
 $pageDescription = "Request a free, candid 5-minute video review of your current spa website. Discover mobile speed leaks, booking friction points, and conversion opportunities within 24 hours.";
 $currentPage = "audit";
 

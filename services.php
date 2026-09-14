@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Services & Transparent Pricing | Jade Cursor";
+$pageTitle = "Services & Transparent Pricing | Spa Design Hub";
 $pageDescription = "Explore our transparent monthly subscription plans ($195/mo to $790/mo) and turnkey website builds tailored for luxury spas, salons, and medical clinics.";
 $currentPage = "services";
 

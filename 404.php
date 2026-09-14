@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Page Not Found (404) | Jade Cursor';
+$pageTitle = 'Page Not Found (404) | Spa Design Hub';
 $pageDescription = 'The page you are looking for has been moved or does not exist.';
 $currentPage = '404';
 

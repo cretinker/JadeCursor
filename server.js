@@ -48,7 +48,7 @@ const server = http.createServer((req, res) => {
 
 function startServer(port) {
   server.listen(port, () => {
-    console.log(`Jade Cursor luxury website is live at: http://localhost:${port}`);
+    console.log(`Spa Design Hub luxury website is live at: http://localhost:${port}`);
   }).on('error', (err) => {
     if (err.code === 'EADDRINUSE') {
       console.log(`Port ${port} in use, trying port ${port + 1}...`);

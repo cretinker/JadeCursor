@@ -1,4 +1,4 @@
-# Jade Cursor Robots.txt
+# Spa Design Hub Robots.txt
 User-agent: *
 Allow: /
 
@@ -8,4 +8,4 @@ Disallow: /includes/
 Disallow: /scratch/
 Disallow: /api/
 
-Sitemap: https://jadecursor.com/sitemap.xml
+Sitemap: https://spadesignhub.com/sitemap.xml

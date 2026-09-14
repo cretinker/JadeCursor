@@ -1,6 +1,6 @@
 <?php
-$pageTitle = "About Us | Jade Cursor Spa Web Design Agency";
-$pageDescription = "Learn about Jade Cursor: The dedicated web design agency helping luxury spas, salons, and wellness clinics elevate their online presence and increase direct bookings.";
+$pageTitle = "About Us | Spa Design Hub Spa Web Design Agency";
+$pageDescription = "Learn about Spa Design Hub: The dedicated web design agency helping luxury spas, salons, and wellness clinics elevate their online presence and increase direct bookings.";
 $currentPage = "about";
 
 require_once __DIR__ . '/includes/header.php';
@@ -14,7 +14,7 @@ require_once __DIR__ . '/includes/header.php';
       <div class="site-container">
         <div class="eyebrow-pill">
           <span class="pill-dot"></span>
-          About Jade Cursor
+          About Spa Design Hub
         </div>
         <h1>
           The web design agency built exclusively for <span class="text-jade-accent">luxury wellness brands</span>.
@@ -46,21 +46,21 @@ require_once __DIR__ . '/includes/header.php';
               They don't understand the nuances of high-ticket treatment pricing, how to present botanical ingredients, or how to properly integrate salon booking systems. The result is usually a slow, generic website that fails to reflect your actual in-person luxury.
             </p>
             <p style="margin-top: 1rem;">
-              We founded Jade Cursor with a single focus: to build websites exclusively for luxury spas, salons, and wellness practices that make booking as effortless as a 5-star concierge.
+              We founded Spa Design Hub with a single focus: to build websites exclusively for luxury spas, salons, and wellness practices that make booking as effortless as a 5-star concierge.
             </p>
 
             <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem;">
               <div class="duality-card jade-side">
-                <h3 style="font-size: 1.35rem; color: var(--color-jade-neon); margin-bottom: 0.5rem;">"Jade" — Luxury Brand Elegance</h3>
-                <p style="font-size: 0.95rem;">
-                  Representing the beauty, calm, and upscale prestige of your physical spa space brought to life on screen.
+                <h3 style="font-size: 1.35rem; color: var(--color-jade-neon); margin-bottom: 0.5rem;">"Spa Aesthetics" &mdash; Architectural Sanctuary &amp; Luminous Calm</h3>
+                <p style="font-size: 0.95rem; color: var(--color-text-muted);">
+                  Bringing the tactile serenity, bespoke interior atmosphere, and 5-star prestige of your physical treatment rooms onto the digital screen.
                 </p>
               </div>
 
               <div class="duality-card cursor-side">
-                <h3 style="font-size: 1.35rem; color: #38BDF8; margin-bottom: 0.5rem;">"Cursor" — Effortless Online Booking</h3>
-                <p style="font-size: 0.95rem;">
-                  Representing the seamless digital click that turns an interested website visitor into a confirmed, paying client.
+                <h3 style="font-size: 1.35rem; color: var(--color-gold-dark); margin-bottom: 0.5rem;">"Design Hub" &mdash; Conversion Engineering &amp; Direct Booking Flow</h3>
+                <p style="font-size: 0.95rem; color: var(--color-text-muted);">
+                  Sub-second mobile speed, zero-commission reservation flows, and friction-free treatment discovery engineered to turn curious visitors into confirmed clients.
                 </p>
               </div>
             </div>
@@ -71,11 +71,11 @@ require_once __DIR__ . '/includes/header.php';
               <div class="double-bezel-inner">
                 <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80" alt="Luxury Spa Atmosphere" style="border-radius: var(--radius-lg); height: 360px; width: 100%; object-fit: cover; margin-bottom: 1.5rem;">
                 <div style="border-left: 3px solid var(--color-jade-neon); padding-left: 1.25rem;">
-                  <p style="font-size: 1.15rem; color: #FFFFFF; font-weight: 500;">
+                  <p style="font-size: 1.15rem; color: var(--color-espresso); font-weight: 500;">
                     "Your website is the front door to your business. When it feels as luxurious and welcoming as your lobby, clients book with confidence."
                   </p>
                   <span style="display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-text-subtle); margin-top: 0.5rem;">
-                    — The Jade Cursor Team
+                    — The Spa Design Hub Team
                   </span>
                 </div>
               </div>
@@ -158,22 +158,22 @@ require_once __DIR__ . '/includes/header.php';
         <div class="agency-metrics-grid">
           <div>
             <div style="font-family: var(--font-display); font-size: 2.75rem; font-weight: 800; color: var(--color-jade-neon); line-height: 1;">+185%</div>
-            <div style="font-size: 0.88rem; font-weight: 700; color: #FFFFFF; margin-top: 0.5rem;">Average Direct Bookings Lift</div>
+            <div style="font-size: 0.88rem; font-weight: 700; color: var(--color-espresso); margin-top: 0.5rem;">Average Direct Bookings Lift</div>
             <div style="font-size: 0.78rem; color: var(--color-text-muted); margin-top: 0.25rem;">Across all client launches</div>
           </div>
           <div>
             <div style="font-family: var(--font-display); font-size: 2.75rem; font-weight: 800; color: #38BDF8; line-height: 1;">&lt; 0.9s</div>
-            <div style="font-size: 0.88rem; font-weight: 700; color: #FFFFFF; margin-top: 0.5rem;">Mobile Page Load Speed</div>
+            <div style="font-size: 0.88rem; font-weight: 700; color: var(--color-espresso); margin-top: 0.5rem;">Mobile Page Load Speed</div>
             <div style="font-size: 0.78rem; color: var(--color-text-muted); margin-top: 0.25rem;">Zero client drop-offs</div>
           </div>
           <div>
             <div style="font-family: var(--font-display); font-size: 2.75rem; font-weight: 800; color: var(--color-jade-neon); line-height: 1;">30+</div>
-            <div style="font-size: 0.88rem; font-weight: 700; color: #FFFFFF; margin-top: 0.5rem;">Luxury Spas &amp; Clinics</div>
+            <div style="font-size: 0.88rem; font-weight: 700; color: var(--color-espresso); margin-top: 0.5rem;">Luxury Spas &amp; Clinics</div>
             <div style="font-size: 0.78rem; color: var(--color-text-muted); margin-top: 0.25rem;">Designed and engineered</div>
           </div>
           <div>
             <div style="font-family: var(--font-display); font-size: 2.75rem; font-weight: 800; color: #F59E0B; line-height: 1;">100%</div>
-            <div style="font-size: 0.88rem; font-weight: 700; color: #FFFFFF; margin-top: 0.5rem;">Direct Founder Communication</div>
+            <div style="font-size: 0.88rem; font-weight: 700; color: var(--color-espresso); margin-top: 0.5rem;">Direct Founder Communication</div>
             <div style="font-size: 0.78rem; color: var(--color-text-muted); margin-top: 0.25rem;">No junior account middlemen</div>
           </div>
         </div>

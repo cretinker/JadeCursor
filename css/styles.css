@@ -1,48 +1,54 @@
 /* ==========================================================================
-   JADE CURSOR — HIGH-PERFORMANCE TECH & WEB DESIGN AGENCY DESIGN SYSTEM
-   Dark Tech Agency Theme (Linear / Stripe / Awwwards Inspired)
-   Floating Glassmorphism Header & Bespoke Luxury Vector Logo
-   Award-Winning Bento Grid Case Studies & Client Qualification Matrix
-   Strictly Pure CSS (Zero JavaScript Architecture)
+   SPA DESIGN HUB — HIGH-PERFORMANCE WEB DESIGN & CONVERSION AGENCY
+   Luminous Architectural Luxury Theme (Aman / Aesop / Clinique La Prairie Inspired)
+   Warm Alabaster (#FAF8F5) Canvas, Champagne Gold (#C5A880) & Espresso (#191512)
+   Playfair Display Serif & Plus Jakarta Sans
+   Bespoke Device Stages & Conversion-Engineered Booking Architecture
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
 :root {
-  /* --- Brand Color System: Obsidian Dark & Electric Jade --- */
-  --color-bg: #080C14;
-  --color-bg-alt: #0D121D;
-  --color-surface: #111724;
-  --color-surface-raised: #161F30;
-  --color-surface-hover: #1C263B;
+  /* --- Brand Color System: Warm Alabaster & Champagne Gold --- */
+  --color-bg: #FAF8F5;
+  --color-bg-alt: #F4EFE6;
+  --color-surface: #FFFFFF;
+  --color-surface-raised: #FAF7F2;
+  --color-surface-hover: #F2EDE4;
   
-  /* Electric Jade & Neon Accents */
-  --color-jade-neon: #00F5A0;
-  --color-jade-primary: #10B981;
-  --color-jade-dark: #059669;
-  --color-jade-glow: rgba(0, 245, 160, 0.25);
-  --color-jade-glow-strong: rgba(0, 245, 160, 0.45);
-  --color-jade-tint: rgba(0, 245, 160, 0.08);
+  /* Champagne Gold & Warm Bronze Accents */
+  --color-jade-neon: #C5A880; /* Mapped to Champagne Gold for backwards-compatible classes */
+  --color-jade-primary: #8E7350; /* Deep Warm Bronze */
+  --color-jade-dark: #6D5537;
+  --color-jade-glow: rgba(197, 168, 128, 0.22);
+  --color-jade-glow-strong: rgba(197, 168, 128, 0.4);
+  --color-jade-tint: rgba(197, 168, 128, 0.08);
+
+  /* Primary Brand Tokens */
+  --color-gold: #C5A880;
+  --color-gold-dark: #8E7350;
+  --color-gold-tint: rgba(197, 168, 128, 0.12);
+  --color-espresso: #191512;
 
   /* Borders & Hairlines */
-  --color-border: rgba(255, 255, 255, 0.09);
-  --color-border-subtle: rgba(255, 255, 255, 0.05);
-  --color-border-glow: rgba(0, 245, 160, 0.35);
+  --color-border: rgba(30, 24, 18, 0.08);
+  --color-border-subtle: rgba(30, 24, 18, 0.05);
+  --color-border-glow: rgba(197, 168, 128, 0.35);
 
   /* Typography Colors */
-  --color-text-main: #F8FAFC;
-  --color-text-muted: #94A3B8;
-  --color-text-subtle: #64748B;
-  --color-text-inverse: #080C14;
+  --color-text-main: #191512;
+  --color-text-muted: #5E564F;
+  --color-text-subtle: #8F857B;
+  --color-text-inverse: #FFFFFF;
 
   /* Status Colors */
-  --color-status-green: #00F5A0;
-  --color-status-red: #F87171;
+  --color-status-green: #3D7A5A;
+  --color-status-red: #C85A5A;
 
   /* Typography System */
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-display: 'Space Grotesk', var(--font-sans);
-  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 
   /* Scale & Spacing */
   --space-2xs: 0.25rem;
@@ -65,13 +71,13 @@
   --radius-2xl: 36px;
   --radius-full: 9999px;
 
-  /* Elevation & Glows */
-  --shadow-subtle: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
-  --shadow-ambient: 0 12px 36px -4px rgba(0, 0, 0, 0.6);
-  --shadow-lift: 0 24px 64px -12px rgba(0, 0, 0, 0.75);
-  --shadow-jade-glow: 0 0 32px -4px var(--color-jade-glow);
-  --shadow-device: 0 32px 80px -16px rgba(0, 0, 0, 0.85);
-  --shadow-inset-soft: inset 0 1px 1px rgba(255, 255, 255, 0.12);
+  /* Elevation & Soft Diffused Ambient Shadows */
+  --shadow-subtle: 0 4px 16px -2px rgba(35, 28, 22, 0.04);
+  --shadow-ambient: 0 16px 36px -6px rgba(35, 28, 22, 0.06);
+  --shadow-lift: 0 24px 50px -12px rgba(35, 28, 22, 0.08), 0 0 0 1px rgba(35, 28, 22, 0.04);
+  --shadow-jade-glow: 0 0 30px -4px rgba(197, 168, 128, 0.25);
+  --shadow-device: 0 28px 60px -14px rgba(35, 28, 22, 0.12);
+  --shadow-inset-soft: inset 0 1px 2px rgba(255, 255, 255, 0.8);
 
   /* Fluid Motion & Transitions */
   --ease-tech: cubic-bezier(0.16, 1, 0.3, 1);
@@ -102,7 +108,7 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--color-bg);
+  background-color: #FFFFFF;
   color: var(--color-text-main);
   line-height: 1.65;
   font-weight: 400;
@@ -119,8 +125,8 @@ body::before {
   position: fixed;
   inset: 0;
   background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    linear-gradient(to right, rgba(30, 24, 18, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 24, 18, 0.02) 1px, transparent 1px);
   background-size: 48px 48px;
   pointer-events: none;
   z-index: 0;
@@ -217,19 +223,19 @@ svg {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(11, 16, 26, 0.82);
+  padding: 0.55rem 0.85rem 0.55rem 1.25rem;
+  background: rgba(253, 251, 247, 0.88);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 16px 40px -8px rgba(0, 0, 0, 0.8), inset 0 1px 1px rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(197, 168, 128, 0.25);
   border-radius: var(--radius-full);
-  padding: 0.55rem 0.85rem 0.55rem 1.25rem;
-  transition: var(--transition-smooth);
+  box-shadow: 0 8px 30px rgba(35, 28, 22, 0.06);
+  position: relative;
 }
 
 .nav-bar:hover {
-  border-color: rgba(0, 245, 160, 0.25);
-  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.9), 0 0 24px rgba(0, 245, 160, 0.12);
+  border-color: rgba(197, 168, 128, 0.25);
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.9), 0 0 24px rgba(197, 168, 128, 0.12);
 }
 
 /* High-End Vector Logo */
@@ -248,13 +254,13 @@ svg {
   width: 38px;
   height: 38px;
   flex-shrink: 0;
-  filter: drop-shadow(0 0 12px rgba(0, 245, 160, 0.35));
+  filter: drop-shadow(0 0 12px rgba(197, 168, 128, 0.35));
   transition: var(--transition-smooth);
 }
 
 .brand-logo:hover .brand-logo-svg {
   transform: rotate(10deg) scale(1.08);
-  filter: drop-shadow(0 0 16px rgba(0, 245, 160, 0.6));
+  filter: drop-shadow(0 0 16px rgba(197, 168, 128, 0.6));
 }
 
 .brand-text-block {
@@ -277,8 +283,8 @@ svg {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--color-jade-neon);
-  background: rgba(0, 245, 160, 0.08);
-  border: 1px solid rgba(0, 245, 160, 0.2);
+  background: rgba(197, 168, 128, 0.08);
+  border: 1px solid rgba(197, 168, 128, 0.2);
   padding: 0.15rem 0.45rem;
   border-radius: var(--radius-full);
   font-weight: 700;
@@ -307,9 +313,9 @@ svg {
 
 .desktop-nav .nav-link.active {
   color: var(--color-jade-neon);
-  background: rgba(0, 245, 160, 0.1);
+  background: rgba(197, 168, 128, 0.1);
   font-weight: 700;
-  box-shadow: inset 0 0 0 1px rgba(0, 245, 160, 0.25);
+  box-shadow: inset 0 0 0 1px rgba(197, 168, 128, 0.25);
 }
 
 .nav-actions {
@@ -348,7 +354,7 @@ svg {
 }
 
 .nav-toggle-label:hover {
-  background: rgba(0, 245, 160, 0.15);
+  background: rgba(197, 168, 128, 0.15);
   border-color: var(--color-jade-neon);
 }
 
@@ -356,7 +362,7 @@ svg {
   display: block;
   width: 18px;
   height: 2px;
-  background-color: #FFFFFF;
+  background-color: #191512;
   border-radius: 2px;
   transition: var(--transition-smooth);
 }
@@ -384,7 +390,7 @@ svg {
     left: 0;
     width: 100%;
     height: 100dvh;
-    background: rgba(6, 10, 18, 0.98);
+    background: rgba(253, 251, 247, 0.98);
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     z-index: 10000;
@@ -404,13 +410,13 @@ svg {
   }
 
   .nav-toggle-input:checked + .nav-toggle-label {
-    background: rgba(0, 245, 160, 0.2);
+    background: rgba(197, 168, 128, 0.2);
     border-color: var(--color-jade-neon);
   }
 
   .nav-toggle-input:checked + .nav-toggle-label span:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
-    background-color: var(--color-jade-neon);
+    background-color: #191512;
   }
 
   .nav-toggle-input:checked + .nav-toggle-label span:nth-child(2) {
@@ -420,7 +426,7 @@ svg {
 
   .nav-toggle-input:checked + .nav-toggle-label span:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
-    background-color: var(--color-jade-neon);
+    background-color: #191512;
   }
 
   .mobile-nav-list {
@@ -522,8 +528,8 @@ svg {
   align-items: center;
   gap: 0.5rem;
   padding: 0.35rem 0.95rem;
-  background-color: rgba(0, 245, 160, 0.08);
-  border: 1px solid rgba(0, 245, 160, 0.25);
+  background-color: rgba(197, 168, 128, 0.08);
+  border: 1px solid rgba(197, 168, 128, 0.25);
   border-radius: var(--radius-full);
   font-size: 0.75rem;
   font-weight: 700;
@@ -537,7 +543,7 @@ svg {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: var(--color-jade-neon);
+  background-color: #191512;
   box-shadow: 0 0 8px var(--color-jade-neon);
 }
 
@@ -569,29 +575,32 @@ svg {
 
 .btn-primary,
 .btn-gold {
-  background-color: var(--color-jade-neon);
-  color: #04100B;
-  box-shadow: 0 4px 20px var(--color-jade-glow);
+  background-color: #191512;
+  color: #FFFFFF;
+  box-shadow: 0 6px 24px -4px rgba(25, 21, 18, 0.25);
+  border: 1px solid #191512;
 }
 
 .btn-primary:hover,
 .btn-gold:hover {
-  background-color: #34D399;
+  background-color: #8E7350;
+  border-color: #8E7350;
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px var(--color-jade-glow-strong);
-  color: #04100B;
+  box-shadow: 0 10px 30px -4px rgba(142, 115, 80, 0.35);
+  color: #FFFFFF;
 }
 
 .btn-secondary {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: #FFFFFF;
   color: var(--color-text-main);
-  border: 1px solid var(--color-border);
+  border: 1.5px solid rgba(197, 168, 128, 0.35);
+  box-shadow: 0 4px 12px rgba(35, 28, 22, 0.04);
 }
 
 .btn-secondary:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #FFFFFF;
-  border-color: rgba(255, 255, 255, 0.25);
+  background-color: #F4EFE6;
+  color: #191512;
+  border-color: #C5A880;
   transform: translateY(-2px);
 }
 
@@ -640,8 +649,8 @@ svg {
 
 .double-bezel-card {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.02);
-  border: 1px solid var(--color-border);
+  background-color: #F4EFE6;
+  border: 1px solid rgba(197, 168, 128, 0.2);
   padding: 6px;
   border-radius: var(--radius-xl);
   transition: var(--transition-smooth);
@@ -654,11 +663,11 @@ svg {
 }
 
 .double-bezel-inner {
-  background-color: var(--color-surface);
+  background-color: #FFFFFF;
   border-radius: calc(var(--radius-xl) - 6px);
   padding: clamp(1.75rem, 3vw, 2.5rem);
-  box-shadow: var(--shadow-inset-soft);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 12px 32px rgba(35, 28, 22, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.8);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -670,8 +679,8 @@ svg {
   align-items: center;
   gap: 0.4rem;
   padding: 0.3rem 0.85rem;
-  background-color: rgba(0, 245, 160, 0.06);
-  border: 1px solid rgba(0, 245, 160, 0.2);
+  background-color: rgba(197, 168, 128, 0.06);
+  border: 1px solid rgba(197, 168, 128, 0.2);
   border-radius: var(--radius-full);
   font-size: 0.78rem;
   font-weight: 600;
@@ -685,7 +694,7 @@ svg {
   gap: 1.5rem;
   flex-wrap: wrap;
   padding: 1.25rem;
-  background-color: rgba(14, 20, 32, 0.8);
+  background-color: #FFFFFF;
   backdrop-filter: blur(12px);
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
@@ -702,16 +711,16 @@ svg {
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  background: rgba(0, 245, 160, 0.12);
-  border: 2px solid var(--color-jade-neon);
-  color: var(--color-jade-neon);
+  background: rgba(197, 168, 128, 0.12);
+  border: 2px solid #8E7350;
+  color: #8E7350;
   font-family: var(--font-mono);
   font-size: 0.82rem;
   font-weight: 800;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 16px rgba(0, 245, 160, 0.3);
+  box-shadow: 0 0 12px rgba(197, 168, 128, 0.2);
   flex-shrink: 0;
 }
 
@@ -778,17 +787,17 @@ svg {
   position: relative;
   width: 100%;
   max-width: 560px;
-  background: #151B26;
+  background: #ECE8E1;
   border-radius: 16px 16px 0 0;
   padding: 12px 12px 0;
-  box-shadow: var(--shadow-device), 0 0 40px rgba(0, 245, 160, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: var(--shadow-device);
+  border: 1px solid rgba(30, 24, 18, 0.1);
 }
 
 .macbook-notch {
   width: 50px;
   height: 10px;
-  background: #080C14;
+  background: #191512;
   margin: 0 auto 6px;
   border-radius: 0 0 6px 6px;
 }
@@ -810,12 +819,12 @@ svg {
 .macbook-base {
   width: calc(100% + 40px);
   height: 14px;
-  background: #252D3D;
+  background: #D8D2C7;
   margin-left: -20px;
   border-radius: 0 0 12px 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 8px 24px rgba(35, 28, 22, 0.15);
   position: relative;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(30, 24, 18, 0.08);
 }
 
 .macbook-base::after {
@@ -835,11 +844,11 @@ svg {
   bottom: -20px;
   right: -20px;
   width: clamp(140px, 18vw, 180px);
-  background: #111724;
+  background: #ECE8E1;
   border-radius: 28px;
   padding: 6px;
-  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 245, 160, 0.15);
-  border: 2.5px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 24px 48px rgba(35, 28, 22, 0.18);
+  border: 2.5px solid #D8D2C7;
   z-index: 10;
 }
 
@@ -881,7 +890,7 @@ svg {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(8, 12, 20, 0.95);
+    background: rgba(253, 251, 247, 0.96);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     padding: 0.85rem 1.25rem;
@@ -903,7 +912,7 @@ svg {
     display: block;
     font-family: var(--font-display);
     font-size: 1.05rem;
-    color: var(--color-jade-neon);
+    color: #8E7350;
   }
 
   .mobile-sticky-cta .btn {
@@ -926,8 +935,8 @@ svg {
   padding-top: clamp(2.5rem, 5vw, 5rem);
   padding-bottom: clamp(4rem, 8vw, 7rem);
   overflow: hidden;
-  background: radial-gradient(circle at 80% 20%, rgba(0, 245, 160, 0.08) 0%, transparent 60%),
-              radial-gradient(circle at 10% 80%, rgba(16, 185, 129, 0.05) 0%, transparent 50%),
+  background: radial-gradient(circle at 80% 20%, rgba(197, 168, 128, 0.08) 0%, transparent 60%),
+              radial-gradient(circle at 10% 80%, rgba(244, 239, 230, 0.5) 0%, transparent 50%),
               var(--color-bg);
 }
 
@@ -1012,7 +1021,7 @@ svg {
 .page-header-luxury {
   padding-top: clamp(3rem, 5vw, 4.5rem);
   padding-bottom: clamp(3rem, 5vw, 4.5rem);
-  background: radial-gradient(circle at 50% 0%, rgba(0, 245, 160, 0.1) 0%, transparent 70%),
+  background: radial-gradient(circle at 50% 0%, rgba(197, 168, 128, 0.1) 0%, transparent 70%),
               var(--color-bg-alt);
   border-bottom: 1px solid var(--color-border);
   text-align: center;
@@ -1051,9 +1060,9 @@ svg {
 }
 
 .audit-status-card.jade-way {
-  background-color: rgba(0, 245, 160, 0.03);
-  border: 1.5px solid rgba(0, 245, 160, 0.3);
-  box-shadow: 0 0 32px rgba(0, 245, 160, 0.08);
+  background-color: rgba(197, 168, 128, 0.06);
+  border: 1.5px solid rgba(197, 168, 128, 0.4);
+  box-shadow: 0 12px 32px rgba(35, 28, 22, 0.05);
 }
 
 .audit-header {
@@ -1129,12 +1138,12 @@ svg {
   align-items: center;
   gap: 0.6rem;
   padding: 0.65rem 1.25rem;
-  background: var(--color-surface);
+  background: #FFFFFF;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-full);
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--color-text-main);
+  color: #191512;
   box-shadow: var(--shadow-subtle);
   transition: var(--transition-fast);
 }
@@ -1193,8 +1202,8 @@ svg {
 .sprint-week-pill {
   padding: 0.35rem 1rem;
   border-radius: var(--radius-full);
-  background-color: var(--color-jade-neon);
-  color: #080C14;
+  background-color: #191512;
+  color: #FFFFFF;
   font-family: var(--font-mono);
   font-size: 0.8rem;
   font-weight: 800;
@@ -1234,12 +1243,12 @@ svg {
 }
 
 .fit-card.is-fit {
-  border-color: rgba(0, 245, 160, 0.35);
-  box-shadow: var(--shadow-lift), 0 0 36px rgba(0, 245, 160, 0.08);
+  border-color: rgba(197, 168, 128, 0.35);
+  box-shadow: var(--shadow-lift), 0 0 36px rgba(197, 168, 128, 0.08);
 }
 
 .fit-card.is-fit:hover {
-  box-shadow: var(--shadow-lift), 0 0 48px rgba(0, 245, 160, 0.16);
+  box-shadow: var(--shadow-lift), 0 0 48px rgba(197, 168, 128, 0.16);
   border-color: var(--color-jade-neon);
 }
 
@@ -1270,8 +1279,8 @@ svg {
 
 .is-fit .fit-status-badge {
   color: var(--color-jade-neon);
-  background: rgba(0, 245, 160, 0.1);
-  border: 1px solid rgba(0, 245, 160, 0.3);
+  background: rgba(197, 168, 128, 0.1);
+  border: 1px solid rgba(197, 168, 128, 0.3);
 }
 
 .is-fit .fit-status-badge .badge-pulse-dot {
@@ -1321,7 +1330,7 @@ svg {
 }
 
 .is-fit .fit-tile-item:hover {
-  border-color: rgba(0, 245, 160, 0.3);
+  border-color: rgba(197, 168, 128, 0.3);
   background: rgba(22, 31, 48, 0.9);
 }
 
@@ -1336,9 +1345,9 @@ svg {
 }
 
 .is-fit .fit-tile-icon-box {
-  background: rgba(0, 245, 160, 0.12);
+  background: rgba(197, 168, 128, 0.12);
   color: var(--color-jade-neon);
-  border: 1px solid rgba(0, 245, 160, 0.25);
+  border: 1px solid rgba(197, 168, 128, 0.25);
 }
 
 .is-fit .fit-tile-icon-box svg {
@@ -1390,8 +1399,8 @@ svg {
 }
 
 .is-fit .fit-card-footer {
-  background: rgba(0, 245, 160, 0.08);
-  border: 1px solid rgba(0, 245, 160, 0.25);
+  background: rgba(197, 168, 128, 0.08);
+  border: 1px solid rgba(197, 168, 128, 0.25);
   color: var(--color-jade-neon);
   font-weight: 600;
 }
@@ -1419,12 +1428,12 @@ svg {
 }
 
 .calc-result-box {
-  background: linear-gradient(135deg, #0A111E 0%, #111A2B 100%);
+  background: linear-gradient(135deg, #FAF7F2 0%, #F4EFE6 100%);
   border-radius: var(--radius-xl);
   padding: 2.25rem;
   color: var(--color-text-main);
   border: 1px solid var(--color-border-glow);
-  box-shadow: 0 0 32px rgba(0, 245, 160, 0.15);
+  box-shadow: 0 0 32px rgba(197, 168, 128, 0.15);
   text-align: center;
 }
 
@@ -1472,7 +1481,7 @@ svg {
 
 .comparison-matrix-table th.highlight-col,
 .comparison-matrix-table td.highlight-col {
-  background: rgba(0, 245, 160, 0.04);
+  background: rgba(197, 168, 128, 0.04);
   font-weight: 600;
   color: var(--color-jade-neon);
 }
@@ -1498,19 +1507,19 @@ svg {
   width: 52px;
   height: 52px;
   border-radius: var(--radius-md);
-  background-color: rgba(0, 245, 160, 0.08);
+  background-color: rgba(197, 168, 128, 0.08);
   color: var(--color-jade-neon);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
-  border: 1px solid rgba(0, 245, 160, 0.25);
+  border: 1px solid rgba(197, 168, 128, 0.25);
   transition: var(--transition-smooth);
 }
 
 .double-bezel-card:hover .service-icon-box {
-  background-color: var(--color-jade-neon);
-  color: #080C14;
+  background-color: #191512;
+  color: #FFFFFF;
   transform: rotate(-4deg) scale(1.05);
 }
 
@@ -1602,11 +1611,11 @@ svg {
 }
 
 .luxury-accordion[open] .accordion-indicator {
-  background: var(--color-jade-neon);
+  background: #191512;
 }
 
 .luxury-accordion[open] .accordion-indicator svg {
-  stroke: #080C14;
+  stroke: #FFFFFF;
   transform: rotate(45deg);
 }
 
@@ -1656,8 +1665,8 @@ svg {
 #filter-dayspa:checked ~ .filter-tabs-wrapper label[for="filter-dayspa"],
 #filter-mobile:checked ~ .filter-tabs-wrapper label[for="filter-mobile"],
 #filter-botanical:checked ~ .filter-tabs-wrapper label[for="filter-botanical"] {
-  background-color: var(--color-jade-neon);
-  color: #080C14;
+  background-color: #191512;
+  color: #FFFFFF;
   border-color: var(--color-jade-neon);
   font-weight: 700;
   box-shadow: 0 0 20px var(--color-jade-glow);
@@ -1695,13 +1704,13 @@ svg {
   left: 10%;
   width: 80%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(0, 245, 160, 0.4), transparent);
+  background: linear-gradient(90deg, transparent, rgba(197, 168, 128, 0.4), transparent);
   pointer-events: none;
 }
 
 .bento-case-card:hover {
   border-color: var(--color-border-glow);
-  box-shadow: var(--shadow-lift), 0 0 48px rgba(0, 245, 160, 0.12);
+  box-shadow: var(--shadow-lift), 0 0 48px rgba(197, 168, 128, 0.12);
 }
 
 /* Bento Top Header */
@@ -1766,7 +1775,7 @@ svg {
 /* High-End Browser Stage */
 .bento-browser-stage {
   position: relative;
-  background: #090E17;
+  background: #F4EFE6;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-xl);
   overflow: hidden;
@@ -1786,7 +1795,7 @@ svg {
 
 .bento-browser-url {
   flex-grow: 1;
-  background: rgba(0, 0, 0, 0.4);
+  background: #FFFFFF;
   border: 1px solid var(--color-border);
   padding: 0.3rem 0.95rem;
   border-radius: var(--radius-full);
@@ -1803,7 +1812,7 @@ svg {
   overflow: hidden;
   height: 100%;
   min-height: 380px;
-  background: #000000;
+  background: #FDFCF9;
 }
 
 .bento-browser-img-wrap img {
@@ -1823,7 +1832,7 @@ svg {
   position: absolute;
   bottom: 1.25rem;
   right: 1.25rem;
-  background: rgba(11, 16, 26, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--color-border-glow);
@@ -1832,7 +1841,7 @@ svg {
   display: flex;
   align-items: center;
   gap: 0.65rem;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 245, 160, 0.2);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(197, 168, 128, 0.2);
   z-index: 10;
 }
 
@@ -1848,7 +1857,7 @@ svg {
   font-family: var(--font-mono);
   font-size: 0.82rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #191512;
 }
 
 /* Right Rail Bento Column */
@@ -1901,12 +1910,12 @@ svg {
 
 /* Glowing Neon KPI Box in Rail */
 .bento-kpi-highlight {
-  background: linear-gradient(135deg, rgba(0, 245, 160, 0.08) 0%, rgba(16, 185, 129, 0.03) 100%);
+  background: linear-gradient(135deg, rgba(197, 168, 128, 0.12) 0%, rgba(142, 115, 80, 0.05) 100%);
   border: 1.5px solid var(--color-border-glow);
   border-radius: var(--radius-lg);
   padding: 1.75rem;
   text-align: center;
-  box-shadow: 0 0 32px rgba(0, 245, 160, 0.1);
+  box-shadow: 0 0 32px rgba(197, 168, 128, 0.1);
 }
 
 .bento-kpi-num {
@@ -1922,7 +1931,7 @@ svg {
 .bento-kpi-label {
   font-size: 0.88rem;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #191512;
 }
 
 .bento-kpi-sub {
@@ -2029,23 +2038,23 @@ svg {
   letter-spacing: 0.08em;
   padding: 0.15rem 0.5rem;
   border-radius: var(--radius-full);
-  background: rgba(0, 245, 160, 0.15);
+  background: rgba(197, 168, 128, 0.15);
   color: var(--color-jade-neon);
-  border: 1px solid rgba(0, 245, 160, 0.3);
+  border: 1px solid rgba(197, 168, 128, 0.3);
   font-weight: 800;
 }
 
 #billing-monthly:checked ~ .pricing-toggle-wrapper label[for="billing-monthly"],
 #billing-onetime:checked ~ .pricing-toggle-wrapper label[for="billing-onetime"] {
-  background-color: var(--color-jade-neon);
-  color: #080C14;
-  box-shadow: 0 0 20px var(--color-jade-glow);
+  background-color: #191512;
+  color: #FFFFFF;
+  box-shadow: 0 4px 16px rgba(25, 21, 18, 0.2);
 }
 
 #billing-monthly:checked ~ .pricing-toggle-wrapper label[for="billing-monthly"] .pricing-badge-save {
-  background: #080C14;
-  color: var(--color-jade-neon);
-  border-color: rgba(0, 0, 0, 0.3);
+  background: #C5A880;
+  color: #191512;
+  border-color: rgba(0, 0, 0, 0.1);
 }
 
 #billing-monthly:checked ~ .pricing-grid-monthly { display: grid !important; }
@@ -2079,7 +2088,7 @@ svg {
   left: 50%;
   transform: translateX(-50%);
   background: var(--color-jade-neon);
-  color: #080C14;
+  color: #FFFFFF;
   font-size: 0.72rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -2131,13 +2140,13 @@ svg {
   text-transform: uppercase;
   padding: 0.15rem 0.55rem;
   border-radius: var(--radius-full);
-  background: rgba(0, 245, 160, 0.12);
+  background: rgba(197, 168, 128, 0.12);
   color: var(--color-jade-neon);
-  border: 1px solid rgba(0, 245, 160, 0.3);
+  border: 1px solid rgba(197, 168, 128, 0.3);
 }
 
 .discount-pill.tier-50 {
-  background: rgba(0, 245, 160, 0.2);
+  background: rgba(197, 168, 128, 0.2);
   color: #FFFFFF;
   border-color: var(--color-jade-neon);
   box-shadow: 0 0 12px var(--color-jade-glow);
@@ -2234,7 +2243,7 @@ svg {
   border-radius: var(--radius-full);
   width: fit-content;
   margin: 3rem auto 0;
-  box-shadow: 0 0 24px rgba(0, 245, 160, 0.08);
+  box-shadow: 0 0 24px rgba(197, 168, 128, 0.08);
 }
 
 .subscription-guarantee-item {
@@ -2355,7 +2364,7 @@ svg {
 .form-textarea {
   width: 100%;
   padding: 0.85rem 1.15rem;
-  background-color: var(--color-bg);
+  background-color: #FFFFFF;
   border: 1.5px solid var(--color-border);
   border-radius: var(--radius-md);
   font-family: var(--font-sans);
@@ -2369,7 +2378,7 @@ svg {
 .form-textarea:focus {
   outline: none;
   border-color: var(--color-jade-neon);
-  background-color: #0C121E;
+  background-color: #FFFFFF;
   box-shadow: 0 0 0 4px var(--color-jade-tint), 0 0 16px var(--color-jade-glow);
 }
 
@@ -2391,7 +2400,7 @@ svg {
   align-items: center;
   justify-content: center;
   padding: 0.65rem 0.85rem;
-  background-color: var(--color-bg);
+  background-color: #FFFFFF;
   border: 1.5px solid var(--color-border);
   border-radius: var(--radius-md);
   font-size: 0.85rem;
@@ -2403,8 +2412,8 @@ svg {
 }
 
 .chip-input:checked + .chip-label {
-  background-color: var(--color-jade-neon);
-  color: #080C14;
+  background-color: #191512;
+  color: #FFFFFF;
   border-color: var(--color-jade-neon);
   font-weight: 700;
   box-shadow: 0 0 16px var(--color-jade-glow);
@@ -2445,8 +2454,8 @@ svg {
   font-size: 0.75rem;
   font-weight: 800;
   color: var(--color-jade-neon);
-  background: rgba(0, 245, 160, 0.1);
-  border: 1px solid rgba(0, 245, 160, 0.3);
+  background: rgba(197, 168, 128, 0.1);
+  border: 1px solid rgba(197, 168, 128, 0.3);
   padding: 0.2rem 0.55rem;
   border-radius: var(--radius-full);
 }
@@ -2519,19 +2528,19 @@ svg {
 }
 
 .date-btn-label:hover {
-  border-color: rgba(0, 245, 160, 0.35);
+  border-color: rgba(197, 168, 128, 0.35);
   background: rgba(255, 255, 255, 0.04);
 }
 
 .date-radio:checked + .date-btn-label {
-  background-color: var(--color-jade-neon);
+  background-color: #191512;
   border-color: var(--color-jade-neon);
   box-shadow: 0 0 20px var(--color-jade-glow);
 }
 
 .date-radio:checked + .date-btn-label .date-day-abbr,
 .date-radio:checked + .date-btn-label .date-num {
-  color: #080C14;
+  color: #FFFFFF;
   font-weight: 800;
 }
 
@@ -2562,13 +2571,13 @@ svg {
 }
 
 .time-btn-label:hover {
-  border-color: rgba(0, 245, 160, 0.35);
+  border-color: rgba(197, 168, 128, 0.35);
   background: rgba(255, 255, 255, 0.04);
 }
 
 .time-radio:checked + .time-btn-label {
-  background-color: var(--color-jade-neon);
-  color: #080C14;
+  background-color: #191512;
+  color: #FFFFFF;
   border-color: var(--color-jade-neon);
   font-weight: 800;
   box-shadow: 0 0 16px var(--color-jade-glow);
@@ -2590,9 +2599,9 @@ svg {
 }
 
 .rail-card-highlight {
-  border-color: var(--color-border-glow);
-  background: linear-gradient(135deg, rgba(17, 23, 36, 0.95) 0%, rgba(13, 18, 29, 0.95) 100%);
-  box-shadow: 0 0 32px rgba(0, 245, 160, 0.08);
+  border: 1.5px solid var(--color-gold);
+  background: linear-gradient(135deg, #FFFFFF 0%, #FAF7F2 100%);
+  box-shadow: 0 12px 32px rgba(197, 168, 128, 0.12), var(--shadow-ambient);
 }
 
 .agenda-list {
@@ -2611,14 +2620,14 @@ svg {
 }
 
 .agenda-item strong {
-  color: #FFFFFF;
+  color: var(--color-text-main);
 }
 
 .agenda-num-bullet {
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  background: rgba(0, 245, 160, 0.12);
+  background: rgba(197, 168, 128, 0.12);
   color: var(--color-jade-neon);
   font-family: var(--font-mono);
   font-size: 0.72rem;
@@ -2628,7 +2637,7 @@ svg {
   justify-content: center;
   flex-shrink: 0;
   margin-top: 2px;
-  border: 1px solid rgba(0, 245, 160, 0.25);
+  border: 1px solid rgba(197, 168, 128, 0.25);
 }
 
 .director-profile-box {
@@ -2655,8 +2664,8 @@ svg {
   align-items: center;
   gap: 0.75rem;
   padding: 0.85rem 1.15rem;
-  background: rgba(0, 245, 160, 0.06);
-  border: 1px solid rgba(0, 245, 160, 0.25);
+  background: rgba(197, 168, 128, 0.06);
+  border: 1px solid rgba(197, 168, 128, 0.25);
   border-radius: var(--radius-md);
   font-size: 0.82rem;
   color: var(--color-jade-neon);
@@ -2675,13 +2684,13 @@ svg {
 /* CTA Banner */
 .cta-banner-luxury {
   position: relative;
-  background: linear-gradient(135deg, #0E1626 0%, #111A2E 100%);
+  background: linear-gradient(135deg, #241C16 0%, #191512 100%);
   border-radius: var(--radius-2xl);
   padding: clamp(3.5rem, 6vw, 5.5rem) clamp(2rem, 5vw, 4.5rem);
   color: #FFFFFF;
   overflow: hidden;
   box-shadow: var(--shadow-lift);
-  border: 1px solid var(--color-border-glow);
+  border: 1px solid rgba(197, 168, 128, 0.3);
   text-align: center;
 }
 
@@ -2692,7 +2701,7 @@ svg {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle at 50% 50%, rgba(0, 245, 160, 0.15) 0%, transparent 60%);
+  background: radial-gradient(circle at 50% 50%, rgba(197, 168, 128, 0.15) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -2716,11 +2725,11 @@ svg {
 
 /* Footer */
 .site-footer {
-  background-color: #05080E;
-  color: var(--color-text-muted);
+  background-color: #191512;
+  color: #A89F95;
   padding-top: clamp(4.5rem, 7vw, 6.5rem);
   padding-bottom: 2.5rem;
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid rgba(197, 168, 128, 0.2);
 }
 
 .footer-grid {
@@ -3012,7 +3021,7 @@ svg {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(8, 12, 20, 0.95);
+    background: rgba(253, 251, 247, 0.96);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom, 0px));
@@ -3033,8 +3042,8 @@ svg {
   .mobile-sticky-cta .mobile-cta-text strong {
     display: block;
     font-family: var(--font-display);
-    font-size: 0.98rem;
-    color: var(--color-jade-neon);
+    font-size: 1.05rem;
+    color: #8E7350;
   }
 
   .mobile-sticky-cta .btn {

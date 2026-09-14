@@ -1,6 +1,6 @@
 <?php
 /**
- * Shared Header Template for Jade Cursor PHP Pages
+ * Shared Header Template for Spa Design Hub PHP Pages
  * Supports dynamic page title, meta description, and active navigation highlighting
  */
 
@@ -28,7 +28,7 @@ $csrfToken = CSRF::generateToken();
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="alternate icon" href="favicon.svg">
   <link rel="apple-touch-icon" href="favicon.svg">
-  <meta name="theme-color" content="#080C14">
+  <meta name="theme-color" content="#FAF8F5">
   <meta property="og:title" content="<?= htmlspecialchars($pageTitle) ?>">
   <meta property="og:description" content="<?= htmlspecialchars($pageDescription) ?>">
   <meta property="og:type" content="website">
@@ -37,7 +37,7 @@ $csrfToken = CSRF::generateToken();
   <!-- Google Fonts & Stylesheet -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   
   <meta name="csrf-token" content="<?= htmlspecialchars($csrfToken) ?>">
@@ -50,40 +50,27 @@ $csrfToken = CSRF::generateToken();
   <header class="site-header">
     <div class="nav-container">
       <div class="nav-bar">
-        <!-- High-End Geometric Vector Logo -->
-        <a href="index.php" class="brand-logo" aria-label="Jade Cursor Home">
+        <!-- High-End Architectural Vector Logo -->
+        <a href="index.php" class="brand-logo" aria-label="Spa Design Hub Home">
           <svg class="brand-logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <linearGradient id="jadeGradPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#00F5A0" />
-                <stop offset="100%" stop-color="#059669" />
+              <linearGradient id="hubGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#D4B996" />
+                <stop offset="100%" stop-color="#B38E5D" />
               </linearGradient>
-              <linearGradient id="jadeFacet1" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#10B981" stop-opacity="0.8" />
-                <stop offset="100%" stop-color="#047857" stop-opacity="0.9" />
-              </linearGradient>
-              <linearGradient id="jadeFacet2" x1="100%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#34D399" stop-opacity="0.4" />
-                <stop offset="100%" stop-color="#064E3B" stop-opacity="0.8" />
-              </linearGradient>
-              <filter id="jadeGlow" x="-20%" y="-20%" width="140%" height="140%">
-                <feGaussianBlur stdDeviation="3" result="blur" />
-                <feComposite in="SourceGraphic" in2="blur" operator="over" />
-              </filter>
             </defs>
-            <polygon points="24,2 43,13 43,35 24,46 5,35 5,13" fill="#080C14" stroke="url(#jadeGradPrimary)" stroke-width="1.8" />
-            <polygon points="24,2 24,24 43,13" fill="url(#jadeFacet1)" />
-            <polygon points="43,13 24,24 43,35" fill="#064E3B" fill-opacity="0.6" />
-            <polygon points="43,35 24,24 24,46" fill="url(#jadeFacet2)" />
-            <polygon points="24,46 24,24 5,35" fill="url(#jadeFacet1)" />
-            <polygon points="5,35 24,24 5,13" fill="#064E3B" fill-opacity="0.6" />
-            <polygon points="5,13 24,24 24,2" fill="url(#jadeFacet2)" />
-            <path d="M21 14L31 24L24 25.5L28 34L24 35.5L20 27L15 31V14H21Z" fill="#00F5A0" filter="url(#jadeGlow)" />
-            <path d="M21 14L31 24L24 25.5L28 34L24 35.5L20 27L15 31V14H21Z" fill="#FFFFFF" fill-opacity="0.85" />
+            <rect x="2" y="2" width="44" height="44" rx="12" fill="#FAF8F5" stroke="#E5DDD0" stroke-width="1.2" />
+            <g transform="translate(24, 24)">
+              <polygon points="0,-16 16,0 0,16 -16,0" fill="none" stroke="url(#hubGold)" stroke-width="1.6" />
+              <path d="M-9,9 C-9,-3 9,-3 9,9" fill="none" stroke="#191512" stroke-width="1.5" stroke-linecap="round" />
+              <line x1="0" y1="-10" x2="0" y2="9" stroke="url(#hubGold)" stroke-width="1.5" stroke-linecap="round" />
+              <circle cx="0" cy="-4" r="2.2" fill="#191512" />
+              <circle cx="0" cy="-4" r="1.2" fill="url(#hubGold)" />
+            </g>
           </svg>
           <div class="brand-text-block">
-            <span class="brand-title">Jade Cursor</span>
-            <span class="brand-badge">Spa Web Studio</span>
+            <span class="brand-title">Spa Design Hub</span>
+            <span class="brand-badge">Boutique Spa Studio</span>
           </div>
         </a>
 
@@ -127,11 +114,9 @@ $csrfToken = CSRF::generateToken();
             <li><a href="contact.php" class="mobile-nav-link <?= $currentPage === 'contact' ? 'active' : '' ?>"><span>Contact Us</span> <span class="nav-num">07</span></a></li>
           </ul>
           <div class="mobile-nav-footer">
-            <p><strong>hello@jadecursor.com</strong></p>
-            <p style="font-size: 0.85rem; margin-top: 0.25rem;">Dedicated Web Design Agency for Luxury Spas &amp; Salons</p>
-            <div style="margin-top: 1.25rem;">
-              <a href="book-a-call.php" class="btn btn-primary" style="width: 100%;">Book a Discovery Call</a>
-            </div>
+            <p><strong>hello@spadesignhub.com</strong></p>
+            <p style="font-size: 0.85rem; margin-top: 0.25rem;">Boutique Web Design Studio &amp; Conversion Engine for Luxury Spas</p>
+            <a href="book-a-call.php" class="btn btn-primary" style="margin-top: 1.25rem; width: 100%; text-align: center;">Book 30-Min Strategy Call</a>
           </div>
         </div>
       </div>

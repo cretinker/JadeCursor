@@ -69,18 +69,18 @@ class Mailer {
   <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background-color:#080C14; padding:30px 15px;">
     <tr>
       <td align="center">
-        <table role="presentation" width="100%" max-width="600" style="max-width:600px; background-color:#0B101A; border:1px solid #1E293B; border-radius:12px; overflow:hidden; box-shadow:0 12px 30px rgba(0,0,0,0.5);">
+        <table role="presentation" width="100%" max-width="600" style="max-width:600px; background-color:#FFFFFF; border:1px solid #E5DDD0; border-radius:12px; overflow:hidden; box-shadow:0 12px 30px rgba(35,28,22,0.06); font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
           <!-- Header -->
           <tr>
-            <td style="padding:28px 30px; background:linear-gradient(135deg, #0B101A 0%, #064E3B 100%); border-bottom:1px solid #1E293B;">
+            <td style="padding:28px 30px; background:linear-gradient(135deg, #FAF8F5 0%, #F4EFE6 100%); border-bottom:1px solid #E5DDD0;">
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
                 <tr>
                   <td>
-                    <div style="font-size:22px; font-weight:800; color:#FFFFFF; letter-spacing:-0.5px;">Jade Cursor</div>
-                    <div style="font-size:12px; color:#00F5A0; font-weight:600; text-transform:uppercase; letter-spacing:1px; margin-top:2px;">Luxury Spa Web Design Agency</div>
+                    <div style="font-size:22px; font-weight:800; color:#191512; letter-spacing:-0.5px; font-family:Georgia, serif;">Spa Design Hub</div>
+                    <div style="font-size:11px; color:#8E7350; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; margin-top:3px;">Luxury Spa Web Design Studio</div>
                   </td>
                   <td align="right">
-                    <span style="display:inline-block; padding:4px 10px; background:rgba(0,245,160,0.1); border:1px solid rgba(0,245,160,0.25); border-radius:20px; font-size:11px; font-weight:700; color:#00F5A0;">NEW INQUIRY</span>
+                    <span style="display:inline-block; padding:5px 12px; background:rgba(197,168,128,0.15); border:1px solid rgba(197,168,128,0.4); border-radius:20px; font-size:11px; font-weight:700; color:#8E7350; letter-spacing:0.5px;">CONFIRMED</span>
                   </td>
                 </tr>
               </table>
@@ -88,15 +88,15 @@ class Mailer {
           </tr>
           <!-- Body Content -->
           <tr>
-            <td style="padding:32px 30px; font-size:15px; line-height:1.6; color:#E2E8F0;">
+            <td style="padding:32px 30px; font-size:15px; line-height:1.6; color:#191512;">
               ' . $contentHtml . '
             </td>
           </tr>
           <!-- Footer -->
           <tr>
-            <td style="padding:20px 30px; background-color:#070A10; border-top:1px solid #1E293B; text-align:center; font-size:12px; color:#64748B;">
-              &copy; ' . date('Y') . ' Jade Cursor Agency. All rights reserved.<br>
-              <span style="color:#00F5A0;">www.jadecursor.com</span> &bull; hello@jadecursor.com
+            <td style="padding:22px 30px; background-color:#FAF8F5; border-top:1px solid #E5DDD0; text-align:center; font-size:12px; color:#5E564F;">
+              &copy; ' . date('Y') . ' Spa Design Hub Studio. All rights reserved.<br>
+              <span style="color:#8E7350; font-weight:600;">hello@spadesignhub.com</span> &bull; Worldwide Digital Flagships
             </td>
           </tr>
         </table>

@@ -1,57 +1,49 @@
-# Jade Cursor - Luxury Spa Web Design & Software Engineering Agency
+# Spa Design Hub - Luxury Spa Web Design & Conversion Studio
 
-> **We build high-performance digital sanctuaries that turn spa visitors into devoted guests.**
+> **We build luminous digital flagships that turn spa visitors into devoted guests.**
 
-Jade Cursor is an elite, boutique web design and digital engineering agency dedicated exclusively to luxury day spas, thermal bathhouses, medical esthetics clinics, and high-end wellness retreats.
+Spa Design Hub is an elite, boutique web design and digital engineering atelier dedicated exclusively to luxury day spas, thermal sanctuaries, medical esthetics clinics, and high-end wellness practices.
 
-We blend technical precision (zero-JS sub-second loading, headless booking integrations, 100/100 Core Web Vitals) with serene, brand-adaptive luxury aesthetics.
-
----
-
-## 🏛️ Agency vs. Client Architecture Clarification
-
-- **Jade Cursor (`JadeCursor/`)**: The **Tech & Design Agency Website** (you are here). Built with a modern, high-converting digital studio aesthetic, device hardware mockups, booking loss ROI calculators, and agency sprint engagements.
-- **Client Spa Websites** (e.g., Eden Spa, JVEE Wellness, Aruna Spa, Pee Skin & Med Spa, Beauticians On The Go): The **Client Wellness Sanctuaries** built using the `spa-salon-craft` playbook.
+We blend architectural serenity (warm alabaster canvases, champagne gold accents, Playfair serif typography) with high-yield conversion engineering (sub-second mobile speeds, friction-free booking integrations, and zero-commission reservation flows).
 
 ---
 
-## ⚡ Technical Architecture & Engineering Standards
+## 🏛️ Agency Overview & Architectural Identity
 
-- **Strictly Zero JavaScript Bloat**:
-  - Entire site runs on 100% semantic HTML5 and advanced modern CSS.
-  - Sub-second global edge delivery (< 0.4s).
-  - 100/100 Google PageSpeed scores on both mobile and desktop viewports.
-  - Pure CSS mobile drawer via checkbox hack (`#nav-toggle`).
-  - Native `<details>` & `<summary>` accordions for deliverables and FAQs.
-  - Pure CSS category filter tabs on the Case Studies portfolio.
-  - Sticky mobile booking bar for viewports under 768px.
-- **Color System Tokens (`css/styles.css`)**:
-  - Deep Obsidian & Emerald: `#071710` / `#0B2219` / `#1B4D3E`
-  - Sage Green: `#F0F4F2` / `#D5E2DA` / `#8EA89D`
-  - Warm Cream: `#FDFBF8` / `#FAF7F2` / `#F3ECE1`
-  - Slate Grey & Tech Dark: `#1C2722` / `#4B5B53`
-  - Champagne Gold: `#C5A059` / `#EFE4CC`
+- **Spa Design Hub (`JadeCursor/`)**: The **Tech & Design Agency Website** (you are here). Built with a warm, luminous luxury atelier aesthetic (`#FAF8F5` alabaster, `#C5A880` champagne gold, `#191512` espresso), device hardware mockups (silver MacBook Pro & travertine iPhone 16), booking loss ROI calculators, transparent subscription tiers, and discovery call booking.
+- **Client Spa Websites** (e.g., Eden Spa, JVEE Wellness, Aruna Spa, Pee Skin & Med Spa, Beauticians On The Go): Showcase client digital flagships with sub-second performance.
+
+---
+
+## ⚡ Technical Architecture & Design Standards
+
+- **Luminous Architectural Luxury Palette (`css/styles.css`)**:
+  - Warm Alabaster Canvas: `#FAF8F5`
+  - Silk Travertine Secondary: `#F4EFE6`
+  - Crisp Surface: `#FFFFFF`
+  - Champagne Gold & Bronze: `#C5A880` / `#8E7350`
+  - Deep Charcoal Espresso: `#191512`
+- **Editorial Typography**:
+  - Display: `Playfair Display` (Serif)
+  - Sans: `Plus Jakarta Sans`
+  - Monospace: `JetBrains Mono`
 - **Double-Bezel UI (Doppelrand)**:
-  - Outer machined shells with hairline borders, concentric radii, and soft ambient shadow lifts.
-  - Button-in-button trailing icon components.
-  - Hardware device mockups (MacBook Pro & iPhone 16 viewports).
+  - Outer machined shells with hairlines, concentric border-radii, and ambient cashmere shadow lifts.
+  - Interactive device stages with responsive MacBook Pro and iPhone 16 viewports.
+  - High-converting 5-day booking calendar and transparent pricing switcher.
 
 ---
 
-## 📁 7-Page Site Architecture
+## 📁 8-Page Site Architecture
 
-1. **`index.html`** - Tech Agency Flagship (Hero with Hardware Mockup, Problem/Solution Teardown, Tech Stack Integrations, Agency Capabilities, Featured Case Studies, Comparison Matrix, Testimonials, CTA)
-2. **`services.html`** - 4 Core Disciplines & 3 Tiered Sprints (*The Refresh Sprint ($4,800)*, *The Signature Atelier ($8,500)*, *The Imperial Enterprise ($14,000)*)
-3. **`portfolio.html`** - 5 In-Depth Agency Results Teardowns with Tech Specs & ROI:
-   - **JVEE Wellness & Spa** (`https://jveewellness.jadecursor.com`)
-   - **Beauticians On The Go** (`https://beauticiansonthego.jadecursor.com`)
-   - **Aruna Spa** (`https://arunaspa.jadecursor.com`)
-   - **Pee Skin & Med Spa** (`https://peeskinmedspa.jadecursor.com`)
-   - **Eden Spa & Salon** (`https://edenspa.jadecursor.com`)
-4. **`process.html`** - Proprietary 4-Week Sanctuary Sprint Methodology & "Who This Is For vs. Who This Is NOT For" qualification matrix
-5. **`audit.html`** - Free 24-Hour Video Website Audit & Interactive Booking Loss ROI Calculator
-6. **`about.html`** - The Atelier: Engineering Standards, The "Jade" & "Cursor" Duality, and Artisan Team Profiles
-7. **`contact.html`** - Qualified Project Intake Questionnaire & Discovery Call Scheduler
+1. **`index.php` / `index.html`** — Agency Flagship (Hero with Hardware Mockup, Problem/Solution Teardown, Tech Integrations, Agency Capabilities, Bento Case Studies, Proof Ribbon, Comparison Matrix, Testimonials, CTA)
+2. **`about.php` / `about.html`** — About the Atelier: Why Generalist Agencies Fail, "Spa Aesthetics" & "Design Hub" Philosophy, 4 Commitments, and Founder Direct Communication
+3. **`services.php` / `services.html`** — 4 Core Disciplines & Transparent Monthly Plans ($195/mo, $395/mo, $790/mo) + Turnkey Builds
+4. **`portfolio.php` / `portfolio.html`** — 5 In-Depth Client Case Studies with Live Subdomain Deep-Links & Metric Cards
+5. **`process.php` / `process.html`** — Proprietary 4-Week Done-For-You Sprint Roadmap & Client Qualification Matrix
+6. **`audit.php` / `audit.html`** — Free 24-Hour Video Website Audit & Interactive Booking Loss ROI Calculator
+7. **`book-a-call.php` / `book-a-call.html`** — 5-Day Interactive Discovery Calendar Engine with Live Timeslot Reservation
+8. **`contact.php` / `contact.html`** — Qualified Intake Questionnaire & Direct Studio Contact
 
 ---
 
@@ -66,4 +58,4 @@ Visit: [http://localhost:8080](http://localhost:8080)
 ---
 
 ## 📜 License
-&copy; 2026 Jade Cursor Atelier. All rights reserved.
+&copy; 2026 Spa Design Hub Studio. All rights reserved.

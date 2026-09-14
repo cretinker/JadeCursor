@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Client Results & Case Studies | Jade Cursor";
+$pageTitle = "Client Results & Case Studies | Spa Design Hub";
 $pageDescription = "Explore our portfolio of high-converting luxury spa and salon websites. See verified client results, mobile UX breakdowns, and booking increases.";
 $currentPage = "results";
 

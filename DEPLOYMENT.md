@@ -1,13 +1,13 @@
-# Jade Cursor — Production Hosting & Deployment Guide
+# Spa Design Hub — Production Hosting & Deployment Guide
 
-This guide details how to host and deploy the Jade Cursor website across various hosting environments with maximum security and sub-second performance.
+This guide details how to host and deploy the Spa Design Hub website across various hosting environments with maximum security and sub-second performance.
 
 ---
 
 ## 📁 Project Architecture Overview
 
 ```
-JadeCursor/
+SpaDesignHub/
 ├── config.php                 # Global configuration (admin email, security secrets, environment)
 ├── .htaccess                  # Apache/LiteSpeed security headers, SSL force, compression & caching
 ├── robots.txt                 # Search engine directives

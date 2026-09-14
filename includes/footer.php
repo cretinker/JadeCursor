@@ -1,6 +1,6 @@
 <?php
 /**
- * Shared Footer Template for Jade Cursor PHP Pages
+ * Shared Footer Template for Spa Design Hub PHP Pages
  */
 ?>
   <!-- ==========================================================================
@@ -28,22 +28,28 @@
         <div class="footer-brand">
           <a href="index.php" class="brand-logo">
             <svg class="brand-logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <polygon points="24,2 43,13 43,35 24,46 5,35 5,13" fill="#080C14" stroke="#00F5A0" stroke-width="1.8" />
-              <polygon points="24,2 24,24 43,13" fill="#10B981" fill-opacity="0.8" />
-              <polygon points="43,13 24,24 43,35" fill="#064E3B" fill-opacity="0.6" />
-              <polygon points="43,35 24,24 24,46" fill="#34D399" fill-opacity="0.4" />
-              <polygon points="24,46 24,24 5,35" fill="#10B981" fill-opacity="0.8" />
-              <polygon points="5,35 24,24 5,13" fill="#064E3B" fill-opacity="0.6" />
-              <polygon points="5,13 24,24 24,2" fill="#34D399" fill-opacity="0.4" />
-              <path d="M21 14L31 24L24 25.5L28 34L24 35.5L20 27L15 31V14H21Z" fill="#00F5A0" />
+              <defs>
+                <linearGradient id="hubGoldFoot" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#D4B996" />
+                  <stop offset="100%" stop-color="#B38E5D" />
+                </linearGradient>
+              </defs>
+              <rect x="2" y="2" width="44" height="44" rx="12" fill="#241C16" stroke="rgba(197,168,128,0.3)" stroke-width="1.2" />
+              <g transform="translate(24, 24)">
+                <polygon points="0,-16 16,0 0,16 -16,0" fill="none" stroke="url(#hubGoldFoot)" stroke-width="1.6" />
+                <path d="M-9,9 C-9,-3 9,-3 9,9" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" />
+                <line x1="0" y1="-10" x2="0" y2="9" stroke="url(#hubGoldFoot)" stroke-width="1.5" stroke-linecap="round" />
+                <circle cx="0" cy="-4" r="2.2" fill="#FFFFFF" />
+                <circle cx="0" cy="-4" r="1.2" fill="url(#hubGoldFoot)" />
+              </g>
             </svg>
             <div class="brand-text-block">
-              <span class="brand-title">Jade Cursor</span>
-              <span class="brand-badge">Spa Web Studio</span>
+              <span class="brand-title" style="color: #FFFFFF;">Spa Design Hub</span>
+              <span class="brand-badge">Boutique Spa Studio</span>
             </div>
           </a>
           <p>
-            The dedicated web design agency crafting custom, high-converting websites for luxury spas, salons, and medi-spas worldwide.
+            The dedicated digital design atelier engineering custom, high-converting websites and booking engines for luxury spas, aesthetic clinics, and medi-spas worldwide.
           </p>
         </div>
 
@@ -67,26 +73,26 @@
             <a href="portfolio.php">Medical Esthetics &amp; MedSpas</a>
             <a href="portfolio.php">Bathhouses &amp; Retreats</a>
             <a href="portfolio.php">Mobile Stylist Collectives</a>
-            <a href="portfolio.php">Upscale Salons</a>
+            <a href="portfolio.php">Upscale Aesthetic Salons</a>
           </div>
         </div>
 
         <div class="footer-col">
           <h4>Contact Us</h4>
           <div class="footer-contact-info">
-            <p><strong>Email:</strong> hello@jadecursor.com</p>
+            <p><strong>Email:</strong> hello@spadesignhub.com</p>
             <p><strong>Hours:</strong> Monday — Friday: 9:00 AM — 6:00 PM EST</p>
-            <p><strong>Global:</strong> Working with luxury spas across the US, UK, Canada &amp; Europe</p>
+            <p><strong>Global:</strong> Partnering with luxury spas across the US, UK, Canada, Switzerland &amp; Europe</p>
           </div>
         </div>
       </div>
 
       <div class="footer-bottom">
         <div>
-          &copy; <?= date('Y') ?> Jade Cursor Agency. All rights reserved. Custom Luxury Web Design.
+          &copy; <?= date('Y') ?> Spa Design Hub Studio. All rights reserved. Custom Luxury Web Design.
         </div>
         <div>
-          <span>More Bookings</span> &bull; <span>Effortless Mobile Experience</span> &bull; <span>Turnkey Delivery</span>
+          <span>Bespoke Web Design</span> &bull; <span>Direct Booking Lift</span> &bull; <span>Turnkey Delivery</span>
         </div>
       </div>
     </div>

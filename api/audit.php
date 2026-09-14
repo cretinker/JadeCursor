@@ -102,47 +102,47 @@ Mailer::saveLead('free_audit_request', $leadData);
 // 7. Compose & Send Internal Admin Notification Email
 $adminSubject = "🔍 Free Video Audit Requested: {$name} ({$website})";
 $adminHtml = '
-<h2 style="color:#00F5A0; margin-top:0; font-size:20px;">New Free Website Audit Request</h2>
-<p style="color:#94A3B8; font-size:14px;">A spa owner has requested a custom 5-minute video audit:</p>
+<h2 style="color:#8E7350; margin-top:0; font-size:20px;">New Free Website Audit Request</h2>
+<p style="color:#5E564F; font-size:14px;">A spa owner has requested a custom 5-minute video audit:</p>
 
 <table style="width:100%; border-collapse:collapse; margin:20px 0; font-size:14px;">
-  <tr style="border-bottom:1px solid #1E293B;">
-    <td style="padding:10px 0; color:#94A3B8; width:140px;"><strong>Client Name:</strong></td>
-    <td style="padding:10px 0; color:#FFFFFF; font-weight:600;">' . htmlspecialchars($name) . '</td>
+  <tr style="border-bottom:1px solid #E5DDD0;">
+    <td style="padding:10px 0; color:#5E564F; width:140px;"><strong>Client Name:</strong></td>
+    <td style="padding:10px 0; color:#191512; font-weight:600;">' . htmlspecialchars($name) . '</td>
   </tr>
-  <tr style="border-bottom:1px solid #1E293B;">
-    <td style="padding:10px 0; color:#94A3B8;"><strong>Work Email:</strong></td>
+  <tr style="border-bottom:1px solid #E5DDD0;">
+    <td style="padding:10px 0; color:#5E564F;"><strong>Work Email:</strong></td>
     <td style="padding:10px 0; color:#38BDF8;"><a href="mailto:' . htmlspecialchars($email) . '" style="color:#38BDF8; text-decoration:none;">' . htmlspecialchars($email) . '</a></td>
   </tr>
-  <tr style="border-bottom:1px solid #1E293B;">
-    <td style="padding:10px 0; color:#94A3B8;"><strong>Website to Audit:</strong></td>
+  <tr style="border-bottom:1px solid #E5DDD0;">
+    <td style="padding:10px 0; color:#5E564F;"><strong>Website to Audit:</strong></td>
     <td style="padding:10px 0; color:#38BDF8;"><a href="' . htmlspecialchars($website) . '" target="_blank" style="color:#38BDF8; font-weight:700;">' . htmlspecialchars($website) . '</a></td>
   </tr>
-  <tr style="border-bottom:1px solid #1E293B;">
-    <td style="padding:10px 0; color:#94A3B8;"><strong>Booking System:</strong></td>
-    <td style="padding:10px 0; color:#00F5A0; font-weight:600;">' . htmlspecialchars($software) . '</td>
+  <tr style="border-bottom:1px solid #E5DDD0;">
+    <td style="padding:10px 0; color:#5E564F;"><strong>Booking System:</strong></td>
+    <td style="padding:10px 0; color:#8E7350; font-weight:600;">' . htmlspecialchars($software) . '</td>
   </tr>
 </table>
 
-<div style="background:#0F172A; border-left:3px solid #00F5A0; padding:15px; border-radius:4px; margin-top:15px;">
-  <strong style="color:#FFFFFF; display:block; margin-bottom:5px;">Biggest Frustration / Notes:</strong>
-  <p style="color:#CBD5E1; margin:0; font-size:14px; white-space:pre-wrap;">' . ($notes ? nl2br(htmlspecialchars($notes)) : 'No specific frustration listed.') . '</p>
+<div style="background:#FAF8F5; border-left:3px solid #8E7350; padding:15px; border-radius:4px; margin-top:15px;">
+  <strong style="color:#191512; display:block; margin-bottom:5px;">Biggest Frustration / Notes:</strong>
+  <p style="color:#332D27; margin:0; font-size:14px; white-space:pre-wrap;">' . ($notes ? nl2br(htmlspecialchars($notes)) : 'No specific frustration listed.') . '</p>
 </div>
 ';
 
 Mailer::send(ADMIN_EMAIL, $adminSubject, Mailer::getEmailTemplate('Free Video Audit Request', $adminHtml), $email);
 
 // 8. Autoresponder to Client
-$clientSubject = "Your Free 5-Minute Video Audit is Being Prepared — Jade Cursor";
+$clientSubject = "Your Free 5-Minute Video Audit is Being Prepared — Spa Design Hub";
 $clientHtml = '
-<h2 style="color:#00F5A0; margin-top:0; font-size:20px;">We are reviewing ' . htmlspecialchars($website) . ', ' . htmlspecialchars($name) . '.</h2>
-<p style="color:#E2E8F0; font-size:15px; line-height:1.6;">
+<h2 style="color:#8E7350; margin-top:0; font-size:20px;">We are reviewing ' . htmlspecialchars($website) . ', ' . htmlspecialchars($name) . '.</h2>
+<p style="color:#191512; font-size:15px; line-height:1.6;">
   Thank you for requesting your custom video audit. Our Principal Design Director, Elijah Vance, will record a candid, 5-minute video walkthrough of your live website.
 </p>
 
-<div style="background:#0F172A; border:1px solid #1E293B; border-radius:8px; padding:20px; margin:20px 0;">
-  <h4 style="color:#FFFFFF; margin-top:0; margin-bottom:10px;">What We Will Cover in Your Video:</h4>
-  <ul style="color:#94A3B8; padding-left:20px; margin:0; font-size:14px; line-height:1.7;">
+<div style="background:#FAF8F5; border:1px solid #E5DDD0; border-radius:8px; padding:20px; margin:20px 0;">
+  <h4 style="color:#191512; margin-top:0; margin-bottom:10px;">What We Will Cover in Your Video:</h4>
+  <ul style="color:#5E564F; padding-left:20px; margin:0; font-size:14px; line-height:1.7;">
     <li><strong>Mobile Speed Test:</strong> Load time bottlenecks on 4G/5G connections</li>
     <li><strong>Booking Friction Points:</strong> Where guests get confused and drop off</li>
     <li><strong>' . htmlspecialchars($software) . ' Connection Check:</strong> How your booking link performs</li>
@@ -150,7 +150,7 @@ $clientHtml = '
   </ul>
 </div>
 
-<p style="color:#64748B; font-size:13px; margin-top:25px;">
+<p style="color:#8F857B; font-size:13px; margin-top:25px;">
   You will receive your private Loom video link by email within 24 business hours. No spam, no sales calls.
 </p>
 ';
