@@ -39,38 +39,37 @@ require_once __DIR__ . '/includes/header.php';
               </a>
             </div>
 
-            <!-- Business Outcomes Row -->
-            <div class="speed-scores-row">
-              <div class="speed-score-item">
-                <div class="score-circle">+142%</div>
-                <div class="speed-score-info">
-                  <span class="speed-score-label">Online Bookings</span>
-                  <span class="speed-score-val">Average Client Increase</span>
-                </div>
+            <!-- Elevated Hero Outcomes Strip -->
+            <div class="hero-outcomes-strip">
+              <div class="outcome-col">
+                <div class="outcome-metric">+185%</div>
+                <div class="outcome-title">Direct Bookings</div>
+                <div class="outcome-sub">Average client surge in 90 days</div>
               </div>
-              <div class="speed-score-item">
-                <div class="score-circle">&lt;60s</div>
-                <div class="speed-score-info">
-                  <span class="speed-score-label">Mobile Checkout</span>
-                  <span class="speed-score-val">Fast &amp; Frictionless</span>
-                </div>
+              <div class="outcome-col">
+                <div class="outcome-metric">&lt;0.8s</div>
+                <div class="outcome-title">Mobile Speed</div>
+                <div class="outcome-sub">Zero drop-off checkout flow</div>
               </div>
-              <div class="speed-score-item">
-                <div class="score-circle">100%</div>
-                <div class="speed-score-info">
-                  <span class="speed-score-label">Custom Design</span>
-                  <span class="speed-score-val">Zero Generic Templates</span>
-                </div>
+              <div class="outcome-col">
+                <div class="outcome-metric">100%</div>
+                <div class="outcome-title">Custom Crafted</div>
+                <div class="outcome-sub">Zero generic templates</div>
               </div>
             </div>
           </div>
 
           <!-- Hardware Device Stage Mockup -->
           <div class="agency-device-stage">
+            <div class="hero-floating-badge">
+              <span class="live-dot"></span>
+              <span>Jane App &amp; Boulevard Deep-Linked &bull; &lt;45s Flow</span>
+            </div>
+
             <div class="macbook-mockup">
               <div class="macbook-notch"></div>
               <div class="macbook-screen">
-                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1000&q=80" alt="Luxury Spa Website Design on MacBook Pro">
+                <img loading="eager" decoding="async" src="images/hero-macbook-showcase.png" alt="Luxury Spa Website Design on MacBook Pro — Created with gpt-image-2">
               </div>
               <div class="macbook-base"></div>
             </div>
@@ -78,7 +77,15 @@ require_once __DIR__ . '/includes/header.php';
             <div class="iphone-mockup">
               <div class="iphone-island"></div>
               <div class="iphone-screen">
-                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1583416750470-965b2707b355?auto=format&fit=crop&w=600&q=80" alt="Mobile Treatment Booking Flow on iPhone 16">
+                <img loading="eager" decoding="async" src="images/hero-iphone-showcase.png" alt="Mobile Treatment Booking Flow on iPhone 16 — Created with gpt-image-2">
+              </div>
+            </div>
+
+            <div class="hero-kpi-badge">
+              <div class="kpi-num">+185%</div>
+              <div class="kpi-text">
+                <strong>Direct Bookings</strong><br>
+                <span style="color: rgba(255,255,255,0.7); font-size: 0.72rem;">Zero commission fees</span>
               </div>
             </div>
           </div>
@@ -130,59 +137,97 @@ require_once __DIR__ . '/includes/header.php';
           </p>
         </div>
 
-        <div class="problem-solution-grid">
-          <!-- The Problem -->
-          <div class="audit-status-card broken-way">
-            <div class="audit-header">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
-              The Common Problem
+        <div class="transformation-comparison-grid">
+          <!-- The Antiquated Booking Funnel -->
+          <div class="transform-card antiquated">
+            <div class="transform-header">
+              <span class="transform-badge">The Antiquated Spa Website</span>
+              <h3 class="transform-title">Where Revenue Leaks Daily</h3>
+              <p class="transform-desc">Generic templates built by non-specialists fail to convey your physical luxury standard and cause high-paying clients to abandon.</p>
             </div>
-            <h3 style="font-size: 1.45rem; color: #F87171;">Losing Bookings Daily</h3>
-            <ul class="audit-point-list">
-              <li>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="18" y1="6" x2="6" y2="18" fill="none" stroke="currentColor"/><line x1="6" y1="6" x2="18" y2="18" fill="none" stroke="currentColor"/></svg>
-                <span><strong>Outdated Design:</strong> A generic template that doesn't reflect the high quality of your physical space or justify your pricing.</span>
-              </li>
-              <li>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="18" y1="6" x2="6" y2="18" fill="none" stroke="currentColor"/><line x1="6" y1="6" x2="18" y2="18" fill="none" stroke="currentColor"/></svg>
-                <span><strong>Frustrating Mobile Experience:</strong> Clunky PDF menus and buried booking links cause over 60% of mobile visitors to leave.</span>
-              </li>
-              <li>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="18" y1="6" x2="6" y2="18" fill="none" stroke="currentColor"/><line x1="6" y1="6" x2="18" y2="18" fill="none" stroke="currentColor"/></svg>
-                <span><strong>Lost Revenue:</strong> Clients unable to buy gift cards or memberships online easily, especially during peak holiday seasons.</span>
-              </li>
-              <li>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="18" y1="6" x2="6" y2="18" fill="none" stroke="currentColor"/><line x1="6" y1="6" x2="18" y2="18" fill="none" stroke="currentColor"/></svg>
-                <span><strong>Front Desk Overwhelmed:</strong> Staff spends all day answering basic pricing and scheduling questions over the phone.</span>
-              </li>
-            </ul>
+
+            <div class="transform-list">
+              <div class="transform-item">
+                <div class="transform-item-icon">
+                  <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </div>
+                <div>
+                  <strong>4.8s Mobile Loading Friction</strong>
+                  <span>Heavy bloated templates cause over 50% of affluent mobile visitors to bounce before ever seeing your treatment rooms.</span>
+                </div>
+              </div>
+
+              <div class="transform-item">
+                <div class="transform-item-icon">
+                  <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </div>
+                <div>
+                  <strong>Buried Menus &amp; Clunky PDFs</strong>
+                  <span>Forcing guests to pinch and zoom on static PDF menus hides treatment durations, pricing, and signature ritual benefits.</span>
+                </div>
+              </div>
+
+              <div class="transform-item">
+                <div class="transform-item-icon">
+                  <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </div>
+                <div>
+                  <strong>Disjointed Scheduling Redirects</strong>
+                  <span>Dumping clients into an unbranded external booking portal creates hesitation and leads to 62% abandoned reservations.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="transform-footer-pill">
+              <span class="transform-stat-label">Estimated Annual Cost:</span>
+              <span class="transform-stat-val">62% Booking Loss &bull; $245,000+</span>
+            </div>
           </div>
 
-          <!-- The Solution -->
-          <div class="audit-status-card jade-way">
-            <div class="audit-header">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01" fill="none" stroke="currentColor"/></svg>
-              The Spa Design Hub Advantage
+          <!-- The Spa Design Hub Standard -->
+          <div class="transform-card flagship">
+            <div class="transform-header">
+              <span class="transform-badge">The Spa Design Hub Standard</span>
+              <h3 class="transform-title">The High-Yield Digital Flagship</h3>
+              <p class="transform-desc">Engineered specifically for luxury day spas, medspas, and aesthetic sanctuaries to maximize direct appointment revenue.</p>
             </div>
-            <h3 style="font-size: 1.45rem; color: var(--color-jade-neon);">A Website That Drives Growth</h3>
-            <ul class="audit-point-list">
-              <li>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12" fill="none" stroke="currentColor"/></svg>
-                <span><strong>World-Class Visual Prestige:</strong> Custom-designed to capture the exact luxury ambiance and caliber of your spa.</span>
-              </li>
-              <li>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12" fill="none" stroke="currentColor"/></svg>
-                <span><strong>One-Tap Seamless Booking:</strong> Clients browse treatments and book directly in seconds from any smartphone.</span>
-              </li>
-              <li>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12" fill="none" stroke="currentColor"/></svg>
-                <span><strong>Packages &amp; Gift Card Portals:</strong> Elegant online portals that maximize average order value and recurring memberships.</span>
-              </li>
-              <li>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12" fill="none" stroke="currentColor"/></svg>
-                <span><strong>100% Done-For-You Delivery:</strong> We handle the design, copywriting, and software setup so you can focus on your guests.</span>
-              </li>
-            </ul>
+
+            <div class="transform-list">
+              <div class="transform-item">
+                <div class="transform-item-icon">
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <strong>Sub-Second Speed (&lt;0.8s)</strong>
+                  <span>Instantaneous mobile load times on cellular connections. Zero lag, zero stutter, and 100/100 Google Core Web Vitals.</span>
+                </div>
+              </div>
+
+              <div class="transform-item">
+                <div class="transform-item-icon">
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <strong>Curated Sensory Treatment Discovery</strong>
+                  <span>Interactive rituals, ingredient showcases, and crystal-clear pricing tailored to appeal to high-ticket wellness clientele.</span>
+                </div>
+              </div>
+
+              <div class="transform-item">
+                <div class="transform-item-icon">
+                  <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <strong>Direct 1-Click Software Deep-Linking</strong>
+                  <span>Seamless 1-tap booking wired directly into your platform (Boulevard, Jane App, Fresha, Mindbody) cutting checkout steps in half.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="transform-footer-pill">
+              <span class="transform-stat-label">Proven Transformation:</span>
+              <span class="transform-stat-val">+185% Direct Inquiries &bull; 0% Drop-Off</span>
+            </div>
           </div>
         </div>
       </div>
@@ -243,93 +288,87 @@ require_once __DIR__ . '/includes/header.php';
           </p>
         </div>
 
-        <div class="services-grid-3col">
-          <!-- Service 1 -->
-          <div class="double-bezel-card">
-            <div class="double-bezel-inner service-card-feature">
-              <div class="service-icon-box">
-                <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        <div class="disciplines-asymmetric-grid">
+          <!-- Primary Featured Discipline -->
+          <div class="discipline-card-primary">
+            <div>
+              <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem;">
+                <div class="service-icon-box" style="margin: 0;">
+                  <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                </div>
+                <span style="font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 800; color: var(--color-gold-dark);">Discipline 01 // Flagship Build</span>
               </div>
-              <div class="service-card-header">
-                <h3>Custom Spa &amp; Salon Web Design</h3>
-                <p style="font-size: 0.95rem; margin-top: 0.5rem;">Bespoke websites designed specifically for luxury day spas, salons, and wellness retreats.</p>
+              <h3 style="font-size: clamp(1.6rem, 2.5vw, 2.15rem); margin-bottom: 0.75rem;">Bespoke Brand &amp; Web Architecture</h3>
+              <p style="color: var(--color-text-muted); font-size: 1.05rem; line-height: 1.7; max-width: 650px;">
+                We design every pixel from scratch to reflect the exact tactile tranquility, bespoke interior decor, and prestige of your physical treatment sanctuary.
+              </p>
+
+              <!-- Interactive Ritual Menu Mockup -->
+              <div class="discipline-preview-mockup">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--color-border);">
+                  <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-gold-dark); font-weight: 700;">Signature Treatment Menu Preview</span>
+                  <span style="font-size: 0.75rem; color: #3D7A5A; font-weight: 700;">&bull; 1-Tap Booking Active</span>
+                </div>
+                <div class="preview-ritual-row">
+                  <div>
+                    <div class="preview-ritual-name">Aromatherapy Thermal Stone Ritual</div>
+                    <div class="preview-ritual-meta">90 min &bull; Botanical Oils &bull; Hydrothermal Pool Access</div>
+                  </div>
+                  <div class="preview-ritual-price">$380</div>
+                </div>
+                <div class="preview-ritual-row">
+                  <div>
+                    <div class="preview-ritual-name">Hydra-Infusion Collagen Facial</div>
+                    <div class="preview-ritual-meta">60 min &bull; LED Light Therapy &bull; Peptide Mask</div>
+                  </div>
+                  <div class="preview-ritual-price">$295</div>
+                </div>
               </div>
-              <ul class="service-feature-list">
-                <li>
-                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
-                  Custom design tailored to your space &amp; branding
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
-                  Clear interactive treatment menus &amp; pricing
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
-                  Fast mobile experience that clients love using
-                </li>
-              </ul>
-              <div style="margin-top: auto; padding-top: 1.25rem;">
-                <a href="services.php" class="btn btn-secondary" style="width: 100%;">Learn More</a>
-              </div>
+            </div>
+
+            <div style="margin-top: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; border-top: 1px solid var(--color-border); padding-top: 1.5rem;">
+              <span style="font-size: 0.85rem; color: var(--color-text-muted);">Includes Done-For-You Copywriting &amp; Mobile Responsive Design</span>
+              <a href="services.php" class="btn btn-secondary">Explore Custom Builds</a>
             </div>
           </div>
 
-          <!-- Service 2 -->
-          <div class="double-bezel-card">
-            <div class="double-bezel-inner service-card-feature">
-              <div class="service-icon-box">
-                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <!-- Secondary Column Split -->
+          <div class="disciplines-column-split">
+            <!-- Discipline 2 -->
+            <div class="discipline-card-secondary">
+              <div>
+                <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1rem;">
+                  <div class="service-icon-box" style="margin: 0; width: 44px; height: 44px;">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  </div>
+                  <span style="font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 800; color: var(--color-gold-dark);">Discipline 02</span>
+                </div>
+                <h3 style="font-size: 1.45rem; margin-bottom: 0.5rem;">Booking Integration &amp; Google SEO</h3>
+                <p style="font-size: 0.92rem; color: var(--color-text-muted); line-height: 1.6;">
+                  Seamless direct deep-links into Boulevard, Jane App, Fresha, or Mindbody that cut reservation steps in half, paired with #1 Google Maps optimization.
+                </p>
               </div>
-              <div class="service-card-header">
-                <h3>Booking Software Integration &amp; SEO</h3>
-                <p style="font-size: 0.95rem; margin-top: 0.5rem;">Connect your website directly to your booking software and dominate local Google search.</p>
-              </div>
-              <ul class="service-feature-list">
-                <li>
-                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
-                  One-tap booking links directly to each treatment
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
-                  Google Local SEO setup to attract nearby guests
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
-                  Works with Boulevard, Mindbody, Fresha, Jane, Vagaro
-                </li>
-              </ul>
-              <div style="margin-top: auto; padding-top: 1.25rem;">
-                <a href="services.php" class="btn btn-secondary" style="width: 100%;">Learn More</a>
+              <div style="margin-top: 1.25rem; border-top: 1px solid var(--color-border); padding-top: 1rem;">
+                <span style="font-size: 0.82rem; font-weight: 700; color: var(--color-gold-dark);">Eliminates 3 Checkout Drop-Off Steps</span>
               </div>
             </div>
-          </div>
 
-          <!-- Service 3 -->
-          <div class="double-bezel-card">
-            <div class="double-bezel-inner service-card-feature">
-              <div class="service-icon-box">
-                <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            <!-- Discipline 3 -->
+            <div class="discipline-card-secondary">
+              <div>
+                <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1rem;">
+                  <div class="service-icon-box" style="margin: 0; width: 44px; height: 44px;">
+                    <svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  </div>
+                  <span style="font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 800; color: var(--color-gold-dark);">Discipline 03</span>
+                </div>
+                <h3 style="font-size: 1.45rem; margin-bottom: 0.5rem;">Atelier Care &amp; Seasonal Growth</h3>
+                <p style="font-size: 0.92rem; color: var(--color-text-muted); line-height: 1.6;">
+                  Continuous monthly campaign launches (Mother's Day, Valentine's, Black Friday), gift card promotions, and 48-hour request turnaround.
+                </p>
               </div>
-              <div class="service-card-header">
-                <h3>Medi-Spa &amp; Consultation Funnels</h3>
-                <p style="font-size: 0.95rem; margin-top: 0.5rem;">For medical esthetics clinics, laser centers, and plastic surgeons selling $1,500+ packages.</p>
-              </div>
-              <ul class="service-feature-list">
-                <li>
-                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
-                  Interactive patient skin concern guides
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
-                  High-converting consultation request forms
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
-                  VIP membership and package showcases
-                </li>
-              </ul>
-              <div style="margin-top: auto; padding-top: 1.25rem;">
-                <a href="services.php" class="btn btn-secondary" style="width: 100%;">Learn More</a>
+              <div style="margin-top: 1.25rem; border-top: 1px solid var(--color-border); padding-top: 1rem;">
+                <span style="font-size: 0.82rem; font-weight: 700; color: var(--color-gold-dark);">Plans from $195/mo &bull; Pause Anytime</span>
               </div>
             </div>
           </div>
@@ -388,7 +427,7 @@ require_once __DIR__ . '/includes/header.php';
                   <span class="bento-browser-url">https://peeskinmedspa.jadecursor.com</span>
                 </div>
                 <div class="bento-browser-img-wrap">
-                  <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1200&q=80" alt="Pee Skin &amp; Med Spa Luxury Medical Aesthetics Website">
+                  <img loading="lazy" decoding="async" src="images/case-study-peeskin.png" alt="Pee Skin &amp; Med Spa Luxury Medical Aesthetics Website — Created with gpt-image-2">
                   <div class="bento-floating-badge">
                     <span class="live-dot"></span>
                     <span>Jane App Deep-Link &bull; &lt;45s Consultation Flow</span>
@@ -413,7 +452,7 @@ require_once __DIR__ . '/includes/header.php';
                   </div>
                 </div>
 
-                <div class="bento-sub-box" style="text-align: center; background: rgba(0, 245, 160, 0.04); border-color: rgba(0, 245, 160, 0.2);">
+                <div class="bento-sub-box" style="text-align: center; background: rgba(197, 168, 128, 0.08); border-color: rgba(197, 168, 128, 0.3);">
                   <div style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 800; color: var(--color-jade-neon);">$1,250</div>
                   <div style="font-size: 0.82rem; color: var(--color-text-main); font-weight: 600;">Average First-Visit Patient Value</div>
                 </div>
@@ -471,7 +510,7 @@ require_once __DIR__ . '/includes/header.php';
                   <span class="bento-browser-url">https://jveewellness.jadecursor.com</span>
                 </div>
                 <div class="bento-browser-img-wrap">
-                  <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80" alt="JVEE Wellness &amp; Spa Website Showcase">
+                  <img loading="lazy" decoding="async" src="images/case-study-jvee.png" alt="JVEE Wellness &amp; Spa Luxury Hydrothermal Website Showcase — Created with gpt-image-2">
                   <div class="bento-floating-badge">
                     <span class="live-dot"></span>
                     <span>Boulevard Software Integration &bull; 1-Tap Booking</span>
@@ -496,7 +535,7 @@ require_once __DIR__ . '/includes/header.php';
                   </div>
                 </div>
 
-                <div class="bento-sub-box" style="text-align: center; background: rgba(0, 245, 160, 0.04); border-color: rgba(0, 245, 160, 0.2);">
+                <div class="bento-sub-box" style="text-align: center; background: rgba(197, 168, 128, 0.08); border-color: rgba(197, 168, 128, 0.3);">
                   <div style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 800; color: var(--color-jade-neon);">-58%</div>
                   <div style="font-size: 0.82rem; color: var(--color-text-main); font-weight: 600;">Mobile Drop-Off Reduction</div>
                 </div>
