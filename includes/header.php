@@ -77,10 +77,7 @@ $csrfToken = CSRF::generateToken();
               <circle cx="0" cy="1" r="0.9" fill="url(#hubHeaderGoldCore)" />
             </g>
           </svg>
-          <div class="brand-text-block">
-            <span class="brand-title">Spa Design Hub</span>
-            <span class="brand-badge">spadesignhub.xyz</span>
-          </div>
+          <span class="brand-title">Spa Design Hub</span>
         </a>
 
         <!-- Desktop Navigation Links (About after Home) -->
