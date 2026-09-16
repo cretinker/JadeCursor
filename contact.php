@@ -53,7 +53,7 @@ require_once __DIR__ . '/includes/header.php';
               </div>
               <div>
                 <strong style="display: block; font-size: 1.05rem; color: var(--color-espresso);">Email Us Directly</strong>
-                <a href="mailto:hello@spadesignhub.com" style="color: var(--color-jade-neon); font-weight: 600;">hello@spadesignhub.com</a>
+                <a href="mailto:hello@spadesignhub.xyz" style="color: var(--color-gold-dark); font-weight: 700;">hello@spadesignhub.xyz</a>
                 <p style="font-size: 0.85rem; margin-top: 0.25rem;">We respond within 24 business hours.</p>
               </div>
             </div>

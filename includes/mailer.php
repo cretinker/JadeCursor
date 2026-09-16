@@ -96,7 +96,7 @@ class Mailer {
           <tr>
             <td style="padding:22px 30px; background-color:#FAF8F5; border-top:1px solid #E5DDD0; text-align:center; font-size:12px; color:#5E564F;">
               &copy; ' . date('Y') . ' Spa Design Hub Studio. All rights reserved.<br>
-              <span style="color:#8E7350; font-weight:600;">hello@spadesignhub.com</span> &bull; Worldwide Digital Flagships
+              <span style="color:#8E7350; font-weight:600;">hello@spadesignhub.xyz</span> &bull; Worldwide Digital Flagships
             </td>
           </tr>
         </table>

@@ -14,12 +14,12 @@ define('APP_ENV', 'production');
 define('SITE_NAME', 'Spa Design Hub');
 define('SITE_TAGLINE', 'Luxury Spa Web Design Studio');
 define('SITE_URL', (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . ($_SERVER['HTTP_HOST'] ?? 'localhost'));
-define('SITE_DOMAIN', $_SERVER['HTTP_HOST'] ?? 'spadesignhub.com');
+define('SITE_DOMAIN', $_SERVER['HTTP_HOST'] ?? 'spadesignhub.xyz');
 
 // Contact & Notification Emails
-define('ADMIN_EMAIL', 'hello@spadesignhub.com');
+define('ADMIN_EMAIL', 'hello@spadesignhub.xyz');
 define('MAIL_FROM_NAME', 'Spa Design Hub Agency');
-define('MAIL_FROM_EMAIL', 'noreply@' . (strpos(SITE_DOMAIN, 'localhost') === false ? SITE_DOMAIN : 'spadesignhub.com'));
+define('MAIL_FROM_EMAIL', 'noreply@' . (strpos(SITE_DOMAIN, 'localhost') === false ? SITE_DOMAIN : 'spadesignhub.xyz'));
 
 // Security & Anti-Spam Parameters
 define('CSRF_SECRET', 'spadesignhub_salt_73e2a910bf4c8d55');

@@ -67,7 +67,7 @@ require_once __DIR__ . '/includes/header.php';
                 </p>
               </div>
               <div class="bento-header-actions">
-                <a href="https://peeskinmedspa.jadecursor.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <a href="https://peeskinmedspa.spadesignhub.xyz" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                   View Live Website
                   <span class="btn-icon-wrapper">
                     <svg viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></svg>
@@ -84,7 +84,7 @@ require_once __DIR__ . '/includes/header.php';
                   <span class="browser-dot dot-red"></span>
                   <span class="browser-dot dot-yellow"></span>
                   <span class="browser-dot dot-green"></span>
-                  <span class="bento-browser-url">https://peeskinmedspa.jadecursor.com</span>
+                  <span class="bento-browser-url">https://peeskinmedspa.spadesignhub.xyz</span>
                 </div>
                 <div class="bento-browser-img-wrap">
                   <img loading="lazy" decoding="async" src="images/case-study-peeskin.png" alt="Pee Skin &amp; Med Spa Luxury Medical Aesthetics Website — Created with gpt-image-2">
@@ -170,7 +170,7 @@ require_once __DIR__ . '/includes/header.php';
                 </p>
               </div>
               <div class="bento-header-actions">
-                <a href="https://jveewellness.jadecursor.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <a href="https://jveewellness.spadesignhub.xyz" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                   View Live Website
                   <span class="btn-icon-wrapper">
                     <svg viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></svg>
@@ -187,7 +187,7 @@ require_once __DIR__ . '/includes/header.php';
                   <span class="browser-dot dot-red"></span>
                   <span class="browser-dot dot-yellow"></span>
                   <span class="browser-dot dot-green"></span>
-                  <span class="bento-browser-url">https://jveewellness.jadecursor.com</span>
+                  <span class="bento-browser-url">https://jveewellness.spadesignhub.xyz</span>
                 </div>
                 <div class="bento-browser-img-wrap">
                   <img loading="lazy" decoding="async" src="images/case-study-jvee.png" alt="JVEE Wellness &amp; Spa Luxury Hydrothermal Website Showcase — Created with gpt-image-2">
@@ -270,7 +270,7 @@ require_once __DIR__ . '/includes/header.php';
                 </p>
               </div>
               <div class="bento-header-actions">
-                <a href="https://arunaspa.jadecursor.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <a href="https://arunaspa.spadesignhub.xyz" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                   View Live Website
                   <span class="btn-icon-wrapper">
                     <svg viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></svg>
@@ -287,7 +287,7 @@ require_once __DIR__ . '/includes/header.php';
                   <span class="browser-dot dot-red"></span>
                   <span class="browser-dot dot-yellow"></span>
                   <span class="browser-dot dot-green"></span>
-                  <span class="bento-browser-url">https://arunaspa.jadecursor.com</span>
+                  <span class="bento-browser-url">https://arunaspa.spadesignhub.xyz</span>
                 </div>
                 <div class="bento-browser-img-wrap">
                   <img loading="lazy" decoding="async" src="images/case-study-aruna.png" alt="Aruna Spa &amp; Thermal Haven Website Showcase — Created with gpt-image-2">
@@ -370,7 +370,7 @@ require_once __DIR__ . '/includes/header.php';
                 </p>
               </div>
               <div class="bento-header-actions">
-                <a href="https://beauticiansonthego.jadecursor.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <a href="https://beauticiansonthego.spadesignhub.xyz" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                   View Live Website
                   <span class="btn-icon-wrapper">
                     <svg viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></svg>
@@ -387,7 +387,7 @@ require_once __DIR__ . '/includes/header.php';
                   <span class="browser-dot dot-red"></span>
                   <span class="browser-dot dot-yellow"></span>
                   <span class="browser-dot dot-green"></span>
-                  <span class="bento-browser-url">https://beauticiansonthego.jadecursor.com</span>
+                  <span class="bento-browser-url">https://beauticiansonthego.spadesignhub.xyz</span>
                 </div>
                 <div class="bento-browser-img-wrap">
                   <img loading="lazy" decoding="async" src="images/case-study-beauticians.png" alt="Beauticians On The Go Luxury Mobile Concierge Website — Created with gpt-image-2">
@@ -470,7 +470,7 @@ require_once __DIR__ . '/includes/header.php';
                 </p>
               </div>
               <div class="bento-header-actions">
-                <a href="https://edenspa.jadecursor.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <a href="https://edenspa.spadesignhub.xyz" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                   View Live Website
                   <span class="btn-icon-wrapper">
                     <svg viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></svg>
@@ -487,7 +487,7 @@ require_once __DIR__ . '/includes/header.php';
                   <span class="browser-dot dot-red"></span>
                   <span class="browser-dot dot-yellow"></span>
                   <span class="browser-dot dot-green"></span>
-                  <span class="bento-browser-url">https://edenspa.jadecursor.com</span>
+                  <span class="bento-browser-url">https://edenspa.spadesignhub.xyz</span>
                 </div>
                 <div class="bento-browser-img-wrap">
                   <img loading="lazy" decoding="async" src="images/case-study-eden.png" alt="Eden Spa &amp; Salon Botanical Website — Created with gpt-image-2">

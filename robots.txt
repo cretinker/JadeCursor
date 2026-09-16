@@ -8,4 +8,4 @@ Disallow: /includes/
 Disallow: /scratch/
 Disallow: /api/
 
-Sitemap: https://spadesignhub.com/sitemap.xml
+Sitemap: https://spadesignhub.xyz/sitemap.xml

@@ -1,5 +1,5 @@
 /**
- * Jade Cursor - Interactive Booking Engine
+ * Spa Design Hub - Interactive Booking Engine
  * Handles date picker, timeslot selector, timezone detector, and multi-step intake validation
  */
 

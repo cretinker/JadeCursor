@@ -1,6 +1,6 @@
 /**
- * Jade Cursor - Core Frontend JavaScript Suite
- * Handles AJAX forms, toast alerts, mobile navigation, and interactive ROI calculator
+ * Spa Design Hub - Core Frontend JavaScript Suite
+ * High-performance interactions, smooth scrolling, drawer navigation, and interactive ROI calculator
  */
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -27,6 +27,7 @@
   /* Primary Brand Tokens */
   --color-gold: #C5A880;
   --color-gold-dark: #8E7350;
+  --color-gold-text: #8E7350; /* High-contrast bronze gold for readable text on light surfaces */
   --color-gold-tint: rgba(197, 168, 128, 0.12);
   --color-espresso: #191512;
 
@@ -104,6 +105,7 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  overflow-x: clip;
 }
 
 body {
@@ -112,7 +114,7 @@ body {
   color: var(--color-text-main);
   line-height: 1.65;
   font-weight: 400;
-  overflow-x: hidden;
+  overflow-x: clip;
   position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -171,7 +173,7 @@ p {
 
 p.lead {
   font-size: clamp(1.15rem, 2vw, 1.35rem);
-  color: #E2E8F0;
+  color: var(--color-text-muted);
   line-height: 1.6;
   font-weight: 400;
 }
@@ -246,21 +248,25 @@ svg {
   font-family: var(--font-display);
   font-size: 1.25rem;
   font-weight: 800;
-  color: #FFFFFF;
+  color: var(--color-espresso);
   letter-spacing: -0.02em;
 }
 
+.site-footer .brand-logo {
+  color: #FAF8F5;
+}
+
 .brand-logo-svg {
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   flex-shrink: 0;
-  filter: drop-shadow(0 0 12px rgba(197, 168, 128, 0.35));
+  filter: drop-shadow(0 2px 8px rgba(142, 115, 80, 0.2));
   transition: var(--transition-smooth);
 }
 
 .brand-logo:hover .brand-logo-svg {
-  transform: rotate(10deg) scale(1.08);
-  filter: drop-shadow(0 0 16px rgba(197, 168, 128, 0.6));
+  transform: rotate(6deg) scale(1.06);
+  filter: drop-shadow(0 4px 14px rgba(142, 115, 80, 0.35));
 }
 
 .brand-text-block {
@@ -273,21 +279,35 @@ svg {
   align-items: center;
   gap: 0.4rem;
   line-height: 1.1;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--color-espresso);
+  letter-spacing: -0.01em;
+}
+
+.site-footer .brand-title {
+  color: #FAF8F5;
 }
 
 .brand-badge {
   display: inline-block;
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.62rem;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--color-jade-neon);
-  background: rgba(197, 168, 128, 0.08);
-  border: 1px solid rgba(197, 168, 128, 0.2);
-  padding: 0.15rem 0.45rem;
+  letter-spacing: 0.14em;
+  color: var(--color-gold-dark);
+  background: rgba(142, 115, 80, 0.08);
+  border: 1px solid rgba(142, 115, 80, 0.25);
+  padding: 0.15rem 0.5rem;
   border-radius: var(--radius-full);
   font-weight: 700;
+  margin-top: 2px;
+}
+
+.site-footer .brand-badge {
+  color: #D4B996;
+  background: rgba(212, 185, 150, 0.12);
+  border-color: rgba(212, 185, 150, 0.3);
 }
 
 /* Desktop Navigation Links */
@@ -307,15 +327,15 @@ svg {
 }
 
 .desktop-nav .nav-link:hover {
-  color: #FFFFFF;
-  background: rgba(255, 255, 255, 0.08);
+  color: var(--color-espresso);
+  background: rgba(142, 115, 80, 0.1);
 }
 
 .desktop-nav .nav-link.active {
-  color: var(--color-jade-neon);
-  background: rgba(197, 168, 128, 0.1);
+  color: var(--color-espresso);
+  background: rgba(142, 115, 80, 0.12);
   font-weight: 700;
-  box-shadow: inset 0 0 0 1px rgba(197, 168, 128, 0.25);
+  box-shadow: inset 0 0 0 1px rgba(142, 115, 80, 0.3);
 }
 
 .nav-actions {
@@ -535,7 +555,7 @@ svg {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: var(--color-jade-neon);
+  color: var(--color-gold-text);
   margin-bottom: 1.25rem;
 }
 
@@ -543,12 +563,17 @@ svg {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #191512;
-  box-shadow: 0 0 8px var(--color-jade-neon);
+  background-color: var(--color-gold-text);
+  box-shadow: 0 0 8px rgba(142, 115, 80, 0.4);
 }
 
 .text-jade-accent {
-  color: var(--color-jade-neon);
+  color: var(--color-gold-text);
+}
+
+.cta-banner-luxury .text-jade-accent,
+.site-footer .text-jade-accent {
+  color: var(--color-gold);
 }
 
 /* ==========================================================================
@@ -1253,8 +1278,8 @@ svg {
 }
 
 .fit-card.not-fit {
-  border-color: rgba(248, 113, 113, 0.25);
-  background: rgba(14, 18, 28, 0.6);
+  border-color: rgba(200, 90, 90, 0.25);
+  background: #FCFAF7;
 }
 
 .fit-card-header {
@@ -1278,17 +1303,17 @@ svg {
 }
 
 .is-fit .fit-status-badge {
-  color: var(--color-jade-neon);
-  background: rgba(197, 168, 128, 0.1);
-  border: 1px solid rgba(197, 168, 128, 0.3);
+  color: var(--color-gold-text);
+  background: rgba(142, 115, 80, 0.1);
+  border: 1px solid rgba(142, 115, 80, 0.3);
 }
 
 .is-fit .fit-status-badge .badge-pulse-dot {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: var(--color-jade-neon);
-  box-shadow: 0 0 10px var(--color-jade-neon);
+  background: var(--color-gold-text);
+  box-shadow: 0 0 10px rgba(142, 115, 80, 0.5);
 }
 
 .not-fit .fit-status-badge {
@@ -1299,7 +1324,7 @@ svg {
 
 .fit-card-title {
   font-size: clamp(1.5rem, 2.5vw, 1.85rem);
-  color: #FFFFFF;
+  color: var(--color-espresso);
   margin-bottom: 0.5rem;
 }
 
@@ -1330,8 +1355,9 @@ svg {
 }
 
 .is-fit .fit-tile-item:hover {
-  border-color: rgba(197, 168, 128, 0.3);
-  background: rgba(22, 31, 48, 0.9);
+  border-color: rgba(142, 115, 80, 0.4);
+  background: var(--color-surface);
+  box-shadow: 0 4px 16px rgba(35, 28, 22, 0.05);
 }
 
 .fit-tile-icon-box {
@@ -1345,15 +1371,15 @@ svg {
 }
 
 .is-fit .fit-tile-icon-box {
-  background: rgba(197, 168, 128, 0.12);
-  color: var(--color-jade-neon);
-  border: 1px solid rgba(197, 168, 128, 0.25);
+  background: rgba(142, 115, 80, 0.12);
+  color: var(--color-gold-text);
+  border: 1px solid rgba(142, 115, 80, 0.25);
 }
 
 .is-fit .fit-tile-icon-box svg {
   width: 18px;
   height: 18px;
-  stroke: var(--color-jade-neon);
+  stroke: var(--color-gold-text);
   fill: none;
   stroke-width: 2.2;
 }
@@ -1381,7 +1407,7 @@ svg {
 .fit-tile-heading {
   font-size: 1rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: var(--color-espresso);
 }
 
 .fit-tile-desc {
@@ -1399,16 +1425,17 @@ svg {
 }
 
 .is-fit .fit-card-footer {
-  background: rgba(197, 168, 128, 0.08);
-  border: 1px solid rgba(197, 168, 128, 0.25);
-  color: var(--color-jade-neon);
-  font-weight: 600;
+  background: rgba(142, 115, 80, 0.1);
+  border: 1px solid rgba(142, 115, 80, 0.25);
+  color: var(--color-espresso);
+  font-weight: 700;
 }
 
 .not-fit .fit-card-footer {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--color-border);
-  color: var(--color-text-muted);
+  background: rgba(200, 90, 90, 0.05);
+  border: 1px solid rgba(200, 90, 90, 0.2);
+  color: var(--color-text-main);
+  font-weight: 600;
 }
 
 /* Calculator Card */
@@ -1476,14 +1503,32 @@ svg {
   background: var(--color-surface-raised);
   font-family: var(--font-display);
   font-size: 1.15rem;
-  color: #FFFFFF;
+  font-weight: 700;
+  color: var(--color-espresso);
+  border-bottom: 2px solid var(--color-border);
 }
 
-.comparison-matrix-table th.highlight-col,
+.comparison-matrix-table td {
+  color: var(--color-text-muted);
+}
+
+.comparison-matrix-table th.highlight-col {
+  background: rgba(142, 115, 80, 0.08);
+  font-weight: 800;
+  color: var(--color-espresso);
+  border-bottom: 2px solid rgba(142, 115, 80, 0.35);
+}
+
 .comparison-matrix-table td.highlight-col {
-  background: rgba(197, 168, 128, 0.04);
-  font-weight: 600;
-  color: var(--color-jade-neon);
+  background: rgba(142, 115, 80, 0.05);
+  font-weight: 700;
+  color: var(--color-espresso);
+}
+
+.comparison-matrix-table td.highlight-col strong,
+.comparison-matrix-table td.highlight-col .feature-highlight-text {
+  color: var(--color-gold-dark);
+  font-weight: 800;
 }
 
 /* Services Grid */
@@ -1655,9 +1700,9 @@ svg {
 }
 
 .filter-label:hover {
-  background-color: var(--color-surface-raised);
-  color: #FFFFFF;
-  border-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--color-surface-hover);
+  color: var(--color-espresso);
+  border-color: rgba(142, 115, 80, 0.35);
 }
 
 #filter-all:checked ~ .filter-tabs-wrapper label[for="filter-all"],
@@ -1741,12 +1786,12 @@ svg {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-weight: 700;
-  color: var(--color-jade-neon);
+  color: var(--color-gold-dark);
 }
 
 .bento-case-title {
   font-size: clamp(2rem, 3.5vw, 2.75rem);
-  color: #FFFFFF;
+  color: var(--color-espresso);
   margin: 0;
 }
 
@@ -1969,7 +2014,7 @@ svg {
 }
 
 .bento-narrative-card.step-problem::before { background: #F87171; }
-.bento-narrative-card.step-solution::before { background: var(--color-jade-neon); }
+.bento-narrative-card.step-solution::before { background: var(--color-gold-dark); }
 .bento-narrative-card.step-impact::before { background: #38BDF8; }
 
 .narrative-card-step {
@@ -1981,12 +2026,13 @@ svg {
 }
 
 .step-problem .narrative-card-step { color: #F87171; }
-.step-solution .narrative-card-step { color: var(--color-jade-neon); }
+.step-solution .narrative-card-step { color: var(--color-gold-dark); }
 .step-impact .narrative-card-step { color: #38BDF8; }
 
 .bento-narrative-card h4 {
   font-size: 1.15rem;
-  color: #FFFFFF;
+  color: var(--color-espresso);
+  font-weight: 700;
   margin: 0;
 }
 
@@ -2028,7 +2074,7 @@ svg {
 }
 
 .pricing-toggle-label:hover {
-  color: #FFFFFF;
+  color: var(--color-espresso);
 }
 
 .pricing-badge-save {
@@ -2038,9 +2084,9 @@ svg {
   letter-spacing: 0.08em;
   padding: 0.15rem 0.5rem;
   border-radius: var(--radius-full);
-  background: rgba(197, 168, 128, 0.15);
-  color: var(--color-jade-neon);
-  border: 1px solid rgba(197, 168, 128, 0.3);
+  background: rgba(142, 115, 80, 0.12);
+  color: var(--color-gold-dark);
+  border: 1px solid rgba(142, 115, 80, 0.28);
   font-weight: 800;
 }
 
@@ -2087,15 +2133,16 @@ svg {
   top: -14px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--color-jade-neon);
-  color: #FFFFFF;
+  background: var(--color-espresso);
+  color: #FAF8F5;
+  border: 1px solid var(--color-gold);
   font-size: 0.72rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   padding: 0.35rem 1.25rem;
   border-radius: var(--radius-full);
-  box-shadow: 0 0 20px var(--color-jade-glow);
+  box-shadow: 0 4px 16px rgba(25, 21, 18, 0.2), 0 0 16px rgba(197, 168, 128, 0.25);
   white-space: nowrap;
 }
 
@@ -2109,6 +2156,7 @@ svg {
 .pricing-tier-name {
   font-family: var(--font-display);
   font-size: 1.65rem;
+  color: var(--color-espresso);
   margin-bottom: 0.35rem;
 }
 
@@ -2140,26 +2188,25 @@ svg {
   text-transform: uppercase;
   padding: 0.15rem 0.55rem;
   border-radius: var(--radius-full);
-  background: rgba(197, 168, 128, 0.12);
-  color: var(--color-jade-neon);
-  border: 1px solid rgba(197, 168, 128, 0.3);
+  background: rgba(142, 115, 80, 0.1);
+  color: var(--color-gold-dark);
+  border: 1px solid rgba(142, 115, 80, 0.25);
 }
 
 .discount-pill.tier-50 {
-  background: rgba(197, 168, 128, 0.2);
-  color: #FFFFFF;
-  border-color: var(--color-jade-neon);
-  box-shadow: 0 0 12px var(--color-jade-glow);
+  background: rgba(142, 115, 80, 0.16);
+  color: var(--color-espresso);
+  border-color: var(--color-gold-dark);
+  box-shadow: 0 0 10px rgba(142, 115, 80, 0.2);
 }
 
 .pricing-price {
   font-family: var(--font-display);
   font-size: 3rem;
   font-weight: 800;
-  color: var(--color-jade-neon);
+  color: var(--color-espresso);
   line-height: 1;
   margin: 0.25rem 0 0.5rem;
-  text-shadow: 0 0 20px var(--color-jade-glow);
 }
 
 .pricing-period {
@@ -2189,7 +2236,7 @@ svg {
 .pricing-deliverables li svg {
   width: 18px;
   height: 18px;
-  stroke: var(--color-jade-neon);
+  stroke: var(--color-gold-dark);
   stroke-width: 2.2;
   fill: none;
   flex-shrink: 0;
@@ -2204,7 +2251,7 @@ svg {
 
 .feature-title {
   font-weight: 700;
-  color: #FFFFFF;
+  color: var(--color-espresso);
   font-size: 0.92rem;
   line-height: 1.35;
 }
@@ -2442,7 +2489,7 @@ svg {
 .booking-step-title {
   font-family: var(--font-display);
   font-size: 1.25rem;
-  color: #FFFFFF;
+  color: var(--color-espresso);
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -2453,9 +2500,9 @@ svg {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 800;
-  color: var(--color-jade-neon);
-  background: rgba(197, 168, 128, 0.1);
-  border: 1px solid rgba(197, 168, 128, 0.3);
+  color: var(--color-gold-dark);
+  background: rgba(142, 115, 80, 0.1);
+  border: 1px solid rgba(142, 115, 80, 0.3);
   padding: 0.2rem 0.55rem;
   border-radius: var(--radius-full);
 }
@@ -2480,7 +2527,7 @@ svg {
   font-family: var(--font-display);
   font-size: 1.1rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: var(--color-espresso);
 }
 
 .calendar-timezone-tag {
@@ -2523,13 +2570,13 @@ svg {
   font-family: var(--font-display);
   font-size: 1.45rem;
   font-weight: 800;
-  color: #FFFFFF;
+  color: var(--color-espresso);
   line-height: 1.2;
 }
 
 .date-btn-label:hover {
-  border-color: rgba(197, 168, 128, 0.35);
-  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(142, 115, 80, 0.4);
+  background: var(--color-surface-hover);
 }
 
 .date-radio:checked + .date-btn-label {
@@ -2571,8 +2618,8 @@ svg {
 }
 
 .time-btn-label:hover {
-  border-color: rgba(197, 168, 128, 0.35);
-  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(142, 115, 80, 0.4);
+  background: var(--color-surface-hover);
 }
 
 .time-radio:checked + .time-btn-label {
@@ -2718,7 +2765,7 @@ svg {
 }
 
 .cta-banner-luxury p {
-  color: var(--color-text-muted);
+  color: #D6CEC5;
   font-size: clamp(1.05rem, 1.8vw, 1.25rem);
   margin-bottom: 2.25rem;
 }
@@ -2726,7 +2773,7 @@ svg {
 /* Footer */
 .site-footer {
   background-color: #191512;
-  color: #A89F95;
+  color: #B8AEA2;
   padding-top: clamp(4.5rem, 7vw, 6.5rem);
   padding-bottom: 2.5rem;
   border-top: 1px solid rgba(197, 168, 128, 0.2);
@@ -2740,7 +2787,7 @@ svg {
 }
 
 .footer-brand p {
-  color: var(--color-text-muted);
+  color: #B8AEA2;
   font-size: 0.95rem;
   margin: 1.25rem 0;
   max-width: 320px;
@@ -2760,13 +2807,13 @@ svg {
 }
 
 .footer-links a {
-  color: var(--color-text-muted);
+  color: #C5BDB5;
   font-size: 0.95rem;
   transition: var(--transition-fast);
 }
 
 .footer-links a:hover {
-  color: var(--color-jade-neon);
+  color: #E2C499;
   transform: translateX(4px);
 }
 
@@ -2774,13 +2821,22 @@ svg {
   display: flex;
   flex-direction: column;
   gap: 0.85rem;
-  color: var(--color-text-muted);
+  color: #C5BDB5;
   font-size: 0.95rem;
+}
+
+.footer-contact-info a {
+  color: #C5BDB5;
+  transition: var(--transition-fast);
+}
+
+.footer-contact-info a:hover {
+  color: #E2C499;
 }
 
 .footer-bottom {
   padding-top: 2rem;
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   justify-content: space-between;
   align-items: center;

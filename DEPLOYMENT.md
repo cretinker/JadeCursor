@@ -75,19 +75,19 @@ If you are running an **Nginx** server instead of Apache, add the following serv
 ```nginx
 server {
     listen 80;
-    server_name jadecursor.com www.jadecursor.com;
+    server_name spadesignhub.xyz www.spadesignhub.xyz;
     return 301 https://$host$request_uri;
 }
 
 server {
     listen 443 ssl http2;
-    server_name jadecursor.com www.jadecursor.com;
+    server_name spadesignhub.xyz www.spadesignhub.xyz;
     root /var/www/jadecursor;
     index index.php index.html;
 
     # SSL Certificates
-    ssl_certificate /etc/letsencrypt/live/jadecursor.com/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/jadecursor.com/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/spadesignhub.xyz/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/spadesignhub.xyz/privkey.pem;
 
     # Security Headers
     add_header X-Content-Type-Options "nosniff" always;
