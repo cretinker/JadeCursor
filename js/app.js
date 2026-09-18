@@ -51,11 +51,11 @@ function initAjaxForms() {
       const action = form.getAttribute('action');
       let targetEndpoint = action;
 
-      if (action.includes('contact.html') || action.includes('contact.php') || action.endsWith('contact')) {
+      if (action.includes('contact.html') || action.includes('contact.php') || action.includes('contact')) {
         targetEndpoint = 'api/contact.php';
-      } else if (action.includes('book-a-call.html') || action.includes('book-a-call.php') || action.endsWith('booking')) {
+      } else if (action.includes('book-a-call') || action.includes('booking')) {
         targetEndpoint = 'api/booking.php';
-      } else if (action.includes('audit.html') || action.includes('audit.php') || action.endsWith('audit')) {
+      } else if (action.includes('audit')) {
         targetEndpoint = 'api/audit.php';
       } else {
         return; // standard submit

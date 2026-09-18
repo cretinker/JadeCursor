@@ -128,7 +128,7 @@
 
           <!-- Left Column: Interactive Intake & Scheduling Engine -->
           <div class="booking-engine-card">
-            <form action="contact.html" method="GET">
+            <form action="api/booking.php" method="POST">
               
               <!-- STEP 1: Date & Time Selection -->
               <div class="form-group">
@@ -139,44 +139,55 @@
 
                 <div class="calendar-module">
                   <div class="calendar-header-row">
-                    <span class="calendar-month-label">October 2026</span>
-                    <span class="calendar-timezone-tag">Timezone: Eastern Time (US &amp; Canada)</span>
+                    <div class="calendar-header-left">
+                      <span class="calendar-month-label" id="calendar-month-display">September 2026</span>
+                      <div class="calendar-nav-group" aria-label="Calendar Week Navigation">
+                        <button type="button" class="calendar-nav-btn" id="calendar-prev-btn" aria-label="Previous available days" title="Previous week" disabled>
+                          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        </button>
+                        <button type="button" class="calendar-nav-btn" id="calendar-next-btn" aria-label="Next available days" title="Next week">
+                          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </button>
+                      </div>
+                    </div>
+                    <span class="calendar-timezone-tag" id="calendar-tz-display">Timezone: Eastern Time (US &amp; Canada)</span>
                   </div>
 
-                  <!-- 5 Selectable Date Radios -->
-                  <div class="calendar-days-row">
+                  <!-- 5 Selectable Date Radios (Populated dynamically by booking.js) -->
+                  <div class="calendar-days-row" id="calendar-days-container" role="radiogroup" aria-label="Select Consultation Date">
                     <div>
-                      <input type="radio" name="call-date" id="date-mon" class="date-radio" value="Oct 20">
-                      <label for="date-mon" class="date-btn-label">
-                        <span class="date-day-abbr">Mon</span>
-                        <span class="date-num">20</span>
+                      <input type="radio" name="call-date" id="date-slot-0" class="date-radio" value="2026-09-18" data-readable="Friday, Sep 18, 2026" checked>
+                      <label for="date-slot-0" class="date-btn-label selected">
+                        <span class="date-today-badge">TODAY</span>
+                        <span class="date-day-abbr">Fri</span>
+                        <span class="date-num">18</span>
                       </label>
                     </div>
                     <div>
-                      <input type="radio" name="call-date" id="date-tue" class="date-radio" value="Oct 21">
-                      <label for="date-tue" class="date-btn-label">
-                        <span class="date-day-abbr">Tue</span>
+                      <input type="radio" name="call-date" id="date-slot-1" class="date-radio" value="2026-09-21" data-readable="Monday, Sep 21, 2026">
+                      <label for="date-slot-1" class="date-btn-label">
+                        <span class="date-day-abbr">Mon</span>
                         <span class="date-num">21</span>
                       </label>
                     </div>
                     <div>
-                      <input type="radio" name="call-date" id="date-wed" class="date-radio" value="Oct 22" checked>
-                      <label for="date-wed" class="date-btn-label">
-                        <span class="date-day-abbr">Wed</span>
+                      <input type="radio" name="call-date" id="date-slot-2" class="date-radio" value="2026-09-22" data-readable="Tuesday, Sep 22, 2026">
+                      <label for="date-slot-2" class="date-btn-label">
+                        <span class="date-day-abbr">Tue</span>
                         <span class="date-num">22</span>
                       </label>
                     </div>
                     <div>
-                      <input type="radio" name="call-date" id="date-thu" class="date-radio" value="Oct 23">
-                      <label for="date-thu" class="date-btn-label">
-                        <span class="date-day-abbr">Thu</span>
+                      <input type="radio" name="call-date" id="date-slot-3" class="date-radio" value="2026-09-23" data-readable="Wednesday, Sep 23, 2026">
+                      <label for="date-slot-3" class="date-btn-label">
+                        <span class="date-day-abbr">Wed</span>
                         <span class="date-num">23</span>
                       </label>
                     </div>
                     <div>
-                      <input type="radio" name="call-date" id="date-fri" class="date-radio" value="Oct 24">
-                      <label for="date-fri" class="date-btn-label">
-                        <span class="date-day-abbr">Fri</span>
+                      <input type="radio" name="call-date" id="date-slot-4" class="date-radio" value="2026-09-24" data-readable="Thursday, Sep 24, 2026">
+                      <label for="date-slot-4" class="date-btn-label">
+                        <span class="date-day-abbr">Thu</span>
                         <span class="date-num">24</span>
                       </label>
                     </div>

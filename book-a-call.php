@@ -45,49 +45,66 @@ require_once __DIR__ . '/includes/header.php';
                   Select Your Preferred Date &amp; Time
                 </div>
 
+                <?php
+                // Dynamic fallback generation of 5 upcoming business days
+                $bookingDays = [];
+                $checkDate = new DateTime('today');
+                $estTz = new DateTimeZone('America/New_York');
+                $nowInEst = new DateTime('now', $estTz);
+                if ((int)$nowInEst->format('H') >= 17 && (int)$nowInEst->format('i') >= 30) {
+                    $checkDate->modify('+1 day');
+                }
+                while (count($bookingDays) < 5) {
+                    if ((int)$checkDate->format('N') <= 5) { // Mon-Fri
+                        $bookingDays[] = clone $checkDate;
+                    }
+                    $checkDate->modify('+1 day');
+                }
+                $monthStart = $bookingDays[0]->format('F Y');
+                $monthEnd = end($bookingDays)->format('F Y');
+                $ssrMonthLabel = ($monthStart === $monthEnd) ? $monthStart : $bookingDays[0]->format('M') . ' — ' . end($bookingDays)->format('M Y');
+                ?>
+
                 <div class="calendar-module">
                   <div class="calendar-header-row">
-                    <span class="calendar-month-label">October 2026</span>
-                    <span class="calendar-timezone-tag">Timezone: Eastern Time (US &amp; Canada)</span>
+                    <div class="calendar-header-left">
+                      <span class="calendar-month-label" id="calendar-month-display"><?= htmlspecialchars($ssrMonthLabel) ?></span>
+                      <div class="calendar-nav-group" aria-label="Calendar Week Navigation">
+                        <button type="button" class="calendar-nav-btn" id="calendar-prev-btn" aria-label="Previous available days" title="Previous week" disabled>
+                          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        </button>
+                        <button type="button" class="calendar-nav-btn" id="calendar-next-btn" aria-label="Next available days" title="Next week">
+                          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </button>
+                      </div>
+                    </div>
+                    <span class="calendar-timezone-tag" id="calendar-tz-display">Timezone: Eastern Time (US &amp; Canada)</span>
                   </div>
 
-                  <!-- 5 Selectable Date Radios -->
-                  <div class="calendar-days-row">
-                    <div>
-                      <input type="radio" name="call-date" id="date-mon" class="date-radio" value="Oct 20">
-                      <label for="date-mon" class="date-btn-label">
-                        <span class="date-day-abbr">Mon</span>
-                        <span class="date-num">20</span>
-                      </label>
-                    </div>
-                    <div>
-                      <input type="radio" name="call-date" id="date-tue" class="date-radio" value="Oct 21">
-                      <label for="date-tue" class="date-btn-label">
-                        <span class="date-day-abbr">Tue</span>
-                        <span class="date-num">21</span>
-                      </label>
-                    </div>
-                    <div>
-                      <input type="radio" name="call-date" id="date-wed" class="date-radio" value="Oct 22" checked>
-                      <label for="date-wed" class="date-btn-label">
-                        <span class="date-day-abbr">Wed</span>
-                        <span class="date-num">22</span>
-                      </label>
-                    </div>
-                    <div>
-                      <input type="radio" name="call-date" id="date-thu" class="date-radio" value="Oct 23">
-                      <label for="date-thu" class="date-btn-label">
-                        <span class="date-day-abbr">Thu</span>
-                        <span class="date-num">23</span>
-                      </label>
-                    </div>
-                    <div>
-                      <input type="radio" name="call-date" id="date-fri" class="date-radio" value="Oct 24">
-                      <label for="date-fri" class="date-btn-label">
-                        <span class="date-day-abbr">Fri</span>
-                        <span class="date-num">24</span>
-                      </label>
-                    </div>
+                  <!-- 5 Selectable Date Radios (SSR with JS Rehydration) -->
+                  <div class="calendar-days-row" id="calendar-days-container" role="radiogroup" aria-label="Select Consultation Date">
+                    <?php 
+                    $todayYmd = (new DateTime('today'))->format('Y-m-d');
+                    foreach ($bookingDays as $idx => $bDay): 
+                      $bDateStr = $bDay->format('Y-m-d');
+                      $isToday = ($bDateStr === $todayYmd);
+                      $bAbbr = $bDay->format('D');
+                      $bNum = $bDay->format('j');
+                      $bReadable = $bDay->format('l, M j, Y');
+                      $inputId = "date-slot-" . $idx;
+                      $isChecked = ($idx === 0);
+                    ?>
+                      <div>
+                        <input type="radio" name="call-date" id="<?= $inputId ?>" class="date-radio" value="<?= $bDateStr ?>" data-readable="<?= htmlspecialchars($bReadable) ?>" <?= $isChecked ? 'checked' : '' ?>>
+                        <label for="<?= $inputId ?>" class="date-btn-label <?= $isChecked ? 'selected' : '' ?>">
+                          <?php if ($isToday): ?>
+                            <span class="date-today-badge">TODAY</span>
+                          <?php endif; ?>
+                          <span class="date-day-abbr"><?= htmlspecialchars($bAbbr) ?></span>
+                          <span class="date-num"><?= htmlspecialchars($bNum) ?></span>
+                        </label>
+                      </div>
+                    <?php endforeach; ?>
                   </div>
 
                   <!-- Selectable Time Slots -->

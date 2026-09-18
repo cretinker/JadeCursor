@@ -61,8 +61,9 @@ if (!empty($_POST['csrf_token']) && !CSRF::validateToken($_POST['csrf_token'])) 
 }
 
 // 5. Input Sanitization & Validation
-$callDate = Security::cleanString($_POST['call-date'] ?? $_POST['call_date'] ?? 'Upcoming Week', 40);
+$callDate = Security::cleanString($_POST['call-date'] ?? $_POST['call_date'] ?? '', 40);
 $callTime = Security::cleanString($_POST['call-time'] ?? $_POST['call_time'] ?? '1:30 PM EST', 40);
+$clientTimezone = Security::cleanString($_POST['client_timezone'] ?? 'Eastern Time (US & Canada)', 80);
 $spaType = Security::cleanString($_POST['spa_type'] ?? 'Day Spa / Massage', 80);
 $software = Security::cleanString($_POST['software'] ?? 'Boulevard', 60);
 
@@ -79,8 +80,17 @@ if (empty($name)) {
     $error = 'Please provide a valid work email address.';
 } elseif (empty($website)) {
     $error = 'Please enter your current spa website URL.';
+} elseif (empty($callDate)) {
+    $error = 'Please select a preferred appointment date.';
 } else {
-    $error = null;
+    // Validate appointment date is not in the past
+    $dateTimestamp = strtotime($callDate);
+    $todayMidnight = strtotime('today midnight');
+    if ($dateTimestamp !== false && $dateTimestamp < $todayMidnight) {
+        $error = 'The selected date is in the past. Please choose an upcoming business day.';
+    } else {
+        $error = null;
+    }
 }
 
 if ($error) {
@@ -101,6 +111,7 @@ $leadData = [
     'phone' => $phone,
     'call_date' => $callDate,
     'call_time' => $callTime,
+    'client_timezone' => $clientTimezone,
     'spa_type' => $spaType,
     'software' => $software,
     'primary_goal' => $primaryGoal,
@@ -116,9 +127,9 @@ $adminHtml = '
 <h2 style="color:#8E7350; margin-top:0; font-size:20px;">New Discovery Session Booked</h2>
 <p style="color:#5E564F; font-size:14px;">A spa owner has confirmed a 30-minute video strategy session:</p>
 
-<div style="background:rgba(0,245,160,0.08); border:1px solid rgba(0,245,160,0.3); border-radius:8px; padding:15px 20px; margin:15px 0;">
+<div style="background:rgba(197,168,128,0.12); border:1px solid rgba(197,168,128,0.35); border-radius:8px; padding:15px 20px; margin:15px 0;">
   <div style="font-size:16px; font-weight:700; color:#191512;">' . htmlspecialchars($callDate) . ' at ' . htmlspecialchars($callTime) . '</div>
-  <div style="font-size:13px; color:#8E7350; margin-top:3px;">30-Minute Live Consultation &bull; Principal Director: Elijah Vance</div>
+  <div style="font-size:13px; color:#8E7350; margin-top:3px;">Timezone: ' . htmlspecialchars($clientTimezone) . ' &bull; Principal Director: Elijah Vance</div>
 </div>
 
 <table style="width:100%; border-collapse:collapse; margin:20px 0; font-size:14px;">
@@ -129,6 +140,10 @@ $adminHtml = '
   <tr style="border-bottom:1px solid #E5DDD0;">
     <td style="padding:10px 0; color:#5E564F;"><strong>Work Email:</strong></td>
     <td style="padding:10px 0; color:#8E7350;"><a href="mailto:' . htmlspecialchars($email) . '" style="color:#8E7350; text-decoration:none;">' . htmlspecialchars($email) . '</a></td>
+  </tr>
+  <tr style="border-bottom:1px solid #E5DDD0;">
+    <td style="padding:10px 0; color:#5E564F;"><strong>Timezone:</strong></td>
+    <td style="padding:10px 0; color:#191512;">' . htmlspecialchars($clientTimezone) . '</td>
   </tr>
   <tr style="border-bottom:1px solid #E5DDD0;">
     <td style="padding:10px 0; color:#5E564F;"><strong>Phone:</strong></td>
@@ -169,7 +184,7 @@ $clientHtml = '
 </p>
 
 <div style="background:#FAF8F5; border:1px solid #E5DDD0; border-radius:8px; padding:20px; margin:20px 0;">
-  <div style="font-size:16px; font-weight:700; color:#191512;">📅 ' . htmlspecialchars($callDate) . ' at ' . htmlspecialchars($callTime) . '</div>
+  <div style="font-size:16px; font-weight:700; color:#191512;">📅 ' . htmlspecialchars($callDate) . ' at ' . htmlspecialchars($callTime) . ' (' . htmlspecialchars($clientTimezone) . ')</div>
   <div style="font-size:13px; color:#8E7350; margin-top:5px;">Google Meet Private Video Link will arrive in your calendar invitation</div>
 </div>
 
