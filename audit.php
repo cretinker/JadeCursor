@@ -48,7 +48,7 @@ require_once __DIR__ . '/includes/header.php';
               <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem;">
                 <div style="display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.25rem; background: var(--color-surface-raised); border-radius: var(--radius-md); border: 1px solid var(--color-border);">
                   <span style="font-size: 0.95rem; font-weight: 600; color: var(--color-text-main);">Typical Monthly Visitors:</span>
-                  <strong style="color: var(--color-jade-neon); font-family: var(--font-mono);">3,000 Visitors</strong>
+                  <strong style="color: var(--color-gold-text); font-family: var(--font-mono);">3,000 Visitors</strong>
                 </div>
 
                 <div style="display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.25rem; background: var(--color-surface-raised); border-radius: var(--radius-md); border: 1px solid var(--color-border);">
@@ -58,14 +58,14 @@ require_once __DIR__ . '/includes/header.php';
 
                 <div style="display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.25rem; background: var(--color-surface-raised); border-radius: var(--radius-md); border: 1px solid var(--color-border);">
                   <span style="font-size: 0.95rem; font-weight: 600; color: var(--color-text-main);">Average Guest Treatment Spend:</span>
-                  <strong style="color: var(--color-jade-neon); font-family: var(--font-mono);">$350 / Appointment</strong>
+                  <strong style="color: var(--color-gold-text); font-family: var(--font-mono);">$350 / Appointment</strong>
                 </div>
               </div>
             </div>
 
             <!-- Result Box -->
             <div class="calc-result-box">
-              <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-jade-neon); font-weight: 700;">
+              <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-gold-text); font-weight: 700;">
                 Estimated Annual Lost Bookings
               </span>
               <div class="calc-metric-number">$245,000+</div>
@@ -171,7 +171,7 @@ require_once __DIR__ . '/includes/header.php';
           <div class="double-bezel-card" style="height: 100%;">
             <div class="double-bezel-inner" style="height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
               <div style="position: relative; width: 100%; overflow: hidden; border-radius: var(--radius-md); box-shadow: 0 12px 30px rgba(25, 21, 18, 0.08);">
-                <img loading="lazy" decoding="async" src="images/audit-report-showcase.png" alt="24-Hour Digital Performance &amp; Booking Audit Report — Created with gpt-image-2" style="width: 100%; height: auto; display: block; object-fit: cover;">
+                <img loading="lazy" decoding="async" src="images/audit-report-showcase.png" alt="24-Hour Digital Performance &amp; Booking Audit Report Sample" style="width: 100%; height: auto; display: block; object-fit: cover;">
                 <div class="bento-floating-badge" style="bottom: 0.85rem; left: 0.85rem; right: auto;">
                   <span class="live-dot"></span>
                   <span>24-Hour Delivery &bull; Private Video &amp; PDF Report</span>

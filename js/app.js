@@ -73,7 +73,7 @@ function initAjaxForms() {
           <span style="display:inline-flex; align-items:center; gap:0.5rem;">
             <svg style="animation: spin 0.8s linear infinite; width:18px; height:18px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <circle cx="12" cy="12" r="10" stroke-opacity="0.25"></circle>
-              <path d="M12 2a10 10 0 0 1 10 10" stroke="#00F5A0"></path>
+              <path d="M12 2a10 10 0 0 1 10 10" stroke="#C5A880"></path>
             </svg>
             Processing...
           </span>
@@ -135,9 +135,9 @@ function showInlineStatus(form, type, message) {
     margin-top: 1.25rem;
     font-size: 0.92rem;
     line-height: 1.5;
-    background: ${isSuccess ? 'rgba(0, 245, 160, 0.12)' : 'rgba(239, 68, 68, 0.12)'};
-    border: 1px solid ${isSuccess ? 'rgba(0, 245, 160, 0.4)' : 'rgba(239, 68, 68, 0.4)'};
-    color: ${isSuccess ? '#00F5A0' : '#FCA5A5'};
+    background: ${isSuccess ? 'rgba(197, 168, 128, 0.12)' : 'rgba(200, 90, 90, 0.1)'};
+    border: 1px solid ${isSuccess ? 'rgba(197, 168, 128, 0.4)' : 'rgba(200, 90, 90, 0.35)'};
+    color: ${isSuccess ? '#8E7350' : '#C85A5A'};
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -183,10 +183,10 @@ function showToast(type, message) {
   const toast = document.createElement('div');
   toast.style.cssText = `
     pointer-events: auto;
-    background: #0B101A;
-    border: 1px solid ${isSuccess ? 'rgba(0, 245, 160, 0.4)' : 'rgba(239, 68, 68, 0.4)'};
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7), 0 0 20px ${isSuccess ? 'rgba(0, 245, 160, 0.15)' : 'rgba(239, 68, 68, 0.15)'};
-    color: #FFFFFF;
+    background: #191512;
+    border: 1px solid ${isSuccess ? 'rgba(197, 168, 128, 0.45)' : 'rgba(200, 90, 90, 0.4)'};
+    box-shadow: 0 16px 36px rgba(25, 21, 18, 0.35), 0 0 20px ${isSuccess ? 'rgba(197, 168, 128, 0.2)' : 'rgba(200, 90, 90, 0.15)'};
+    color: #FAF8F5;
     padding: 14px 18px;
     border-radius: 10px;
     font-size: 0.92rem;
@@ -199,7 +199,7 @@ function showToast(type, message) {
   `;
 
   toast.innerHTML = `
-    <span style="display:flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:${isSuccess ? 'rgba(0,245,160,0.15)' : 'rgba(239,68,68,0.15)'}; color:${isSuccess ? '#00F5A0' : '#EF4444'}; flex-shrink:0;">
+    <span style="display:flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:${isSuccess ? 'rgba(197, 168, 128, 0.2)' : 'rgba(200, 90, 90, 0.2)'}; color:${isSuccess ? '#C5A880' : '#F87171'}; flex-shrink:0;">
       ${isSuccess 
         ? '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>'
         : '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>'}

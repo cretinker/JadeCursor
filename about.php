@@ -51,15 +51,15 @@ require_once __DIR__ . '/includes/header.php';
 
             <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem;">
               <div class="duality-card jade-side">
-                <h3 style="font-size: 1.35rem; color: var(--color-jade-neon); margin-bottom: 0.5rem;">"Spa Aesthetics" &mdash; Architectural Sanctuary &amp; Luminous Calm</h3>
-                <p style="font-size: 0.95rem; color: var(--color-text-muted);">
-                  Bringing the tactile serenity, bespoke interior atmosphere, and 5-star prestige of your physical treatment rooms onto the digital screen.
+                <h3 style="font-size: 1.35rem; color: var(--color-espresso); margin-bottom: 0.5rem; font-family: var(--font-display); font-weight: 600;">Architectural Sanctuary &amp; Luminous Calm</h3>
+                <p style="font-size: 0.95rem; color: var(--color-text-muted); line-height: 1.6;">
+                  Translating the tactile serenity, bespoke interior atmosphere, and 5-star prestige of your physical treatment rooms onto the digital screen.
                 </p>
               </div>
 
               <div class="duality-card cursor-side">
-                <h3 style="font-size: 1.35rem; color: var(--color-gold-dark); margin-bottom: 0.5rem;">"Design Hub" &mdash; Conversion Engineering &amp; Direct Booking Flow</h3>
-                <p style="font-size: 0.95rem; color: var(--color-text-muted);">
+                <h3 style="font-size: 1.35rem; color: var(--color-espresso); margin-bottom: 0.5rem; font-family: var(--font-display); font-weight: 600;">Conversion Architecture &amp; Direct Booking Flow</h3>
+                <p style="font-size: 0.95rem; color: var(--color-text-muted); line-height: 1.6;">
                   Sub-second mobile speed, zero-commission reservation flows, and friction-free treatment discovery engineered to turn curious visitors into confirmed clients.
                 </p>
               </div>
@@ -69,13 +69,13 @@ require_once __DIR__ . '/includes/header.php';
           <div>
             <div class="double-bezel-card">
               <div class="double-bezel-inner">
-                <img loading="lazy" decoding="async" src="images/about-atelier-interior.png" alt="Spa Design Hub Architectural Design Atelier — Created with gpt-image-2" style="border-radius: var(--radius-lg); height: 360px; width: 100%; object-fit: cover; margin-bottom: 1.5rem;">
-                <div style="border-left: 3px solid var(--color-jade-neon); padding-left: 1.25rem;">
-                  <p style="font-size: 1.15rem; color: var(--color-espresso); font-weight: 500;">
-                    "Your website is the front door to your business. When it feels as luxurious and welcoming as your lobby, clients book with confidence."
+                <img loading="lazy" decoding="async" src="images/about-atelier-interior.png" alt="Spa Design Hub Architectural Design Atelier Interior" style="border-radius: var(--radius-lg); height: 360px; width: 100%; object-fit: cover; margin-bottom: 1.5rem;">
+                <div style="border-left: 3px solid var(--color-gold); padding-left: 1.25rem;">
+                  <p style="font-size: 1.15rem; color: var(--color-espresso); font-weight: 500; font-family: var(--font-display); font-style: italic; line-height: 1.6;">
+                    "Your website is the front door to your practice. When it feels as luxurious and welcoming as your lobby, clients reserve treatments with complete confidence."
                   </p>
-                  <span style="display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-text-subtle); margin-top: 0.5rem;">
-                    — The Spa Design Hub Team
+                  <span style="display: block; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-gold-text); margin-top: 0.65rem; font-weight: 700;">
+                    — Elijah Vance, Founder &amp; Principal Design Director
                   </span>
                 </div>
               </div>
@@ -157,22 +157,22 @@ require_once __DIR__ . '/includes/header.php';
       <div class="site-container">
         <div class="agency-metrics-grid">
           <div>
-            <div style="font-family: var(--font-display); font-size: 2.75rem; font-weight: 800; color: var(--color-jade-neon); line-height: 1;">+185%</div>
+            <div style="font-family: var(--font-display); font-size: 2.75rem; font-weight: 800; color: var(--color-gold-text); line-height: 1;">+185%</div>
             <div style="font-size: 0.88rem; font-weight: 700; color: var(--color-espresso); margin-top: 0.5rem;">Average Direct Bookings Lift</div>
             <div style="font-size: 0.78rem; color: var(--color-text-muted); margin-top: 0.25rem;">Across all client launches</div>
           </div>
           <div>
-            <div style="font-family: var(--font-display); font-size: 2.75rem; font-weight: 800; color: #38BDF8; line-height: 1;">&lt; 0.9s</div>
+            <div style="font-family: var(--font-display); font-size: 2.75rem; font-weight: 800; color: var(--color-gold-text); line-height: 1;">&lt; 0.9s</div>
             <div style="font-size: 0.88rem; font-weight: 700; color: var(--color-espresso); margin-top: 0.5rem;">Mobile Page Load Speed</div>
             <div style="font-size: 0.78rem; color: var(--color-text-muted); margin-top: 0.25rem;">Zero client drop-offs</div>
           </div>
           <div>
-            <div style="font-family: var(--font-display); font-size: 2.75rem; font-weight: 800; color: var(--color-jade-neon); line-height: 1;">30+</div>
+            <div style="font-family: var(--font-display); font-size: 2.75rem; font-weight: 800; color: var(--color-gold-text); line-height: 1;">30+</div>
             <div style="font-size: 0.88rem; font-weight: 700; color: var(--color-espresso); margin-top: 0.5rem;">Luxury Spas &amp; Clinics</div>
             <div style="font-size: 0.78rem; color: var(--color-text-muted); margin-top: 0.25rem;">Designed and engineered</div>
           </div>
           <div>
-            <div style="font-family: var(--font-display); font-size: 2.75rem; font-weight: 800; color: #F59E0B; line-height: 1;">100%</div>
+            <div style="font-family: var(--font-display); font-size: 2.75rem; font-weight: 800; color: var(--color-gold-text); line-height: 1;">100%</div>
             <div style="font-size: 0.88rem; font-weight: 700; color: var(--color-espresso); margin-top: 0.5rem;">Direct Founder Communication</div>
             <div style="font-size: 0.78rem; color: var(--color-text-muted); margin-top: 0.25rem;">No junior account middlemen</div>
           </div>
@@ -202,9 +202,9 @@ require_once __DIR__ . '/includes/header.php';
           <!-- Member 1: Elijah Vance (Founder & Principal Director) -->
           <div class="double-bezel-card">
             <div class="double-bezel-inner">
-              <img loading="lazy" decoding="async" src="images/founder-elijah-vance.png" alt="Elijah Vance — Founder &amp; Principal Design Director — Created with gpt-image-2" style="border-radius: var(--radius-lg); height: 280px; width: 100%; object-fit: cover; margin-bottom: 1.25rem;">
+              <img loading="lazy" decoding="async" src="images/founder-elijah-vance.png" alt="Elijah Vance — Founder &amp; Principal Design Director" style="border-radius: var(--radius-lg); height: 280px; width: 100%; object-fit: cover; margin-bottom: 1.25rem;">
               <h3 style="font-size: 1.45rem;">Elijah Vance</h3>
-              <span style="font-size: 0.85rem; color: var(--color-jade-neon); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; display: block; margin-bottom: 0.75rem;">Founder &amp; Principal Design Director</span>
+              <span style="font-size: 0.85rem; color: var(--color-gold-text); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; display: block; margin-bottom: 0.75rem;">Founder &amp; Principal Design Director</span>
               <p style="font-size: 0.95rem; color: var(--color-text-muted);">
                 Architect behind our proprietary booking conversion frameworks. Elijah personally leads client discovery calls and ensures every website is engineered to capture high-value appointments.
               </p>
@@ -214,9 +214,9 @@ require_once __DIR__ . '/includes/header.php';
           <!-- Member 2: Seraphina Lin -->
           <div class="double-bezel-card">
             <div class="double-bezel-inner">
-              <img loading="lazy" decoding="async" src="images/team-seraphina-lin.png" alt="Seraphina Lin — Creative Director &amp; Visual Stylist — Created with gpt-image-2" style="border-radius: var(--radius-lg); height: 280px; width: 100%; object-fit: cover; margin-bottom: 1.25rem;">
+              <img loading="lazy" decoding="async" src="images/team-seraphina-lin.png" alt="Seraphina Lin — Creative Director &amp; Visual Stylist" style="border-radius: var(--radius-lg); height: 280px; width: 100%; object-fit: cover; margin-bottom: 1.25rem;">
               <h3 style="font-size: 1.45rem;">Seraphina Lin</h3>
-              <span style="font-size: 0.85rem; color: var(--color-jade-neon); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; display: block; margin-bottom: 0.75rem;">Creative Director &amp; Visual Stylist</span>
+              <span style="font-size: 0.85rem; color: var(--color-gold-text); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; display: block; margin-bottom: 0.75rem;">Creative Director &amp; Visual Stylist</span>
               <p style="font-size: 0.95rem; color: var(--color-text-muted);">
                 Specializing in luxury aesthetics, typography, and botanical art direction. Seraphina ensures your online presence reflects the soothing, high-end atmosphere of your physical space.
               </p>
@@ -226,9 +226,9 @@ require_once __DIR__ . '/includes/header.php';
           <!-- Member 3: Julian Thorne -->
           <div class="double-bezel-card">
             <div class="double-bezel-inner">
-              <img loading="lazy" decoding="async" src="images/team-julian-thorne.png" alt="Julian Thorne — Lead Systems &amp; Booking Engineer — Created with gpt-image-2" style="border-radius: var(--radius-lg); height: 280px; width: 100%; object-fit: cover; margin-bottom: 1.25rem;">
+              <img loading="lazy" decoding="async" src="images/team-julian-thorne.png" alt="Julian Thorne — Lead Systems &amp; Booking Engineer" style="border-radius: var(--radius-lg); height: 280px; width: 100%; object-fit: cover; margin-bottom: 1.25rem;">
               <h3 style="font-size: 1.45rem;">Julian Thorne</h3>
-              <span style="font-size: 0.85rem; color: var(--color-jade-neon); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; display: block; margin-bottom: 0.75rem;">Lead Systems &amp; Booking Engineer</span>
+              <span style="font-size: 0.85rem; color: var(--color-gold-text); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; display: block; margin-bottom: 0.75rem;">Lead Systems &amp; Booking Engineer</span>
               <p style="font-size: 0.95rem; color: var(--color-text-muted);">
                 Expert in custom booking platform integrations (Boulevard, Jane, Mindbody, Phorest). Julian ensures lightning-fast mobile speeds and 1-click reservation checkouts.
               </p>

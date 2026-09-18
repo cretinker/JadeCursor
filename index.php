@@ -69,7 +69,7 @@ require_once __DIR__ . '/includes/header.php';
             <div class="macbook-mockup">
               <div class="macbook-notch"></div>
               <div class="macbook-screen">
-                <img loading="eager" decoding="async" src="images/hero-macbook-showcase.png" alt="Luxury Spa Website Design on MacBook Pro — Created with gpt-image-2">
+                <img loading="eager" decoding="async" src="images/hero-macbook-showcase.png" alt="Luxury Spa Website Design on MacBook Pro">
               </div>
               <div class="macbook-base"></div>
             </div>
@@ -77,7 +77,7 @@ require_once __DIR__ . '/includes/header.php';
             <div class="iphone-mockup">
               <div class="iphone-island"></div>
               <div class="iphone-screen">
-                <img loading="eager" decoding="async" src="images/hero-iphone-showcase.png" alt="Mobile Treatment Booking Flow on iPhone 16 — Created with gpt-image-2">
+                <img loading="eager" decoding="async" src="images/hero-iphone-showcase.png" alt="Mobile Treatment Booking Flow on iPhone 16">
               </div>
             </div>
 
@@ -427,7 +427,7 @@ require_once __DIR__ . '/includes/header.php';
                   <span class="bento-browser-url">https://peeskinmedspa.spadesignhub.xyz</span>
                 </div>
                 <div class="bento-browser-img-wrap">
-                  <img loading="lazy" decoding="async" src="images/case-study-peeskin.png" alt="Pee Skin &amp; Med Spa Luxury Medical Aesthetics Website — Created with gpt-image-2">
+                  <img loading="lazy" decoding="async" src="images/case-study-peeskin.png" alt="Pee Skin &amp; Med Spa Luxury Medical Aesthetics Website Showcase">
                   <div class="bento-floating-badge">
                     <span class="live-dot"></span>
                     <span>Jane App Deep-Link &bull; &lt;45s Consultation Flow</span>
@@ -453,7 +453,7 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
 
                 <div class="bento-sub-box" style="text-align: center; background: rgba(197, 168, 128, 0.08); border-color: rgba(197, 168, 128, 0.3);">
-                  <div style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 800; color: var(--color-jade-neon);">$1,250</div>
+                  <div style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 800; color: var(--color-gold-text);">$1,250</div>
                   <div style="font-size: 0.82rem; color: var(--color-text-main); font-weight: 600;">Average First-Visit Patient Value</div>
                 </div>
               </div>
@@ -510,7 +510,7 @@ require_once __DIR__ . '/includes/header.php';
                   <span class="bento-browser-url">https://jveewellness.spadesignhub.xyz</span>
                 </div>
                 <div class="bento-browser-img-wrap">
-                  <img loading="lazy" decoding="async" src="images/case-study-jvee.png" alt="JVEE Wellness &amp; Spa Luxury Hydrothermal Website Showcase — Created with gpt-image-2">
+                  <img loading="lazy" decoding="async" src="images/case-study-jvee.png" alt="JVEE Wellness &amp; Spa Luxury Hydrothermal Website Showcase">
                   <div class="bento-floating-badge">
                     <span class="live-dot"></span>
                     <span>Boulevard Software Integration &bull; 1-Tap Booking</span>
@@ -536,7 +536,7 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
 
                 <div class="bento-sub-box" style="text-align: center; background: rgba(197, 168, 128, 0.08); border-color: rgba(197, 168, 128, 0.3);">
-                  <div style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 800; color: var(--color-jade-neon);">-58%</div>
+                  <div style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 800; color: var(--color-gold-text);">-58%</div>
                   <div style="font-size: 0.82rem; color: var(--color-text-main); font-weight: 600;">Mobile Drop-Off Reduction</div>
                 </div>
               </div>

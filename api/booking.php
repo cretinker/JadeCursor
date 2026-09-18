@@ -128,7 +128,7 @@ $adminHtml = '
   </tr>
   <tr style="border-bottom:1px solid #E5DDD0;">
     <td style="padding:10px 0; color:#5E564F;"><strong>Work Email:</strong></td>
-    <td style="padding:10px 0; color:#38BDF8;"><a href="mailto:' . htmlspecialchars($email) . '" style="color:#38BDF8; text-decoration:none;">' . htmlspecialchars($email) . '</a></td>
+    <td style="padding:10px 0; color:#8E7350;"><a href="mailto:' . htmlspecialchars($email) . '" style="color:#8E7350; text-decoration:none;">' . htmlspecialchars($email) . '</a></td>
   </tr>
   <tr style="border-bottom:1px solid #E5DDD0;">
     <td style="padding:10px 0; color:#5E564F;"><strong>Phone:</strong></td>
@@ -136,7 +136,7 @@ $adminHtml = '
   </tr>
   <tr style="border-bottom:1px solid #E5DDD0;">
     <td style="padding:10px 0; color:#5E564F;"><strong>Spa Website:</strong></td>
-    <td style="padding:10px 0; color:#38BDF8;"><a href="' . htmlspecialchars($website) . '" target="_blank" style="color:#38BDF8;">' . htmlspecialchars($website) . '</a></td>
+    <td style="padding:10px 0; color:#8E7350;"><a href="' . htmlspecialchars($website) . '" target="_blank" style="color:#8E7350;">' . htmlspecialchars($website) . '</a></td>
   </tr>
   <tr style="border-bottom:1px solid #E5DDD0;">
     <td style="padding:10px 0; color:#5E564F;"><strong>Business Type:</strong></td>
@@ -144,11 +144,11 @@ $adminHtml = '
   </tr>
   <tr style="border-bottom:1px solid #E5DDD0;">
     <td style="padding:10px 0; color:#5E564F;"><strong>Booking Software:</strong></td>
-    <td style="padding:10px 0; color:#38BDF8; font-weight:600;">' . htmlspecialchars($software) . '</td>
+    <td style="padding:10px 0; color:#8E7350; font-weight:600;">' . htmlspecialchars($software) . '</td>
   </tr>
   <tr style="border-bottom:1px solid #E5DDD0;">
     <td style="padding:10px 0; color:#5E564F;"><strong>Primary Goal:</strong></td>
-    <td style="padding:10px 0; color:#F59E0B; font-weight:600;">' . htmlspecialchars($primaryGoal) . '</td>
+    <td style="padding:10px 0; color:#8E7350; font-weight:600;">' . htmlspecialchars($primaryGoal) . '</td>
   </tr>
 </table>
 

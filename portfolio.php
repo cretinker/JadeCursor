@@ -87,7 +87,7 @@ require_once __DIR__ . '/includes/header.php';
                   <span class="bento-browser-url">https://peeskinmedspa.spadesignhub.xyz</span>
                 </div>
                 <div class="bento-browser-img-wrap">
-                  <img loading="lazy" decoding="async" src="images/case-study-peeskin.png" alt="Pee Skin &amp; Med Spa Luxury Medical Aesthetics Website — Created with gpt-image-2">
+                  <img loading="lazy" decoding="async" src="images/case-study-peeskin.png" alt="Pee Skin &amp; Med Spa Luxury Medical Aesthetics Website Showcase">
                   <!-- Floating UI Badge -->
                   <div class="bento-floating-badge">
                     <span class="live-dot"></span>
@@ -118,8 +118,8 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
 
                 <!-- Initial Ticket Badge -->
-                <div class="bento-sub-box" style="text-align: center; background: rgba(0, 245, 160, 0.04); border-color: rgba(0, 245, 160, 0.2);">
-                  <div style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 800; color: var(--color-jade-neon);">$1,250</div>
+                <div class="bento-sub-box" style="text-align: center; background: rgba(197, 168, 128, 0.08); border-color: rgba(197, 168, 128, 0.3);">
+                  <div style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 800; color: var(--color-gold-text);">$1,250</div>
                   <div style="font-size: 0.82rem; color: var(--color-text-main); font-weight: 600;">Average First-Visit Patient Value</div>
                 </div>
               </div>
@@ -137,9 +137,9 @@ require_once __DIR__ . '/includes/header.php';
 
               <div class="bento-narrative-card step-solution">
                 <span class="narrative-card-step">02 // What We Built</span>
-                <h4>Interactive Skin Navigator</h4>
+                <h4>Interactive Skin Concern Navigator</h4>
                 <p>
-                  We built a luxury cosmetic experience featuring an intuitive skin concern selector and a pre-qualified consultation booking funnel directly linked into Jane App.
+                  We designed a warm aesthetic experience with an intuitive concern selector, patient testimonials, and 1-click consultation booking directly in Jane App.
                 </p>
               </div>
 
@@ -147,7 +147,7 @@ require_once __DIR__ . '/includes/header.php';
                 <span class="narrative-card-step">03 // Business Impact</span>
                 <h4>+310% High-Ticket Inquiries</h4>
                 <p>
-                  New patient consultation inquiries grew by 310% in the first 90 days, raising their average initial ticket to $1,250 and generating an estimated 3.8x patient lifetime value.
+                  New patient consultation inquiries grew by 310% in the first 90 days, raising their initial average ticket to $1,250 and filling their injector schedules.
                 </p>
               </div>
             </div>
@@ -190,7 +190,7 @@ require_once __DIR__ . '/includes/header.php';
                   <span class="bento-browser-url">https://jveewellness.spadesignhub.xyz</span>
                 </div>
                 <div class="bento-browser-img-wrap">
-                  <img loading="lazy" decoding="async" src="images/case-study-jvee.png" alt="JVEE Wellness &amp; Spa Luxury Hydrothermal Website Showcase — Created with gpt-image-2">
+                  <img loading="lazy" decoding="async" src="images/case-study-jvee.png" alt="JVEE Wellness &amp; Spa Luxury Hydrothermal Website Showcase">
                   <!-- Floating UI Badge -->
                   <div class="bento-floating-badge">
                     <span class="live-dot"></span>
@@ -218,8 +218,8 @@ require_once __DIR__ . '/includes/header.php';
                   </div>
                 </div>
 
-                <div class="bento-sub-box" style="text-align: center; background: rgba(0, 245, 160, 0.04); border-color: rgba(0, 245, 160, 0.2);">
-                  <div style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 800; color: var(--color-jade-neon);">-58%</div>
+                <div class="bento-sub-box" style="text-align: center; background: rgba(197, 168, 128, 0.08); border-color: rgba(197, 168, 128, 0.3);">
+                  <div style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 800; color: var(--color-gold-text);">-58%</div>
                   <div style="font-size: 0.82rem; color: var(--color-text-main); font-weight: 600;">Mobile Drop-Off Reduction</div>
                 </div>
               </div>
@@ -290,7 +290,7 @@ require_once __DIR__ . '/includes/header.php';
                   <span class="bento-browser-url">https://arunaspa.spadesignhub.xyz</span>
                 </div>
                 <div class="bento-browser-img-wrap">
-                  <img loading="lazy" decoding="async" src="images/case-study-aruna.png" alt="Aruna Spa &amp; Thermal Haven Website Showcase — Created with gpt-image-2">
+                  <img loading="lazy" decoding="async" src="images/case-study-aruna.png" alt="Aruna Spa &amp; Thermal Haven Website Showcase">
                   <!-- Floating UI Badge -->
                   <div class="bento-floating-badge">
                     <span class="live-dot"></span>
@@ -318,8 +318,8 @@ require_once __DIR__ . '/includes/header.php';
                   </div>
                 </div>
 
-                <div class="bento-sub-box" style="text-align: center; background: rgba(0, 245, 160, 0.04); border-color: rgba(0, 245, 160, 0.2);">
-                  <div style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 800; color: var(--color-jade-neon);">$480k</div>
+                <div class="bento-sub-box" style="text-align: center; background: rgba(197, 168, 128, 0.08); border-color: rgba(197, 168, 128, 0.3);">
+                  <div style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 800; color: var(--color-gold-text);">$480k</div>
                   <div style="font-size: 0.82rem; color: var(--color-text-main); font-weight: 600;">Corporate Retreat Sales in Q1</div>
                 </div>
               </div>
@@ -390,7 +390,7 @@ require_once __DIR__ . '/includes/header.php';
                   <span class="bento-browser-url">https://beauticiansonthego.spadesignhub.xyz</span>
                 </div>
                 <div class="bento-browser-img-wrap">
-                  <img loading="lazy" decoding="async" src="images/case-study-beauticians.png" alt="Beauticians On The Go Luxury Mobile Concierge Website — Created with gpt-image-2">
+                  <img loading="lazy" decoding="async" src="images/case-study-beauticians.png" alt="Beauticians On The Go Luxury Mobile Concierge Website Showcase">
                   <!-- Floating UI Badge -->
                   <div class="bento-floating-badge">
                     <span class="live-dot"></span>
@@ -418,8 +418,8 @@ require_once __DIR__ . '/includes/header.php';
                   </div>
                 </div>
 
-                <div class="bento-sub-box" style="text-align: center; background: rgba(0, 245, 160, 0.04); border-color: rgba(0, 245, 160, 0.2);">
-                  <div style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 800; color: var(--color-jade-neon);">12+ hrs</div>
+                <div class="bento-sub-box" style="text-align: center; background: rgba(197, 168, 128, 0.08); border-color: rgba(197, 168, 128, 0.3);">
+                  <div style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 800; color: var(--color-gold-text);">12+ hrs</div>
                   <div style="font-size: 0.82rem; color: var(--color-text-main); font-weight: 600;">Saved per Week in Phone Admin</div>
                 </div>
               </div>
@@ -490,7 +490,7 @@ require_once __DIR__ . '/includes/header.php';
                   <span class="bento-browser-url">https://edenspa.spadesignhub.xyz</span>
                 </div>
                 <div class="bento-browser-img-wrap">
-                  <img loading="lazy" decoding="async" src="images/case-study-eden.png" alt="Eden Spa &amp; Salon Botanical Website — Created with gpt-image-2">
+                  <img loading="lazy" decoding="async" src="images/case-study-eden.png" alt="Eden Spa &amp; Botanical Salon Website Showcase">
                   <!-- Floating UI Badge -->
                   <div class="bento-floating-badge">
                     <span class="live-dot"></span>
@@ -518,8 +518,8 @@ require_once __DIR__ . '/includes/header.php';
                   </div>
                 </div>
 
-                <div class="bento-sub-box" style="text-align: center; background: rgba(0, 245, 160, 0.04); border-color: rgba(0, 245, 160, 0.2);">
-                  <div style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 800; color: var(--color-jade-neon);">&lt;0.8s</div>
+                <div class="bento-sub-box" style="text-align: center; background: rgba(197, 168, 128, 0.08); border-color: rgba(197, 168, 128, 0.3);">
+                  <div style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 800; color: var(--color-gold-text);">&lt;0.8s</div>
                   <div style="font-size: 0.82rem; color: var(--color-text-main); font-weight: 600;">Lightning Mobile Load Speed</div>
                 </div>
               </div>

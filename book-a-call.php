@@ -302,10 +302,10 @@ require_once __DIR__ . '/includes/header.php';
 
               <!-- Director Bio -->
               <div class="director-profile-box">
-                <img loading="lazy" decoding="async" src="images/founder-elijah-vance.png" alt="Elijah Vance — Founder &amp; Principal Design Director — Created with gpt-image-2" class="director-avatar">
+                <img loading="lazy" decoding="async" src="images/founder-elijah-vance.png" alt="Elijah Vance — Founder &amp; Principal Design Director" class="director-avatar">
                 <div>
                   <div style="font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; color: var(--color-espresso);">Elijah Vance</div>
-                  <div style="font-size: 0.78rem; color: var(--color-jade-neon); font-weight: 600;">Founder &amp; Principal Design Director</div>
+                  <div style="font-size: 0.78rem; color: var(--color-gold-text); font-weight: 600;">Founder &amp; Principal Design Director</div>
                   <div style="font-size: 0.75rem; color: var(--color-text-muted);">Direct consultation &bull; No junior middlemen</div>
                 </div>
               </div>
@@ -313,7 +313,7 @@ require_once __DIR__ . '/includes/header.php';
 
             <!-- Client Proof Card -->
             <div class="rail-card">
-              <div style="display: flex; gap: 0.25rem; color: #F59E0B; margin-bottom: 0.75rem;">
+              <div style="display: flex; gap: 0.25rem; color: var(--color-gold-text); margin-bottom: 0.75rem;">
                 &#9733;&#9733;&#9733;&#9733;&#9733;
               </div>
               <p style="font-size: 0.92rem; color: var(--color-text-muted); font-style: italic; line-height: 1.6; margin-bottom: 1rem;">
@@ -321,7 +321,7 @@ require_once __DIR__ . '/includes/header.php';
               </p>
               <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--color-border); padding-top: 0.75rem;">
                 <span style="font-size: 0.82rem; font-weight: 700; color: var(--color-espresso);">Dr. Chloe Chen, Founder</span>
-                <span style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--color-jade-neon); font-weight: 700;">Soleil MedSpa (+310% Bookings)</span>
+                <span style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--color-gold-text); font-weight: 700;">Soleil MedSpa (+310% Bookings)</span>
               </div>
             </div>
 

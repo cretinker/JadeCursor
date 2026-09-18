@@ -1031,7 +1031,7 @@ svg {
   font-family: var(--font-display);
   font-size: clamp(2rem, 3.5vw, 2.75rem);
   font-weight: 800;
-  color: var(--color-jade-neon);
+  color: var(--color-gold-text);
   line-height: 1;
   margin-bottom: 0.35rem;
   text-shadow: 0 0 20px var(--color-jade-glow);
@@ -1471,7 +1471,7 @@ svg {
   font-family: var(--font-display);
   font-size: clamp(2.75rem, 5vw, 4rem);
   font-weight: 800;
-  color: var(--color-jade-neon);
+  color: var(--color-gold-text);
   line-height: 1.1;
   margin: 0.5rem 0;
   text-shadow: 0 0 24px var(--color-jade-glow);
@@ -2016,9 +2016,9 @@ svg {
   background: var(--color-border);
 }
 
-.bento-narrative-card.step-problem::before { background: #F87171; }
+.bento-narrative-card.step-problem::before { background: var(--color-status-red); }
 .bento-narrative-card.step-solution::before { background: var(--color-gold-dark); }
-.bento-narrative-card.step-impact::before { background: #38BDF8; }
+.bento-narrative-card.step-impact::before { background: var(--color-status-green); }
 
 .narrative-card-step {
   font-family: var(--font-mono);
@@ -2028,9 +2028,9 @@ svg {
   font-weight: 700;
 }
 
-.step-problem .narrative-card-step { color: #F87171; }
+.step-problem .narrative-card-step { color: var(--color-status-red); }
 .step-solution .narrative-card-step { color: var(--color-gold-dark); }
-.step-impact .narrative-card-step { color: #38BDF8; }
+.step-impact .narrative-card-step { color: var(--color-status-green); }
 
 .bento-narrative-card h4 {
   font-size: 1.15rem;
@@ -2338,7 +2338,7 @@ svg {
 }
 
 .duality-card.cursor-side {
-  border-left: 4px solid #38BDF8;
+  border-left: 4px solid var(--color-gold-dark);
 }
 
 /* Contact Layout */
