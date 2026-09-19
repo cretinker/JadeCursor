@@ -223,14 +223,14 @@ require_once __DIR__ . '/includes/header.php';
             </div>
           </div>
 
-          <!-- Member 3: Tunde Bakare -->
+          <!-- Member 3: Julian Thorne -->
           <div class="double-bezel-card">
             <div class="double-bezel-inner">
-              <img loading="lazy" decoding="async" src="images/team-tunde-bakare.jpg" alt="Tunde Bakare — Lead Systems &amp; Booking Engineer" style="border-radius: var(--radius-lg); height: 280px; width: 100%; object-fit: cover; margin-bottom: 1.25rem;">
-              <h3 style="font-size: 1.45rem;">Tunde Bakare</h3>
+              <img loading="lazy" decoding="async" src="images/team-julian-thorne.jpg" alt="Julian Thorne — Lead Systems &amp; Booking Engineer" style="border-radius: var(--radius-lg); height: 280px; width: 100%; object-fit: cover; margin-bottom: 1.25rem;">
+              <h3 style="font-size: 1.45rem;">Julian Thorne</h3>
               <span style="font-size: 0.85rem; color: var(--color-gold-text); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; display: block; margin-bottom: 0.75rem;">Lead Systems &amp; Booking Engineer</span>
               <p style="font-size: 0.95rem; color: var(--color-text-muted);">
-                Specialist in custom booking platform integrations (Boulevard, Jane, Mindbody, Phorest). Tunde engineers lightning-fast mobile speeds and seamless 1-click reservation checkouts.
+                Specialist in custom booking platform integrations (Boulevard, Jane, Mindbody, Phorest). Julian engineers lightning-fast mobile speeds and seamless 1-click reservation checkouts.
               </p>
             </div>
           </div>
