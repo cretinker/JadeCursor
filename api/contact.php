@@ -158,7 +158,7 @@ $clientSubject = "We received your inquiry — Spa Design Hub";
 $clientHtml = '
 <h2 style="color:#8E7350; margin-top:0; font-size:20px;">Thank you for connecting with Spa Design Hub, ' . htmlspecialchars($name) . '.</h2>
 <p style="color:#191512; font-size:15px; line-height:1.6;">
-  We have received your project details for <strong>' . htmlspecialchars($spaName) . '</strong>. Our Principal Design Director, Elijah Vance, will review your current online presence and reach out within 24 business hours to schedule your 30-minute Discovery Session.
+  We have received your project details for <strong>' . htmlspecialchars($spaName) . '</strong>. Our Principal Design Director, Elijah Adah, will review your current online presence and reach out within 24 business hours to schedule your 30-minute Discovery Session.
 </p>
 <div style="background:#FAF8F5; border:1px solid #E5DDD0; border-radius:8px; padding:20px; margin:20px 0;">
   <h4 style="color:#191512; margin-top:0; margin-bottom:10px;">What We Will Prepare for You:</h4>

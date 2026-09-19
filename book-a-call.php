@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Book a 30-Min Discovery Strategy Call | Spa Design Hub";
-$pageDescription = "Schedule a free 30-minute 1-on-1 strategy session with Principal Design Director Elijah Vance. Live mobile audit and transparent project roadmap.";
+$pageDescription = "Schedule a free 30-minute 1-on-1 strategy session with Principal Design Director Elijah Adah. Live mobile audit and transparent project roadmap.";
 $currentPage = "book-a-call";
 $extraScripts = ["js/booking.js"];
 
@@ -319,9 +319,9 @@ require_once __DIR__ . '/includes/header.php';
 
               <!-- Director Bio -->
               <div class="director-profile-box">
-                <img loading="lazy" decoding="async" src="images/founder-elijah-vance.png" alt="Elijah Vance — Founder &amp; Principal Design Director" class="director-avatar">
+                <img loading="lazy" decoding="async" src="images/founder-elijah-adah.jpg" alt="Elijah Adah — Founder &amp; Principal Design Director" class="director-avatar">
                 <div>
-                  <div style="font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; color: var(--color-espresso);">Elijah Vance</div>
+                  <div style="font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; color: var(--color-espresso);">Elijah Adah</div>
                   <div style="font-size: 0.78rem; color: var(--color-gold-text); font-weight: 600;">Founder &amp; Principal Design Director</div>
                   <div style="font-size: 0.75rem; color: var(--color-text-muted);">Direct consultation &bull; No junior middlemen</div>
                 </div>

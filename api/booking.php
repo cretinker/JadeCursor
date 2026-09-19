@@ -129,7 +129,7 @@ $adminHtml = '
 
 <div style="background:rgba(197,168,128,0.12); border:1px solid rgba(197,168,128,0.35); border-radius:8px; padding:15px 20px; margin:15px 0;">
   <div style="font-size:16px; font-weight:700; color:#191512;">' . htmlspecialchars($callDate) . ' at ' . htmlspecialchars($callTime) . '</div>
-  <div style="font-size:13px; color:#8E7350; margin-top:3px;">Timezone: ' . htmlspecialchars($clientTimezone) . ' &bull; Principal Director: Elijah Vance</div>
+  <div style="font-size:13px; color:#8E7350; margin-top:3px;">Timezone: ' . htmlspecialchars($clientTimezone) . ' &bull; Principal Director: Elijah Adah</div>
 </div>
 
 <table style="width:100%; border-collapse:collapse; margin:20px 0; font-size:14px;">
@@ -193,7 +193,7 @@ $clientHtml = '
   <li><strong>Live Mobile Speed &amp; UX Audit:</strong> We inspect your live booking flow on phone screens</li>
   <li><strong>' . htmlspecialchars($software) . ' Deep-Link Strategy:</strong> How to eliminate 3 redundant booking steps</li>
   <li><strong>Custom Scope &amp; Roadmap:</strong> Transparent options tailored to your revenue goals</li>
-  <li><strong>Zero Sales Pressure:</strong> Helpful advice from Principal Director Elijah Vance</li>
+  <li><strong>Zero Sales Pressure:</strong> Helpful advice from Principal Director Elijah Adah</li>
 </ul>
 
 <p style="color:#8F857B; font-size:13px; margin-top:25px;">

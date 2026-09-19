@@ -137,7 +137,7 @@ $clientSubject = "Your Free 5-Minute Video Audit is Being Prepared — Spa Desig
 $clientHtml = '
 <h2 style="color:#8E7350; margin-top:0; font-size:20px;">We are reviewing ' . htmlspecialchars($website) . ', ' . htmlspecialchars($name) . '.</h2>
 <p style="color:#191512; font-size:15px; line-height:1.6;">
-  Thank you for requesting your custom video audit. Our Principal Design Director, Elijah Vance, will record a candid, 5-minute video walkthrough of your live website.
+  Thank you for requesting your custom video audit. Our Principal Design Director, Elijah Adah, will record a candid, 5-minute video walkthrough of your live website.
 </p>
 
 <div style="background:#FAF8F5; border:1px solid #E5DDD0; border-radius:8px; padding:20px; margin:20px 0;">

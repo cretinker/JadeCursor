@@ -105,7 +105,7 @@ require_once __DIR__ . '/includes/header.php';
               <div class="form-row-2col">
                 <div class="form-group">
                   <label for="full-name" class="form-label">Your Name *</label>
-                  <input type="text" id="full-name" name="name" class="form-input" placeholder="e.g. Eleanor Vance" required>
+                  <input type="text" id="full-name" name="name" class="form-input" placeholder="e.g. Sarah Jenkins" required>
                 </div>
                 <div class="form-group">
                   <label for="email" class="form-label">Work Email Address *</label>
